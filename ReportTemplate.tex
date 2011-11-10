@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+
+\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{tabularx} %tabular with stretch columns
+\usepackage{enumerate}
+\usepackage{pdfpages}
+\usepackage{pdflscape}
+
+% Index
+\usepackage{makeidx}
+\makeindex
+
+\begin{document}
+
+\nocite{big}
+\nocite{Sh:1}
+\nocite{small} 
+
+
+\input{./title.tex}
+
+\tableofcontents
+\newpage
+
+\begin{abstract}
+Our abstract goes here...
+\end{abstract}
+\newpage
+
+\section{Introduction}
+Write some stuff.....
+\subsection{Definitions}
+\subsection{Background}
+\subsection{Purpose}
+\subsection{Method}
+\section{Standards}
+\section{Projects and Organizations}
+\section{Prerequisites for Increased Interoperability}
+\section{Conclusions}
+
+\newpage
+\begin{appendix}
+
+
+\end{appendix}
+
+\newpage
+\bibliographystyle{unsrt} 
+\bibliography{ourBib} 
+
+
+\end{document} 

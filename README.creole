@@ -1,0 +1,19 @@
+{{https://github.com/mooremo/HealthShare/blob/master/Images/HealthShare.png|HealthShare}}
+
+= HealthShare =
+
+{{https://github.com/mooremo/HealthShare/blob/master/Images/logo.png|Rose-Hulman Institute of Technology}}
+{{https://github.com/mooremo/HealthShare/blob/master/Images/uppsala.png|Uppsala Universitet}}
+
+== Computing in a Global Society ==
+
+|=Name              |=Email address                 |
+| Josh Jones        | jonesjg@rose-hulman.edu       |
+| Romel Ayalew      | romel.ayalew@gmail.com        |
+| Emil Wall         | emwa3503@student.uu.se        |
+| Matt Moore        | mooremo@rose-hulman.edu       |
+| Robert Lööf       | robert__86@hotmail.com        |
+
+* [[https://healthshare.teamlab.com/|TeamLabs]]
+* [[http://www.uu.se/en/|Uppsala Universitet]]
+* [[http://www.rose-hulman.edu/|Rose-Hulman Institute of Technology]]

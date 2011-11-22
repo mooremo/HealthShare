@@ -12,6 +12,7 @@
 \usepackage{enumerate}
 \usepackage{pdfpages}
 \usepackage{pdflscape}
+\usepackage[utf8]{inputenc}
 
 
 % Index
@@ -20,10 +21,7 @@
 
 \begin{document}
 
-\nocite{big}
 \nocite{Sh:1}
-\nocite{small} 
-
 
 \input{./title.tex}
 
@@ -33,7 +31,9 @@
 \begin{abstract}
 Our abstract goes here...
 \end{abstract}
+
 \newpage
+
 
 \section{Introduction}
 Define the problem and in what context (maybe contextualize, write a story, describe a scenario? a concrete relevant scenario that occurs with persons involved)
@@ -43,10 +43,10 @@ The setting of problems in EHR/EMR interoperability situations. Describe what th
 describe the ideal interoperating system
 
 \subsection{Purpose and Scope}
-“To investigate the interoperability of
+To investigate the interoperability of
 EHR/EMR systems taking in regard what
 the people involved want, the limitations,
-standards and organizational issues.”
+standards and organizational issues.
 
 Explain what we will look into and why, limit the scope to what we will be discussing in the paper.
 
@@ -67,14 +67,14 @@ instructions for different audiences, so people who already know, or don't care 
 \item hybrids between the two
 \end{itemize}
 
-How did we prepare the interviews, how they where/wasn’t structured, transcibed(?).
+How did we prepare the interviews, how they where/wasn't structured, transcibed(?).
 
 \subsection{Reading}
 methods for searching for information
 
 \subsection{Other?}
 
-\section{“what the people involved want” }
+\section{What the people involved want}
 (maybe move to introduction if too small)
 \begin{itemize}
 \item physicians
@@ -87,15 +87,22 @@ methods for searching for information
 \item legal authorities
 \item lab workers
 \end{itemize}
+
+
 \section{Interoperabilty}
 
 \begin{itemize}
 \item Introduction to what this chapter should be about. (relevant, not too long, not too short)
-\item Define what interoperability is. Talk about interoperability in general, and also in this specific case. Why interoperability is important and how it works. \item 
+\item Define what interoperability is. Talk about interoperability in general, and also in this specific case. Why interoperability is important and how it works.
 \item What the current situation is regarding interoperability. Why it is a big problem.
+\item Prerequisites for interoperability on a national level
+
+To achieve European wide solutions for cross-border transfer of patient information certain requirements need to be fulfilled. There has to be an agreement on the definitions of data sets for both patient summaries and e-prescription, a legal framework for data transfer, a technical framework to connect the systems at each level and a working semantic interoperability. \cite{epSOS1}
+
 \item Subsections on different interoperability solutions.
 \item Standardized care plans
 \end{itemize}
+
 
 \section{Current limitations and obstacles for adoption of future systems}
 
@@ -103,10 +110,13 @@ methods for searching for information
 Security? Limitations for what that can technically be done?
 
 \subsection{Legal}
-What does the laws allow? The new Swedish legislation provides new opportunities, but not obligations. %\Cite{RiR201119}
+What does the laws allow? 
+
+The new Swedish legislation provides new opportunities, but not obligations. \cite{RiR19}
 
 \subsection{Organizational}
 current organizational issues that limit the adoption of interoperating systems
+
 
 \section{Results/ Discussion}
 
@@ -114,19 +124,20 @@ current organizational issues that limit the adoption of interoperating systems
 
 \subsection{Types of solutions and implications for the end user}
 
-\section{Conclusions}
 
 \section{Conclusions}
+
 
 \newpage
+
 \begin{appendix}
 
 
 \end{appendix}
 
 \newpage
+
 \bibliographystyle{unsrt} 
 \bibliography{ourBib} 
-
 
 \end{document} 

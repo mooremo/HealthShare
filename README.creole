@@ -6,6 +6,7 @@
 |=Name              |=Email address                 |
 | Matt Moore        | mooremo@rose-hulman.edu       |
 | Josh Jones        | jonesjg@rose-hulman.edu       |
+| Phil Scherer      | scherepn@rose-hulman.edu      |
 | Romel Ayalew      | romel.ayalew@gmail.com        |
 | Emil Wall         | emwa3503@student.uu.se        |
 | Robert Loof       | robert__86@hotmail.com        |

@@ -1,12 +1,12 @@
 *.aux
 *.acn
+*.alg
 *.bbl
 *.blg
 *.dvi
 *.fdb_latexmk
 *.glg
 *.glo
-*.gls
 *.idx
 *.ilg
 *.ind

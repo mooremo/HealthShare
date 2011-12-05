@@ -14,6 +14,15 @@
 \usepackage{pdflscape}
 \usepackage[utf8]{inputenc}
 
+\usepackage[acronym]{glossaries} % make a separate list of acronyms
+\makeglossaries
+
+\newglossaryentry{sample}{name={sample},
+description={a sample entry}}
+
+\newacronym[\glsshortpluralkey=cas,\glslongpluralkey=contrived
+acronyms]{aca}{aca}{a contrived acronym}
+
 %testing
 % Index
 \usepackage{makeidx}
@@ -35,11 +44,7 @@ Our abstract goes here...
 
 \newpage
 
-\section*{Glossary}
-
-\begin{itemize}
-\item healthcare
-\end{itemize}
+\printglossaries
 
 \newpage
 
@@ -187,6 +192,13 @@ The new Swedish legislation provides new opportunities, but not obligations. \ci
 \newpage
 
 \section{Conclusions}
+
+A \gls{sample} entry and \gls{aca}. Second use: \gls{aca}.
+
+Plurals: \glspl{sample}. Reset acronym\glsreset{aca}.
+First use: \glspl{aca}. Second use: \glspl{aca}.
+
+\printglossaries
 
 
 \newpage

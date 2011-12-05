@@ -1,4 +1,5 @@
 *.aux
+*.acn
 *.bbl
 *.blg
 *.dvi
@@ -16,6 +17,7 @@
 *.nav
 *.nlo
 *.out
+*.pdf
 *.pdfsync
 *.ps
 *.snm
@@ -25,4 +27,3 @@
 *.maf
 *.mtc
 *.mtc0
-*.pdf

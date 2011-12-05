@@ -17,12 +17,6 @@
 \usepackage[acronym]{glossaries} % make a separate list of acronyms
 \makeglossaries
 
-\newglossaryentry{sample}{name={sample},
-description={a sample entry}}
-
-\newacronym[\glsshortpluralkey=cas,\glslongpluralkey=contrived
-acronyms]{aca}{aca}{a contrived acronym}
-
 %testing
 % Index
 \usepackage{makeidx}
@@ -123,7 +117,6 @@ To achieve European wide solutions for cross-border transfer of patient informat
 \subsection{Solution 1}
 \subsection{Solution 2}
 \subsection{Solution 3}
-\subsection{Solution $\pi$}
 
 \newpage
 
@@ -193,12 +186,19 @@ The new Swedish legislation provides new opportunities, but not obligations. \ci
 
 \section{Conclusions}
 
+\section{How to do Glossary Entries}
+
+Look at the {\LaTeX} for this section to see how add glossary entries and how to use the in the text.
+
+\newglossaryentry{sample}{name={sample}, description={a sample entry}}
+
+\newacronym[\glsshortpluralkey=cas,\glslongpluralkey=contrived acronyms]{aca}{aca}{a contrived acronym}
+
 A \gls{sample} entry and \gls{aca}. Second use: \gls{aca}.
 
 Plurals: \glspl{sample}. Reset acronym\glsreset{aca}.
 First use: \glspl{aca}. Second use: \glspl{aca}.
 
-\printglossaries
 
 
 \newpage

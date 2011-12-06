@@ -40,9 +40,23 @@
 
 \end{abstract}
 
+
 \newpage
 
 \printglossaries
+
+\section*{Temporary section: How to do Glossary Entries}
+
+Look at the {\LaTeX} for this section to see how add glossary entries and how to use them in the text.
+
+\newglossaryentry{interoperability}{name={interoperability}, description={The ability of diverse systems and organizations to work together. Please see section~\ref{sec:interopDefinition} for the meaning within healthcare}}
+
+
+An \gls{interoperability} entry and \gls{EHR}. Second use: \gls{EHR}.
+
+%Plurals: \glspl{interoperability}. 
+Reset acronym\glsreset{EHR}. \\
+Plural: First use: \glspl{EHR}. Second use: \glspl{EHR}.
 
 \newpage
 
@@ -52,12 +66,12 @@ Define the problem and in what context (maybe contextualize, write a story, desc
 
 \subsection{Background}
 
-Romel hah The setting of problems in EHR/EMR interoperability situations. Describe what the problems related to interoperability are within healthcare. The situation in Uppsala County, why we are doing this. What is being done on interoperability in other areas. Describe the problems related to interoperating EHR.
+The setting of problems in \gls{EHR}/EMR \gls{interoperability} situations. Describe what the problems related to \gls{interoperability} are within healthcare. The situation in Uppsala County, why we are doing this. What is being done on \gls{interoperability} in other areas. Describe the problems related to interoperating \glspl{EHR}.
 describe the ideal interoperating system
 
 \subsection{Purpose and Scope}
-To investigate the interoperability of
-EHR/EMR systems taking in regard what
+To investigate the \gls{interoperability} of
+\gls{EHR}/EMR systems taking in regard what
 the people involved want, the limitations,
 standards and organizational issues.
 
@@ -65,6 +79,14 @@ Explain what we will look into and why, limit the scope to what we will be discu
 
 \subsection{Reading Instructions}
 instructions for different audiences, so people who already know, or don't care about certain sections, don't have to sift through the paper to find information relevant to them. For the rest of the report.
+
+\begin{description}
+\item[Administrators] Section * and *
+\item[Doctors] Sections * and *
+\item[Politicans] Sections * and *
+\item[Public] Section * and *
+\item[Technicans] Sections * and *
+\end{description}
 
 \newpage
 
@@ -104,20 +126,21 @@ Reading, methods for searching for information
 
 \newpage
 
-\section{Interoperabilty}
+\section{Interoperability}
 
 \subsection{Introduction} % Introduction to what this chapter should be about. (relevant, not too long, not too short) ...Should this really be a subsection or just text?
 
-\subsection{Definition within healthcare} %Define what interoperability is. Talk about interoperability in general, and also in this specific case. Why interoperability is important and how it works.
+\subsection{Definition within healthcare} %Define what \gls{interoperability} is. Talk about \gls{interoperability} in general, and also in this specific case. Why \gls{interoperability} is important and how it works.
+\label{sec:interopDefinition}
 
-\subsection{Current situation} %What the current situation is regarding interoperability. Why it is a big problem.
+\subsection{Current situation} %What the current situation is regarding \gls{interoperability}. Why it is a big problem.
 \subsection{Prerequisites for interoperability on a national level}
 
-To achieve European wide solutions for cross-border transfer of patient information certain requirements need to be fulfilled. There has to be an agreement on the definitions of data sets for both patient summaries and e-prescription, a legal framework for data transfer, a technical framework to connect the systems at each level and a working semantic interoperability. \cite{epSOS1}
+To achieve European wide solutions for cross-border transfer of patient information certain requirements need to be fulfilled. There has to be an agreement on the definitions of data sets for both patient summaries and e-prescription, a legal framework for data transfer, a technical framework to connect the systems at each level and a working semantic \gls{interoperability}. \cite{epSOS1}
 
 \subsection{Standardized care plans}
 
-%Subsections on different interoperability solutions.
+%Subsections on different \gls{interoperability} solutions.
 \subsection{Solution 1}
 \subsection{Solution 2}
 \subsection{Solution 3}
@@ -128,10 +151,10 @@ To achieve European wide solutions for cross-border transfer of patient informat
 
 
 \subsection{What is a Technical Standard for Computer Software?}
-A technical standard is a recognized and established requirement about software systems that establishes the ``way things should be done." They are responsible for everything from the uniformity of web browsers (although not all browsers strictly conform to the standard) to the ability for nearly any laptop to connect wirelessly to any access point. Such standards specify aspects of a program such as a commont format for a file or data transfer that allow different developers to develop separate software programs while allowing for interoperability between the different systems. Software standards are the foundation for the interoperability of different software systems.
+A technical standard is a recognized and established requirement about software systems that establishes the ``way things should be done." They are responsible for everything from the uniformity of web browsers (although not all browsers strictly conform to the standard) to the ability for nearly any laptop to connect wirelessly to any access point. Such standards specify aspects of a program such as a commont format for a file or data transfer that allow different developers to develop separate software programs while allowing for \gls{interoperability} between the different systems. Software standards are the foundation for the \gls{interoperability} of different software systems.
 
 \subsection{The Creation of a Standard}
-Typically for different parties (software development companies) to agree on a specific software standard they create a software standards organization that consist of members and representatives of the various software companies who contribute ideas and opinions about making a single, unifed standard addressing the data interoperability problem that needs to be addressed.
+Typically for different parties (software development companies) to agree on a specific software standard they create a software standards organization that consist of members and representatives of the various software companies who contribute ideas and opinions about making a single, unifed standard addressing the data \gls{interoperability} problem that needs to be addressed.
 
 \subsubsection{ Examples of Software Standards Organizations}
 
@@ -149,7 +172,7 @@ Adherance to a particular software standard can be either manditorally required 
 With the growing ubiquitousness of the internet, computers, and modern technology as well as the geographic diversity of medical tallent and information it is doubtless that someday a standard specifying the transmission, storage, and format of electronic healthcare records will be developed; the benefit of such a standard is too great to be ignored for long. Such a standard will require and large organization to oversee and develop as patent data is widely varried and medical breakthroughs are discovered daily requiring such a standard to be constantly updated and modified to stay relevent. 
 
 \subsection{The Alternative to a Future Standard For EHR Software}
-The only other option for sharing healthcare records would be to have a unified software system doctors all over the world would use to view and modify patient records. However, such a solution is unrealistic as for one there are already too many EHR software companies to resonably plan for one, new company to globally take over the entire electronic healthcare record industry. Furthermore, with anti-trust laws as well as fair competition clauses in many countries (such as the United States) a single organization would not be legally allowed to be the sole producer of EHR software systems.
+The only other option for sharing healthcare records would be to have a unified software system doctors all over the world would use to view and modify patient records. However, such a solution is unrealistic as for one there are already too many \gls{EHR} software companies to resonably plan for one, new company to globally take over the entire electronic healthcare record industry. Furthermore, with anti-trust laws as well as fair competition clauses in many countries (such as the United States) a single organization would not be legally allowed to be the sole producer of \gls{EHR} software systems.
 
 \newpage
 
@@ -172,8 +195,8 @@ The new Swedish legislation provides new opportunities, but not obligations. \ci
 
 %Here are related items from the Empirica interview
 \begin{itemize}
-\item When it comes to interoperability, technical issues and standard specifications are subordinated to legal and organizational issues. The organizational issues include common understanding from people involved in the process and getting the commitment from doctors and nurses. 
-\item Clear objectives and strong project leaders with the backing of the top level management and politics are very important factors of success for EHR projects. Continuous development and the ability to revise things are also crucial.
+\item When it comes to \gls{interoperability}, technical issues and standard specifications are subordinated to legal and organizational issues. The organizational issues include common understanding from people involved in the process and getting the commitment from doctors and nurses. 
+\item Clear objectives and strong project leaders with the backing of the top level management and politics are very important factors of success for \gls{EHR} projects. Continuous development and the ability to revise things are also crucial.
 \item It is important to reach all the layers of the health care organization to achieve change, to engage the different groups of doctors, nurses, secretaries, technicians and not only have the software developers talk to the management section of the organization.
 \item Electronic systems are changing the way doctors work and what responsibilities they have.
 \end{itemize}
@@ -182,7 +205,7 @@ The new Swedish legislation provides new opportunities, but not obligations. \ci
 
 \section{Results/ Discussion}
 
-\subsection{ Prerequisites for increased interoperability}
+\subsection{Prerequisites for increased interoperability}
 
 \subsection{Types of solutions and implications for the end user}
 
@@ -190,18 +213,6 @@ The new Swedish legislation provides new opportunities, but not obligations. \ci
 
 \section{Conclusions}
 
-\section{How to do Glossary Entries}
-
-Look at the {\LaTeX} for this section to see how add glossary entries and how to use the in the text.
-
-\newglossaryentry{sample}{name={sample}, description={a sample entry}}
-
-\newacronym[\glsshortpluralkey=cas,\glslongpluralkey=contrived acronyms]{aca}{aca}{a contrived acronym}
-
-A \gls{sample} entry and \gls{aca}. Second use: \gls{aca}.
-
-Plurals: \glspl{sample}. Reset acronym\glsreset{aca}.
-First use: \glspl{aca}. Second use: \glspl{aca}.
 
 \newpage
 

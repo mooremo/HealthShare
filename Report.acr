@@ -1,9 +1,7 @@
 \glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
 \begin{theglossary}\glossaryheader
-\glsgroupheading{A}\relax \glsresetentrylist %
-\glossaryentryfield{aca}{\glsnamefont{aca}}{a contrived acronym}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{12}}}\glsgroupskip
 \glsgroupheading{E}\relax \glsresetentrylist %
 \glossaryentryfield{EHR}{\glsnamefont{EHR}}{\gls {Electronic Healthcare Record}}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{2}}}%
+		\setentrycounter[]{page}\glsnumberformat{2\delimR 4}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{9\delimN 10}}}%
 \end{theglossary}\glossarypostamble

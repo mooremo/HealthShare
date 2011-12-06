@@ -27,3 +27,5 @@
 *.maf
 *.mtc
 *.mtc0
+
+clean.sh

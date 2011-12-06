@@ -2,7 +2,7 @@
 \begin{theglossary}\glossaryheader
 \glsgroupheading{E}\relax \glsresetentrylist %
 \glossaryentryfield{Electronic Healthcare Record}{\glsnamefont{Electronic Healthcare Record}}{a systematic collection of electronic health information about individual patients or populations recorded in a digital format that is capable of being shared across different health care settings, by being embedded in network-connected enterprise-wide information systems}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{2\delimN 3}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{3}}}\glsgroupskip
 \glsgroupheading{I}\relax \glsresetentrylist %
 \glossaryentryfield{interoperability}{\glsnamefont{interoperability}}{The ability of diverse systems and organizations to work together. Please see section~\ref {sec:interopDefinition} for the meaning within healthcare}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{3\delimN 4}\delimN 

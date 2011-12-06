@@ -1,6 +1,9 @@
 \glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
 \begin{theglossary}\glossaryheader
+\glsgroupheading{E}\relax \glsresetentrylist %
+\glossaryentryfield{Electronic Healthcare Record}{\glsnamefont{Electronic Healthcare Record}}{a systematic collection of electronic health information about individual patients or populations recorded in a digital format that is capable of being shared across different health care settings, by being embedded in network-connected enterprise-wide information systems}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{2}}}\glsgroupskip
 \glsgroupheading{S}\relax \glsresetentrylist %
 \glossaryentryfield{sample}{\glsnamefont{sample}}{a sample entry}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{11}}}%
+		\setentrycounter[]{page}\glsnumberformat{12}}}%
 \end{theglossary}\glossarypostamble

@@ -40,6 +40,20 @@ Our abstract goes here...
 
 \printglossaries
 
+\section*{Temporary section: How to do Glossary Entries}
+
+Look at the {\LaTeX} for this section to see how add glossary entries and how to use them in the text.
+
+\newglossaryentry{interoperability}{name={interoperability}, description={The ability of diverse systems and organizations to work together. Please see section~\ref{sec:interoperabilityDefinition} for the meaning within healthcare}}
+
+\newacronym[\glsshortpluralkey=EHRs,\glslongpluralkey=electronic health records]{EHR}{EHR}{electronic health record}
+
+A \gls{interoperability} entry and \gls{EHR}. Second use: \gls{EHR}.
+
+%Plurals: \glspl{interoperability}. 
+Reset acronym\glsreset{EHR}. \\
+Plural: First use: \glspl{EHR}. Second use: \glspl{EHR}.
+
 \newpage
 
 \section{Introduction}
@@ -105,6 +119,7 @@ Reading, methods for searching for information
 \subsection{Introduction} % Introduction to what this chapter should be about. (relevant, not too long, not too short) ...Should this really be a subsection or just text?
 
 \subsection{Definition within healthcare} %Define what interoperability is. Talk about interoperability in general, and also in this specific case. Why interoperability is important and how it works.
+\label{sec:interoperabilityDefinition}
 
 \subsection{Current situation} %What the current situation is regarding interoperability. Why it is a big problem.
 \subsection{Prerequisites for interoperability on a national level}
@@ -185,21 +200,6 @@ The new Swedish legislation provides new opportunities, but not obligations. \ci
 \newpage
 
 \section{Conclusions}
-
-\section{How to do Glossary Entries}
-
-Look at the {\LaTeX} for this section to see how add glossary entries and how to use the in the text.
-
-\newglossaryentry{sample}{name={sample}, description={a sample entry}}
-
-\newacronym[\glsshortpluralkey=cas,\glslongpluralkey=contrived acronyms]{aca}{aca}{a contrived acronym}
-
-A \gls{sample} entry and \gls{aca}. Second use: \gls{aca}.
-
-Plurals: \glspl{sample}. Reset acronym\glsreset{aca}.
-First use: \glspl{aca}. Second use: \glspl{aca}.
-
-
 
 \newpage
 

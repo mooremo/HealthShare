@@ -1,6 +1,6 @@
 \glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
 \begin{theglossary}\glossaryheader
-\glsgroupheading{S}\relax \glsresetentrylist %
-\glossaryentryfield{sample}{\glsnamefont{sample}}{a sample entry}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{11}}}%
+\glsgroupheading{I}\relax \glsresetentrylist %
+\glossaryentryfield{interoperability}{\glsnamefont{interoperability}}{The ability of diverse systems and organizations to work together. Please see section~\ref {sec:interoperabilityDefinition} for the meaning within healthcare}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{3}}}%
 \end{theglossary}\glossarypostamble

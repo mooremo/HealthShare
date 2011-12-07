@@ -60,15 +60,15 @@ This paper reports on the various aspects of achieving \gls{EHR} \gls{interopera
 
 \printglossaries
 
-\section*{Temporary section: How to do Glossary Entries}
-
-Look at the {\LaTeX} for the Abstract section to see how add glossary entries and how to use them in the text.
-
-An \gls{interoperability} entry and \gls{EHR}. Second use: \gls{EHR}.
-
-%Plurals: \glspl{interoperability}. 
-Reset acronym\glsreset{EHR}. \\
-Plural: First use: \glspl{EHR}. Second use: \glspl{EHR}.
+%\section*{Temporary section: How to do Glossary Entries}
+%
+%Look at the {\LaTeX} for the Abstract section to see how add glossary entries and how to use them in the text.
+%
+%An \gls{interoperability} entry and \gls{EHR}. Second use: \gls{EHR}.
+%
+%%Plurals: \glspl{interoperability}. 
+%Reset acronym\glsreset{EHR}. \\
+%Plural: First use: \glspl{EHR}. Second use: \glspl{EHR}.
 
 \newpage
 
@@ -123,36 +123,47 @@ The project was carried in cooperation with and as a service to a client, Benny 
 Cary Laxer was the instructor from Rose-Hulman Institute of Technology and Åsa Cajander and Mats Daniels were the instructors from Uppsala University.
 
 \subsection{Interviews}
-\subsubsection{Phone interviews}
+
+The initial work was to find suitable people to interview, which were done by searching the web. Before conducting the actual phone interviews initial calls were made, or emails were sent to book a time slot with people of interest. Interview questions were prepared in before hand and they were designed to suit the interviewee; technical questions for technical staff etc. 
+
+The focus of the interviews was, as mentioned, depending on the profession of the interviewee. Overall focus was however always on \glspl{EHR} and the possibility of interoperability between them. So the different type of questions asked varied between being administrative and technical, and always covering the overall focus. 
+
+Before the start of the interview it was important to make sure that there was paper to take notes and write down answers on. Mostly the interviews did not follow the structure of the questions prepared beforehand. However, during the interview all the prepared questions were covered, but usually not in any particular order. The most important thing was to get the interviewee to talk as much as possible.
+
+After the interview was done, transcription of the information gathered from the interview was done and a summary was written.
+
+
+\subsubsection{Phone Interviews}
 
 Interviews were performed with representatives of Cambio \cite{Cambio}, epSOS \cite{epSOS} and [insert your interviewees here].
 
 (preparations, structure, outlines/protocols, focus of the interviews.
 How did we prepare the interviews, how were/weren't they structured, transcribed?)
 
-\subsubsection{Regular interviews}
+\subsubsection{In-Person Interviews}
 
 Based on the relevant litterature, interview templates were produced before contact was initiated. The templates were then adapted to fit with the specific individual ranges of knowledge and sent to them beforehand to allow for them to prepare. Contact was initiated through both phone calls and email conversations, to book the time of meeting and sending the interview questions.
 \\\\
 During the actual interview, typically we'd be one or two people interviewing a single person as was the case for the EPJ interviews \cite{EPJ1} \cite{EPJ2}. For the Empirica interview~\cite{Empirica}, we interviewed two people at once, which was more time efficient but led to that the most experienced of the two interviewees did most of the talking.
 \\\\
-The CeHis interview~\cite{CeHis} was performed by four people, with four people being interviewed, two of them participating through speakerphone. This meant that it became a hybrid between a phone interview and a regular interview, resulting in that the ones physically present participated more actively. 
+The CeHis interview~\cite{CeHis} was performed by four people, with four people being interviewed, two of them participating through speaker phone. This meant that it became a hybrid between a phone interview and a regular interview, resulting in that the ones physically present participated more actively. 
 \\\\
-The interviews were structured to focus on which problems exist today, how they are currently being dealt with and how different organizations and projects correspond to this. The interviews that were recorded were transcribed and translated to english, these transcripts are available in a seperate document available from the project coordinators.
+The interviews were structured to focus on which problems exist today, how they are currently being dealt with and how different organizations and projects correspond to this. The interviews that were recorded were transcribed and translated to english, these transcripts are available in a separate document available from the project coordinators.
 
 \subsection{Information search}
-[Reading, methods for searching for information]
+Initially, all four teams had a topic specific to \glspl{EHR} that they were supposed to research (e.g. Successful \glspl{EHR}, \glspl{EHR} that failed, local \glspl{EHR}, etc.).  Once they were assigned their individual topics, everyone set out to find \gls{EHR} systems that met their personal categories.  Additionally, there were quick meetings to ensure that no groups were overlapping their research.  Once everyone knew which systems they were going to look into, everyone started with general research which later became more direct as specific questions that needed to be answered began to form.
+
+Methods of research ranged from reading articles written by outside sources about the \gls{EHR} system to technical documents created by the system itself, depending upon what was available.  While the majority of the resources were found by using the Internet, some team members found useful information through other forms of media such as the library.  Additionally, the team had access to previous papers that had been published on similar topics which were of great use to the team.  Once resources were found, the information was read and parsed to enable the team members to answer specific questions for the benefit of others (e.g. Solutions to the problem with interoperability).  It was then important to summarize these findings so that other members of the team were able to quickly able to locate and use the useful information that was found.
+
 
 \newpage
 
-\section{What the people involved want}
+\section{What the People Involved Want}
 \label{sec:People}
-(maybe move to introduction if too small)
-\begin{itemize}
-\item physicians
-\item nurses
-\item patients
-\item administrative personal
+\subsection{Physicians}
+\subsection{Nurses}
+\subsection{Patients}
+\subsection{Administrative Personal}
 in order to make the adoption of a new system as smooth as possible it is important that we make sure that the final system is able to easily integrate with the already existing systems for \gls{EHR} handling. This can be done in a few different ways, one of the main ways of doing it is to develop a module that would extend the different \gls{EHR} systems that already exist and are in use.\cite{EPJ2} For Cambio Cosmic there is already such a module made for integration with NPÖ, however this module is not currently used at the Akademiska hospital in Uppsala\cite{EPJ1}.
 \\\\
 If we decide to implement an extension module for the sharing of \glspl{EHR} it is important to make sure that the look and feel are similar to the system that already exists. This is crucial in order make the system popular. 
@@ -160,22 +171,30 @@ If we decide to implement an extension module for the sharing of \glspl{EHR} it 
 A system for \gls{EHR} sharing could also be made as an external system, however if this is done Susanne stresses the need for it to still be somewhat integrated with the existing system. For example this could be done by implementing an exporting feature into the already existing system that would export the information of the active patient into the new system. This would simplify the use of the new system since it would eliminate the need of inputting the patient information multiple times.
 \\\\
 Another very important issue to consider is the need to be able to remove certain information about a particular patient. For example, a patient who have received psychiatric care might not want that information to be left on the the patients \gls{EHR} after treatment have been completed\cite{EPJ1}.
-\item the public
+\subsection{The Public}
 The general public want a system that inexpensive especially if a solution involves the use of government funds.
-\item politicians
-\item technicians
-\item legal authorities
-\item lab workers
-\end{itemize}
+\subsection{Politicians}
+\subsection{Technicians}
+\subsection{Legal Authorities}
+\subsection{Lab Workers}
 
 \newpage
 
 \section{Interoperability}
 \label{sec:Interoperability}
 
-\subsection{Introduction} % Introduction to what this chapter should be about. (relevant, not too long, not too short) ...Should this really be a subsection or just text?
+\subsection{Introduction} 
 
-\subsection{Definition within Healthcare} %Define what \gls{interoperability} is. Talk about \gls{interoperability} in general, and also in this specific case. Why \gls{interoperability} is important and how it works.
+One of the most important, and most prominent, issues that were encountered while working on this project was interoperability.  The goal of this section of the report is to familiarize the reader with the concept of interoperability and inform them of how it affects the problem at hand.  In addition, the possible solutions to the different interoperability problems are also included in this section of the report.  Lastly, care plans will be described and it will be discussed how standardizing them could potentially help the interoperability of \gls{EHR} systems.
+
+\subsection{Definition within Healthcare} 
+
+\newglossaryentry{Institute of Electrical and Electronics Engineers}{name={Institute of Electrical and Electronics Engineers}, description={is a non-profit professional association headquartered in New York City that is dedicated to advancing technological innovation and excellence}}
+
+\newacronym[\glsshortpluralkey=IEEE ,\glslongpluralkey= Institute of Electrical and Electronics Engineers]{IEEE}{IEEE}{\gls{Institute of Electrical and Electronics Engineers}}
+
+Interoperability is the ability of multiple systems to exchange information and to use the information that has been exchanged, as defined by \gls{IEEE}.  In general, if there are multiple systems that both work with the same type of information it is beneficial to all of those systems to be able to communicate and share information with one another.  An easy example of this to think about is the different word processing applications that are available.  By making it so that files created and saved with Microsoft Word can be opened and modified using Word Perfect, both products benefit.  Related to this report, the ability for different systems that handle \glspl{EHR} to be able to communicate with each other and exchange data is invaluable.  Generally, there are a couple of different ways that interoperability is handled, which will be discussed in a later section.  It is a long-term investment that has a great history of paying off in the long run (both within the electronic health industry and out).
+
 \label{sec:interopDefinition}
 
 \subsection{Current situation} %What the current situation is regarding \gls{interoperability}. Why it is a big problem.
@@ -208,9 +227,8 @@ To achieve European wide solutions for cross-border transfer of patient informat
 [Emil and Sam: Explaining what it is.]
 
 %Subsections on different \gls{interoperability} solutions.
-\subsection{Solution 1}
-\subsection{Solution 2}
-\subsection{Solution 3}
+\subsection{Solutions}
+There are two takes on the solution to interoperability that are generally accepted.  Since interoperability is essentially making sure that two or more systems can exchange information, the two most popular solutions are to either make sure that all systems are capable of using the same data formats (Syntactic) or there exists some way for the systems to automatically interpret the other data formats used that they don’t natively use (Semantic).
 
 \newpage
 
@@ -329,6 +347,20 @@ The biggest difficulty with creating this standalone application is ensuring tha
 
 \section{Conclusions}
 \label{sec:Conclusions}
+\subsection{Recommended Development Methodologies}
+The interviews with administrative personal and technicians were focused on what they thought would be required to create interoperability between \glspl{EHR} rather than what they would want in such a system. 
+
+One of the most important things learned from these interviews was that the development of an interoperable system would be very complex. It is hard to define a definite end in such a big development process and the process should be considered on-going where focus lie on completing sub-goals rather than only shooting for the final goal. In other words the work should be approached with a type of agile development. 
+
+Agile development is an iterative and incremental development process where the work is done in small steps and every step is evaluated. The small steps could be subparts of the final system. Starting off with a smaller part of the system, ensuring that this part works and then move on by adding more features or go on to the next part of system might be more successful than trying to complete the whole system at once. However, this could be very time consuming and is not an option if there is a short amount of time to complete the system. It is therefore important to consider the amount of time and resources that can be spent on the project against the size of the iterative steps in the agile development.
+
+
+Another important aspect that came up during the interviews was the involvement of the end-user in the development process. The end-user in an interoperable system between \glspl{EHR} is the users of the \glspl{EHR} such physicians, nurses etc. If the development of the interoperable system can not be done only in the back-end, meaning that the end-user's systems will be affected, their opinions will be of importance. In this case the change in the systems might be made in a way that does not affect the end-users negatively if their opinions are taken into consideration in the development. Even if there is no need for noticeable changes their opinions can still be of importance when it comes to what kind of patient information that is most important to share in the interoperable system if it is unmanageable to share all information. 
+
+The involvement of end-users can be included in the agile development by letting them take part in the evaluation of the sub-parts where their opinions matter. 
+
+During the interviews the issue regarding security came up as an important factor to consider in an interoperable system. It is always important to handle the security with great care when it comes to patient information, but the security issues might be a lot greater when dealing with a system of bigger size such as when multiple \glspl{EHR} is interoperating. One example of a feature that might need improvement is the access control of patient information due to the fact that an interoperable system will increase the amount reachable information. Ordinary methods for checking access control such as going through logs might be inefficient and costly and new methods might be needed.
+
 
 \newpage
 

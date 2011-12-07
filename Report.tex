@@ -17,7 +17,6 @@
 \usepackage[acronym]{glossaries} % make a separate list of acronyms
 \makeglossaries
 
-%testing
 % Index
 \usepackage{makeidx}
 \makeindex
@@ -27,19 +26,34 @@
 \input{./title.tex}
 
 \tableofcontents
+
 \newpage
 
 \begin{abstract}
 
-\newglossaryentry{Electronic Healthcare Record}{name={Electronic Healthcare Record}, description={a systematic collection of electronic health information about individual patients or populations recorded in a digital format that is capable of being shared across different health care settings, by being embedded in network-connected enterprise-wide information systems}}
+\newglossaryentry{interoperability}{name={interoperability}, description={The ability of diverse systems and organizations to work together. Please see section~\ref{sec:interopDefinition} for the meaning within healthcare}}
+
+\newglossaryentry{Health Care Provider}{name={Health Care Provider}, description={an individual or an institution that provides health care services in a systematic way}}
+
+\newacronym[\glsshortpluralkey=HCPs ,\glslongpluralkey= Health Care Providers]{HCP}{HCP}{\gls{Health Care Provider}}
+
+\newglossaryentry{Electronic Medical Record}{name={Electronic Medical Record}, description={a digitalized, systematic documentation of a single patient's medical history and care across time within one particular \gls{HCP} jurisdiction}}
+
+\newacronym[\glsshortpluralkey=EMRs ,\glslongpluralkey= Electronic Medical Records]{EMR}{EMR}{\gls{Electronic Medical Record}}
+
+\newglossaryentry{Electronic Healthcare Record}{name={Electronic Healthcare Record}, description={an \gls{EMR} or a collection of \glspl{EMR} that can be shared across networks between different \glspl{HCP}}}
 
 \newacronym[\glsshortpluralkey=EHRs ,\glslongpluralkey= Electronic Healthcare Records]{EHR}{EHR}{\gls{Electronic Healthcare Record}}
+
+\newglossaryentry{Personal Health Record}{name={Personal Health Record}, description={a health record where health data is maintained and owned by the individual it pertains to, rather than an institution or a hospital}}
+
+\newacronym[\glsshortpluralkey=PHRs ,\glslongpluralkey= Personal Health Records]{PHR}{PHR}{\gls{Personal Health Record}}
 
 \glspl{EHR} are rapidly expanding in their use and their benefits are well known. Significant reduction in the cost of care, improved quality of care, and improved record keeping are just a few of the benefits of using an \gls{EHR}. It is for these reasons that many medical institutions are rapidly adopting \glspl{EHR}. 
 
 An explosion of innovation has stemmed from this rapid adoption and has produced many different solutions from many different providers. Unfortunately, these solutions tend to store and transmit the information that they collect in formats that are not compatible with each other. In order to maximize the benefit received from these \glspl{EHR} they must be able to share information between different systems and locations.
 
-This paper reports on the various aspects of the creating a framework for \gls{EHR} interoperability.
+This paper reports on the various aspects of achieving \gls{EHR} \gls{interoperability}.
 \end{abstract}
 
 \newpage
@@ -48,10 +62,7 @@ This paper reports on the various aspects of the creating a framework for \gls{E
 
 \section*{Temporary section: How to do Glossary Entries}
 
-Look at the {\LaTeX} for this section to see how add glossary entries and how to use them in the text.
-
-\newglossaryentry{interoperability}{name={interoperability}, description={The ability of diverse systems and organizations to work together. Please see section~\ref{sec:interopDefinition} for the meaning within healthcare}}
-
+Look at the {\LaTeX} for the Abstract section to see how add glossary entries and how to use them in the text.
 
 An \gls{interoperability} entry and \gls{EHR}. Second use: \gls{EHR}.
 
@@ -196,10 +207,6 @@ Security? Limitations for what that can technically be done?
 
 
 \subsection{Legal}
-
-\newglossaryentry{Health Care Provider}{name={Health Care Provider}, description={an individual or an institution that provides health care services in a systematic way}}
-
-\newacronym[\glsshortpluralkey=HCPs ,\glslongpluralkey= Health Care Providers]{HCP}{HCP}{\gls{Health Care Provider}}
 
 The new Swedish legislation provides new opportunities, but not obligations. \cite{RiR19}
 

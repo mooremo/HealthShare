@@ -1,11 +1,16 @@
 \glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
 \begin{theglossary}\glossaryheader
 \glsgroupheading{E}\relax \glsresetentrylist %
-\glossaryentryfield{Electronic Healthcare Record}{\glsnamefont{Electronic Healthcare Record}}{a systematic collection of electronic health information about individual patients or populations recorded in a digital format that is capable of being shared across different health care settings, by being embedded in network-connected enterprise-wide information systems}{\relax }{\glossaryentrynumbers{\relax 
+\glossaryentryfield{Electronic Healthcare Record}{\glsnamefont{Electronic Healthcare Record}}{an \gls {EMR} or a collection of \glspl {EMR} that can be shared across networks between different \glspl {HCP}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{3}}}%
+\glossaryentryfield{Electronic Medical Record}{\glsnamefont{Electronic Medical Record}}{a digitalized, systematic documentation of a single patient's medical history and care across time within one particular \gls {HCP} jurisdiction}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{3}}}\glsgroupskip
+\glsgroupheading{H}\relax \glsresetentrylist %
+\glossaryentryfield{Health Care Provider}{\glsnamefont{Health Care Provider}}{an individual or an institution that provides health care services in a systematic way}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{3}}}\glsgroupskip
 \glsgroupheading{I}\relax \glsresetentrylist %
 \glossaryentryfield{interoperability}{\glsnamefont{interoperability}}{The ability of diverse systems and organizations to work together. Please see section~\ref {sec:interopDefinition} for the meaning within healthcare}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{3\delimN 4}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{2\delimR 4}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{7\delimN 8}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{10}}}%
 \end{theglossary}\glossarypostamble

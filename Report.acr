@@ -4,4 +4,10 @@
 \glossaryentryfield{EHR}{\glsnamefont{EHR}}{\gls {Electronic Healthcare Record}}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{2\delimR 4}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{9\delimN 10}}}%
+\glossaryentryfield{EMR}{\glsnamefont{EMR}}{\gls {Electronic Medical Record}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{3}}}\glsgroupskip
+\glsgroupheading{H}\relax \glsresetentrylist %
+\glossaryentryfield{HCP}{\glsnamefont{HCP}}{\gls {Health Care Provider}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{3}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{10}}}%
 \end{theglossary}\glossarypostamble

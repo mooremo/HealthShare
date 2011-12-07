@@ -276,16 +276,19 @@ do so. Same thing applies if there is risk of violence or permanent damage to th
 patient, should the information be disclosed. Also (unless enforced by law), a caregiver is not allowed to disclose details of health or personal conditions about a patient to outsiders.\cite{PatientSafetyAct}
 
 \subsection{Organizational}
-
-[Emil and Erik: Current organizational issues that limit the adoption of interoperating systems.]
-
+%[Emil and Erik: Current organizational issues that limit the adoption of interoperating systems.]
+It is important to realize that in order to successfully implementing a new system for \gls{EHR} sharing we need to have all the layers of the organization involved\cite{Empirica}. We need to have the all the different types of employees such as doctors and nurses etc. committed to the change of system in order for the switch to go over well. In order to get all the different layers of the organization interested in the system it's important to involve them in the development of the system\cite{Empirica}. Instead of having just the managers talking to the developers all of the layers should be involved in the development stage of the system so that they feel like they have a say about the system that they will eventually use.
+\\\\
+When developing \gls{EHR} systems it is important that we have clear objectives and the ability to continuously revise changes\cite{Empirica}. This ties in to the previous topic of having all the layers of the organization involved in the development of the system, since the different types of employees might not be sure of exactly what they want we need to make sure that when implementing a new feature or changing an existing one it is easy to make changes to the implementation in case of a misunderstanding between the developers and the employee who requested the feature.
+\\\\
+When a new system is implemented we might have a problem with semantics, since it might be the case that different hospitals use different words to mean the same thing, or the opposite, that the same word is used to mean different things\cite{Empirica}. We need to make sure that when we implement a new system these types of issues are resolved.
 %Here are related items from the Empirica interview
-\begin{itemize}
-\item When it comes to \gls{interoperability}, technical issues and standard specifications are subordinated to legal and organizational issues. The organizational issues include common understanding from people involved in the process and getting the commitment from doctors and nurses. 
-\item Clear objectives and strong project leaders with the backing of the top level management and politics are very important factors of success for \gls{EHR} projects. Continuous development and the ability to revise things are also crucial.
-\item It is important to reach all the layers of the health care organization to achieve change, to engage the different groups of doctors, nurses, secretaries, technicians and not only have the software developers talk to the management section of the organization.
-\item Electronic systems are changing the way doctors work and what responsibilities they have.
-\end{itemize}
+%\begin{itemize}
+%\item When it comes to \gls{interoperability}, technical issues and standard specifications are subordinated to legal and organizational %issues. The organizational issues include common understanding from people involved in the process and getting the commitment from %doctors and nurses. 
+%\item Clear objectives and strong project leaders with the backing of the top level management and politics are very important factors of %success for \gls{EHR} projects. Continuous development and the ability to revise things are also crucial.
+%\item It is important to reach all the layers of the health care organization to achieve change, to engage the different groups of doctors, %nurses, secretaries, technicians and not only have the software developers talk to the management section of the organization.
+%\item Electronic systems are changing the way doctors work and what responsibilities they have.
+%\end{itemize}
 
 \newpage
 
@@ -296,21 +299,27 @@ patient, should the information be disclosed. Also (unless enforced by law), a c
 
 \subsection{Types of solutions and implications for the end user}
 
+\subsection{EHR integrated into existing EMR systems}
+
 \subsection{EHR as a Standalone Application}
 One possible interoperating system granting health personnel access to patient records from different hospitals would be a standalone application separated from existing EMR systems. Health care units would need to implement an interface towards the interoperating system to make their health records available. 
+
 This raises a few concerns regarding the ownership of data, and who actually controls the data and keeps track of existing copies etc. The design of such a system could be either centralized with a data-cluster collecting patient information, or using a decentralized structure only accessing the patient information temporarily upon a specific query. By integrating the system into their previous EHR system the hospital would then give access to their health records. Then, whenever a user (from any hospital with this application installed) searches for information on a specific patient, the application would be able to search every hospital connected to the system. These searches could be narrowed to specific hospitals if, for example, a doctor had already run a search on a patient and wanted to find his/her information again, or knew which hospital that patient had been to. Essentially each hospital would have its own account, labeled as that hospitals name. Any other hospital could search its own database, or another hospitals database, or all databases.
+
 A standalone system could be implemented either as a desktop application or in a web application. From a usability perspective a standalone application could cause a few usability issues. This doesn’t take advantage of the users knowledge of the legacy system as they have to learn a new user interface specific for the interoperating system. A workaround for this could be to allow individual hospitals to customize the end user interface to accommodate differences in user needs.
+
 Another issue is that a standalone application forces the end user to multi-task between the legacy EHR system and the new interoperating application. This increases the complexity of the work environment as it doesn’t take advantage of human cognitive capabilities and adds a burden on the human memory.
+
 A standalone system could be implemented with an interface for patients to access their Personal Health Records from their home computers. This would be a useful way for patients to obtain the various medical records that are shown to schools, employers, or whoever they may need to share medical information with. Additional features could also be implemented into the health records to extend it’s functionality with self-care and preliminary test before visiting a health care unit. This will also become helpful for certain security issues, as will be discussed in the next section.
 
-Security
+\subsubsection{Security}
 This standalone application does cause a few security concerns. Hospitals would have to be careful about which data they allow the application to access. If a hospital is storing sensitive data about a patient that cannot be shared without that patients consent, a few problems occur. A simple, though impractical, solution would be to have the hospital create a separate database for sensitive information. Again, this simply is not practical. The extra upkeep would be costly and searching two databases each time a doctor needs information on one patient is time consuming. Instead, the data on each patient can be labeled as sensitive. The application would then know not to share this data, unless permission is given. But how should permission to view sensitive data be given? There are two viable options here. Either have the patient create a password that is only shared with those who are allowed to view the data, or have an administrative control deciding who can and cannot view the data. The first option is far easier to use and can allow permission to be given out quickly. The main problem with passwords is that they are not very secure. The password could be stolen, accidentally released, or guessed by another. Once a doctor knows the password that doctor can share it with anyone, regardless of what the patient says. While this is an easy solution, it is not very secure. Administrative control, on the other hand, is secure. In this scenario, only the account that uploaded the sensitive data can view it. Then, that account must give permission to another account to view the data. This requires a few things. First, an individual account must be created. Anytime a search on that patient is run, sensitive data will be hidden unless the searcher requests permission from the account owner. The owner would then be free to give or refuse permission. This would be a more time consuming process than the first option, but quite a bit more secure. These individual accounts do not need to be able to modify any medical records, only give permission to other accounts to access the sensitive data regarding a certain patient.
 
-Interoperability
+\subsubsection{Interoperability}
 A common problem our solutions run into is the degree to which hospital databases can vary. In this scenario, one application needs to be able to search many different databases. None of these databases necessarily work in the same way. Trying to make an application that could properly read every part of each database would be impractical. This can be solved if the application only retrieves entire sections listed under a specific patient. The application would not be able to retrieve exact details about a patient. Instead it would find a file regarding that patient and return it to the user. This may result in larger amounts of information being retrieved than the user wanted or needed, but this is hardly a concern as long as they get the actual data.
 Additional problems in this area can be resolved by also allowing a message function. This would be a fallback if the application is completely unable to work with a certain file or database system. One hospital would be able to send a message to another, requesting a file on a patient. This would be a much slower process, but at least it still gets the work done.
 
-Feasibility
+\subsubsection{Feasibility}
 The biggest difficulty with creating this standalone application is ensuring that it can interact with various different database systems. Fortunately there are a lot of standards and regulations regarding database systems and medical records. These should help to limit the variations in systems and are discussed in greater detail in the section 6. 
 
 \subsection{EHR integrated into existing EMR systems}

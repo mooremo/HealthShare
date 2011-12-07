@@ -110,7 +110,7 @@ instructions for different audiences, so people who already know, or don't care 
 \subsection{Project Organization}
 \subsubsection{Project group}
 The Healthshare project was carried out during the autumn of 2011 as a collaborative course between Rose-Hulman Institute of Technology, IN, USA and Uppsala University, Sweden.
-The project group consisted of XX students, X from Rose-Hulman Institute of Technology and X from Uppsala University. To encourage cooperation between USA and Sweden responsibility was equally distributed over the two Universities.
+The project group consisted of 17 students, 8 from Rose-Hulman Institute of Technology and 9 from Uppsala University. To encourage cooperation between USA and Sweden responsibility was equally distributed over the two Universities.
 
 The project was organized in a hierarchical organization structure with two project managers with the outmost responsibility, one from Sweden and one from USA. The project was then divided into four teams containing a mix of both Rose-Hulman and Uppsala students. Each team then had a team leader answering to the project managers.
 %Insert a table/figure of project organization and members
@@ -179,6 +179,8 @@ The general public want a system that inexpensive especially if a solution invol
 \label{sec:interopDefinition}
 
 \subsection{Current situation} %What the current situation is regarding \gls{interoperability}. Why it is a big problem.
+When a new system is implemented we might have a problem with semantics, since it might be the case that different hospitals use different words to mean the same thing, or the opposite, that the same word is used to mean different things. We need to make sure that when we implement a new system these types of issues are resolved.~\cite{Empirica}
+\\\\
 Today in Sweden the electronic \gls{interoperability} among hospitals is limited. This is also very true for the sharing of \glspl{EHR}. The sharing of \glspl{EHR} today are done in mainly two ways.
 \\\\
 One of them works in such a way that if an \gls{EHR} needs to be sent from one hospital to another one, the first hospital makes a print out of the \gls{EHR} and then anonymize this one before the document is sent via fax to the other hospital. When the second hospital receives the document contact is made between the hospitals and the identifying information is communicated to the second hospital.\cite{EPJ2} The reason for anomyzation is to make sure that even if a fax is accidently sent to the wrong address it will not be possible to distinguish which patient the information is relevant to.
@@ -255,13 +257,11 @@ The only other option for sharing healthcare records would be to have a unified 
 \section{Adoption of future systems}
 \label{sec:Future}
 
-%Current limitations and obstacles
-
-\subsection{Technical}
+\subsection{Technical limitations}
 Security? Limitations for what that can technically be done?
 
 
-\subsection{Legal}
+\subsection{Legal issues}
 
 The new Swedish legislation provides new opportunities, but not obligations. \cite{RiR19}
 
@@ -280,13 +280,13 @@ that the data is not provided to the patient, then the caregiver is not allowed 
 do so. Same thing applies if there is risk of violence or permanent damage to the
 patient, should the information be disclosed. Also (unless enforced by law), a caregiver is not allowed to disclose details of health or personal conditions about a patient to outsiders.\cite{PatientSafetyAct}
 
-\subsection{Organizational}
+\subsection{Organizational issues}
 %[Emil and Erik: Current organizational issues that limit the adoption of interoperating systems.]
-It is important to realize that in order to successfully implementing a new system for \gls{EHR} sharing we need to have all the layers of the organization involved\cite{Empirica}. We need to have the all the different types of employees such as doctors and nurses etc. committed to the change of system in order for the switch to go over well. In order to get all the different layers of the organization interested in the system it's important to involve them in the development of the system\cite{Empirica}. Instead of having just the managers talking to the developers all of the layers should be involved in the development stage of the system so that they feel like they have a say about the system that they will eventually use.
+It is important to realize that in order to successfully implement a new system for \gls{EHR} sharing we need to have all the layers of the organization involved~\cite{Empirica} including all the different types of employees such as doctors and nurses etcetera. They must commit to the change of system in order for the switch to go well, since it changes the way they work and what responsibilities they have~\cite{Empirica}. In order to get all the different layers of the organization interested in the system it's important to involve them in the development of the system~\cite{Empirica}. Instead of having just the managers talking to the developers, all of the layers should be involved in the development stage of the system so that they feel like they have a say about the system that they will eventually use.
 \\\\
-When developing \gls{EHR} systems it is important that we have clear objectives and the ability to continuously revise changes\cite{Empirica}. This ties in to the previous topic of having all the layers of the organization involved in the development of the system, since the different types of employees might not be sure of exactly what they want we need to make sure that when implementing a new feature or changing an existing one it is easy to make changes to the implementation in case of a misunderstanding between the developers and the employee who requested the feature.
+When developing \gls{EHR} systems it is important to have clear objectives, ability to continuously revise changes and most importantly strong project leaders with the backing of the top level management and politics~\cite{Empirica}. This ties in to the previous topic of having all the layers of the organization involved in the development of the system. The employees might not be sure of exactly what they want so we need to make sure that when implementing a new feature or changing an existing one it is easy to make changes to the implementation in case of a misunderstanding between the developers and the employee who requested the feature.
 \\\\
-When a new system is implemented we might have a problem with semantics, since it might be the case that different hospitals use different words to mean the same thing, or the opposite, that the same word is used to mean different things\cite{Empirica}. We need to make sure that when we implement a new system these types of issues are resolved.
+
 %Here are related items from the Empirica interview
 %\begin{itemize}
 %\item When it comes to \gls{interoperability}, technical issues and standard specifications are subordinated to legal and organizational %issues. The organizational issues include common understanding from people involved in the process and getting the commitment from %doctors and nurses. 

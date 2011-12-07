@@ -2,18 +2,19 @@
 \begin{theglossary}\glossaryheader
 \glsgroupheading{E}\relax \glsresetentrylist %
 \glossaryentryfield{Electronic Healthcare Record}{\glsnamefont{Electronic Healthcare Record}}{an \gls {EMR} or a collection of \glspl {EMR} that can be shared across networks between different \glspl {HCP}}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossaryentryfield{Electronic Medical Record}{\glsnamefont{Electronic Medical Record}}{a digitalized, systematic documentation of a single patient's medical history and care across time within one particular \gls {HCP} jurisdiction}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{19}}}\glsgroupskip
 \glsgroupheading{H}\relax \glsresetentrylist %
 \glossaryentryfield{Health Care Provider}{\glsnamefont{Health Care Provider}}{an individual or an institution that provides health care services in a systematic way}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{12}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{17}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{13}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{19}}}\glsgroupskip
 \glsgroupheading{I}\relax \glsresetentrylist %
 \glossaryentryfield{Institute of Electrical and Electronics Engineers}{\glsnamefont{Institute of Electrical and Electronics Engineers}}{is a non-profit professional association headquartered in New York City that is dedicated to advancing technological innovation and excellence}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{7}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{8}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossaryentryfield{interoperability}{\glsnamefont{interoperability}}{The ability of diverse systems and organizations to work together. Please see section~\ref {sec:interopDefinition} for the meaning within healthcare}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{3}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{7\delimR 10}}}%
+		\setentrycounter[]{page}\glsnumberformat{1}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{4}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{8\delimR 11}}}%
 \end{theglossary}\glossarypostamble

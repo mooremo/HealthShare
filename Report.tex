@@ -275,7 +275,25 @@ The only other option for sharing healthcare records would be to have a unified 
 \label{sec:Future}
 
 \subsection{Technical limitations}
-Security? Limitations for what that can technically be done?
+
+\newglossaryentry{Simple Object Access Protocol}{name = {Simple Object Access Protocol}, description = {is a protocol specification for exchanging structured information in the implementation of Web Services in computer networks}}
+
+\newacronym[\glsshortpluralkey = SOAPs, \glslongpluralkey = Simple Object Access Protocol]{SOAP}{SOAP}{\gls{Simple Object Access Protocol}}
+
+\newglossaryentry{Hypertext Transfer Protocol}{name={Hypertext Transfer Protocol}, description={a networking protocol for distributed, collaborative, hypermedia information systems}}
+
+\newacronym[\glsshortpluralkey=HTTPs ,\glslongpluralkey= Hypertext Transfer Protocol]{HTTP}{HTTP}{\gls{Hypertext Transfer Protocol}}
+
+\newglossaryentry{Extensible Markup Language}{name={Extensible Markup Language}, description={a set of rules for encoding documents in machine-readable form}}
+
+\newacronym[\glsshortpluralkey=XLMs ,\glslongpluralkey=Extensible Markup Languages]{XML}{XML}{\gls{Extensible Markup Language}}
+
+The technical limitations for an \glspl{EHR} system are multi-faceted. Two separate approaches to a solution are outlined in the United States’ Department of Health and Human Services paper Health Information Technology: Initial Set of Standards, Implementation Specifications, and Certification Criteria for Electronic Health Record Technology. \cite{AMA} 
+
+One solution is to use a \gls{SOAP} which is a specification for exchanging structures information. This setup relies on the \gls{XML}, a remote procedure call, and the \gls{HTTP}. This system creates several layers of specifications for layer formats. This solution is very dependent on multiple different systems, which creates a problem for dependency. If one of the needed layers for specification goes down or malfunctions than the system as a whole will not work. 
+
+Additionally, because of the use of the \gls{XML} format, the \glspl{SOAP} protocol will be slower than other options. This might cause a scalability problem for a large system. Also when relying on \glspl{HTTP} as a transport protocol the roles of the interacting parties are fixed therefore only the client can use the services of the other. These limitations to the design may cause future problems implementing a \glspl{SOAP} style system on a large scale.
+
 
 
 \subsection{Legal issues}

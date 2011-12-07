@@ -197,6 +197,11 @@ Whenever a caregiver deletes information in the local EHR system he/she have to 
 Many patients today expect a high level of electronic \gls{interoperability} when it comes to their patient records\cite{EPJ2}, something that is not really there today. The reason for that is assumed might be a lack of familiarity of the current laws in place as well as thinking that patient data is shared between the different counties. This means that there is a risk of misunderstandings if the patient assumes that their patient records are accessible through every hospital in Sweden even though they might just be able to get a summary through the NPÖ-system.
 
 \subsubsection{NPÖ adapter}
+Cosmic has a language CCP module on top of it which extract all kinds of information from it. On the CCP module Cosmic has build something called NPÖ adapter. This NPÖ adatper takes the data that CCP module produces and translates it to 13606 format which is needed to communicate with NPÖ. The NPÖ Adapter is illustrated in figure 1. As can be seen in the figure the communication between the EHR systems and the NPÖ adapter can be in any format. However when the NPÖ adapter communicates with actual NPÖ the information is translated in 13606 format. The reason for doing this is to avoid having the 13606 as a communication format between the EHR systems and the NPÖ adapter. This is because the 13606 is a complex and abstract format. Therefore it is an advantage to use a simpler format to between the EHR systems and the NPÖ adapter. Another advantage is that there will only be one transformation, that is the 13606 transformation between the Local Connection Point and NPÖ  \cite{ViktorJernelov}. (see figure 1) 
+
+\includegraphics[width=0.5\textwidth]{Images/npoAdapt}
+\\
+Figure 1 NPÖ Adapter: Commmunication Architecture between COSMIC and NPÖ
 
 \section{Technicians}
 

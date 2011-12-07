@@ -23,6 +23,9 @@
 \glossaryentryfield{interoperability}{\glsnamefont{Interoperability}}{The ability of diverse systems and organizations to work together. Please see section~\ref {sec:interopDefinition} for the meaning within healthcare}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{1}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{8\delimR 11}}}\glsgroupskip
+\glsgroupheading{P}\relax \glsresetentrylist %
+\glossaryentryfield{Personal Health Record}{\glsnamefont{Personal Health Record}}{a health record where health data is maintained and owned by the individual it pertains to, rather than an institution or a hospital}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{20}}}\glsgroupskip
 \glsgroupheading{S}\relax \glsresetentrylist %
 \glossaryentryfield{Simple Object Access Protocol}{\glsnamefont{Simple Object Access Protocol}}{is a protocol specification for exchanging structured information in the implementation of Web Services in computer networks}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{13}\delimN 

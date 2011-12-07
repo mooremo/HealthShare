@@ -373,17 +373,6 @@ There are however similar industries that have the same issue but have solutions
 In a system this big there is a risk that a lot of data will be handles back and forth. There are regulations on where data is stored and that a patient can request it's deletion. To be able to follow these regulations a central database could be used. Each EHR system stores the data they have in their system but also stores the same information in the central database. That way the central database keeps a complete record for each patient. The data however never get copied from the central database. When looking at a patients record in any of the EHR systems it reads from the central server. With a system set up like this data stored will only be stored at two places, in the EHR system where it was created and in the central database. This makes a deletion of data easy.
 The system also has to be secure, no unauthorized users should be able to access data. As the users are using the old EHR systems, where they have authentication to able to access information, all that is needed is that every EHR system fulfill a required standard for security. The whole system can also be kept in a intranet to avoid intrusion even further.
 
-\subsubsection{Feasability}
-One of the problems with implementing a system like this is to get all the systems to unit and accept a set standard to be used. Some of the systems has to change more then others.
-Having a large central database for all EHR data (Sweden) could be considered hard to manage but according to Johan Thorvid it should be feasible.
-
-\subsubsection{Usability implications}
-This integrated solution is supposed to have as small implication as possible for the users. There might be some small changes as the systems that they are currently using may have to change a bit to be able to meet the standards that are going to be used. As the semantics has to match some of the users may have to change how they write. However with a integrated solution the user can do all the work in the system they are currently using. Most of the old systems will however still be intact and the users can use the old knowledge and experience when navigating.
-
-\newpage
-
-\section{Conclusions}
-\label{sec:Conclusions}
 \subsection{Recommended Development Methodologies}
 The interviews with administrative personal and technicians were focused on what they thought would be required to create interoperability between \glspl{EHR} rather than what they would want in such a system. 
 
@@ -399,6 +388,19 @@ The involvement of end-users can be included in the agile development by letting
 
 \subsubsection{Security Testing}
 During the interviews the issue regarding security came up as an important factor to consider in an interoperable system. It is always important to handle the security with great care when it comes to patient information, but the security issues might be a lot greater when dealing with a system of bigger size such as when multiple \glspl{EHR} is interoperating. One example of a feature that might need improvement is the access control of patient information due to the fact that an interoperable system will increase the amount reachable information. Ordinary methods for checking access control such as going through logs might be inefficient and costly and new methods might be needed.
+
+\subsubsection{Feasability}
+One of the problems with implementing a system like this is to get all the systems to unit and accept a set standard to be used. Some of the systems has to change more then others.
+Having a large central database for all EHR data (Sweden) could be considered hard to manage but according to Johan Thorvid it should be feasible.
+
+\subsubsection{Usability implications}
+This integrated solution is supposed to have as small implication as possible for the users. There might be some small changes as the systems that they are currently using may have to change a bit to be able to meet the standards that are going to be used. As the semantics has to match some of the users may have to change how they write. However with a integrated solution the user can do all the work in the system they are currently using. Most of the old systems will however still be intact and the users can use the old knowledge and experience when navigating.
+
+\newpage
+
+\section{Conclusions}
+\label{sec:Conclusions}
+
 
 
 \newpage

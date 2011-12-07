@@ -211,13 +211,30 @@ The second way that a transfer of an \gls{EHR} between hospitals is conducted to
 \\\\
 A lot of work is done to increase the \gls{interoperability}, for example the National strategy for eHealth Sweden, which was launched in 2006 aims to increase the interoperability by bringing laws and regulations in Sweden in line with the extended use of information and communication technologies (ICT). It also aims to facilitate interoperable ICT systems and make access to information across organizational boundaries\cite{NationalStrategy}. 
 
-\subsubsection{NPÖ}
-Currently the main initiative for the electronic sharing of patient records that are in used today is something called NPÖ, "Nationell Patient Översikt" ("National Patient Summary"). NPÖ is a project that was started during 2004 by what was then called Carelink\cite{ViktorJernelov}. The goal of the NPÖ-system is to provide the different caregivers, such as hospitals with mirrored information from the different \gls{EHR} systems \cite{ViktorJernelov}. It works in such a way that when a caregiver wants to connect with the NPÖ system the caregiver can get information about a patient via a web service. 
+\subsubsection{NPÖ} %Written by Sam & Romel according to interview with Viktor Jernelöv from NPÖ.
+Currently the main initiative for the electronic sharing of patient records that are in used today is something called NPÖ, "Nationell Patient Översikt" ("National Patient Summary"). NPÖ is a project that was started during 2004 by what was then called Carelink\cite{ViktorJernelov}. The goal of the NPÖ-system is to provide the different caregivers, such as hospitals with mirrored information from the different \gls{EHR} systems \cite{ViktorJernelov}.The project conducted a pilot test during the period 2005-2006, which was deployed in the county of Norrbotten, Stockholm, Jönköping and västergötland in Sweden.
 \\\\
-One of the main technical problems with the NPÖ-system is the removal of information from the system. As it is today if you remove some part of information from the local \gls{EHR} and you also want the same information removed from the NPÖ-system you have to do this manually.
-\\ %Written by Sam & Romel according to interview with Viktor.
-Whenever a caregiver deletes information in the local \gls{EHR} system he/she have to delete the same information in NPÖ manually. And since he/she deletes information from the core database in the local \gls{EHR} systems it gets difficult recover information that is deleted because the system does not recall of ever having the information. This is a problem if information gets deleted by accident. Many caregivers solve this problem by making someone administrator who deals with only deleting information on both local \gls{EHR} systems and NPÖ  \cite{ViktorJernelov}.
+The goal of the NPÖ-system is to provide the different caregivers, such as hospitals with mirrored information from the different \gls{EHR} systems \cite{ViktorJernelov}. It works in such a way that when a caregiver wants to connect with the NPÖ system the caregiver can get information about a patient via a web service. Currently it is not possible to add/edit information in NPÖ, however NPÖ can be used to view patient information from different \gls{EHR} systems. This could be useful for example in an ambulance where nurses in the ambulance can use their mobile devices to login to NPÖ and look at the patients medical record.  
 \\\\
+NPÖ's web service has two main function an answer and question service. According to \cite{ViktorJernelov} the question service is not completely implemented, thus it is not used that much. The idea with the question service is to ask questions to NPÖ i.e. show all the information about patient X and the answer services is then used to reply to this query. Today NPÖ can only be accessed by caregivers, however as reported by \cite{ViktorJernelov} NPÖ is working on redesigning the question service to make it more adaptable for patients and allow them to ask question directly to NPÖ. 
+\\\\
+The experience gathered during the pilot test was behind the development of a requirements specification for the full development of a national patient overview. Among these experiences were described what amounts of information that should be part of in the first version of the solution. As part of the specification states that the following amounts of information should be possible to present a first version of the NPÖ.
+\begin{itemize}
+\item Health and care
+\item Attention Signal
+\item Diagnosis
+\item Personal care and service
+\item Pharmaceuticals
+\item Care Contact
+\item Care Document
+\item Operation Permits
+\item Care planning
+\item Findings
+\end{itemize}
+Each of these information amount is delimitation of a specific area. The first information amount health and care is always included because it contains information about patients ID and administrative information for example patients address and their relatives. Whenever a caretaker wants to connect to NPÖ they have to first choose which information area they want to connect to. Although the integration between \gls{EHR} systems and NPÖ is not strictly bounded, NPÖ has some requirements which all caretakers have to follow. For instance NPÖ tells the caretakers how the patient information should look like and which attributes it should contain, then it is up to the caretakers to fulfill the requirements and follow the structure. The caretakers are also responsible for updating the information in the NPÖ. 
+\\\\
+One of the main technical problems with the NPÖ-system is the removal of information from the system. As it is today if you remove some part of information from the local \gls{EHR} and you also want the same information removed from the NPÖ-system you have to do this manually. Because of that information has to be deleted from the core database in the local \gls{EHR} systems.  This makes it difficult to recover information that have been deleted from the system and this is a problem if information gets deleted by accident for example. Many caregivers solve this problem by making someone administrator who deals with only deleting information on both local \gls{EHR} systems and NPÖ  \cite{ViktorJernelov}.
+
 Many patients today expect a high level of electronic \gls{interoperability} when it comes to their patient records\cite{EPJ2}, something that is not really there today. The reason for that is assumed might be a lack of familiarity of the current laws in place as well as thinking that patient data is shared between the different counties. This means that there is a risk of misunderstandings if the patient assumes that their patient records are accessible through every hospital in Sweden even though they might just be able to get a summary through the NPÖ-system.
 
 \subsubsection{NPÖ adapter}
@@ -342,7 +359,6 @@ The aim of establishing a successful \gls{EHR} system is to improve efficiency, 
 \end{itemize}
 
 There are many potential reasons for this lack of attention on \gls{EHR} usability. One problem is to identify the people responsible for the systems usability. Janols et al [?] had examined how a large Swedish county with several healthcare units works with usability problems in the EPR [?] deployment process. They showed that there is confusion about the responsibility for usability issues with the organization. The confusion is because some of the stakeholders consider the EPR system to be an IT system, not an integral part of the healthcare process. Others consider it to be a core business system and therefore the core business responsibility. This confusion and uncertainty about responsibility leads to an unsustainable work situation for the care staff that needs an effective EPR system to perform a high quality work.
-
 
 %Here are related items from the Empirica interview
 %\begin{itemize}

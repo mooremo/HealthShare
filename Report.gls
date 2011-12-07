@@ -4,6 +4,7 @@
 \glossaryentryfield{Electronic Healthcare Record}{\glsnamefont{Electronic Healthcare Record}}{an \gls {EMR} or a collection of \glspl {EMR} that can be shared across networks between different \glspl {HCP}}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{20}}}%
 \glossaryentryfield{Electronic Medical Record}{\glsnamefont{Electronic Medical Record}}{a digitalized, systematic documentation of a single patient's medical history and care across time within one particular \gls {HCP} jurisdiction}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{16}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{20}}}%
 \glossaryentryfield{Extensible Markup Language}{\glsnamefont{Extensible Markup Language}}{a set of rules for encoding documents in machine-readable form}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{13}\delimN 

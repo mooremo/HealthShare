@@ -6,16 +6,22 @@
 		\setentrycounter[]{page}\glsnumberformat{4\delimR 9}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{12\delimR 17}}}%
 \glossaryentryfield{EMR}{\glsnamefont{EMR}}{\gls {Electronic Medical Record}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{16}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{20}}}\glsgroupskip
 \glsgroupheading{H}\relax \glsresetentrylist %
 \glossaryentryfield{HCP}{\glsnamefont{HCP}}{\gls {Health Care Provider}}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{13}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{20}}}%
+\glossaryentryfield{HCU}{\glsnamefont{HCU}}{Health Care Unit}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{16}}}%
 \glossaryentryfield{HTTP}{\glsnamefont{HTTP}}{\gls {Hypertext Transfer Protocol}}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{13}}}\glsgroupskip
 \glsgroupheading{I}\relax \glsresetentrylist %
 \glossaryentryfield{IEEE}{\glsnamefont{IEEE}}{\gls {Institute of Electrical and Electronics Engineers}}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{8}}}\glsgroupskip
+\glsgroupheading{P}\relax \glsresetentrylist %
+\glossaryentryfield{PHR}{\glsnamefont{PHR}}{\gls {Personal Health Record}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{16}}}\glsgroupskip
 \glsgroupheading{S}\relax \glsresetentrylist %
 \glossaryentryfield{SOAP}{\glsnamefont{SOAP}}{\gls {Simple Object Access Protocol}}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{13}}}\glsgroupskip

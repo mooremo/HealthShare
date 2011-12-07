@@ -318,8 +318,6 @@ When developing \gls{EHR} systems it is important to have clear objectives, abil
 
 \subsection{Types of solutions and implications for the end user}
 
-\subsection{EHR integrated into existing EMR systems}
-
 \subsection{EHR as a Standalone Application}
 One possible interoperating system granting health personnel access to patient records from different hospitals would be a standalone application separated from existing EMR systems. Health care units would need to implement an interface towards the interoperating system to make their health records available. 
 
@@ -342,7 +340,21 @@ Additional problems in this area can be resolved by also allowing a message func
 The biggest difficulty with creating this standalone application is ensuring that it can interact with various different database systems. Fortunately there are a lot of standards and regulations regarding database systems and medical records. These should help to limit the variations in systems and are discussed in greater detail in the section 6. 
 
 \subsection{EHR integrated into existing EMR systems}
--to be added-
+
+\subsubsection{Interoperability}
+To make a system like this work within all the existing EHR systems it needs a really good 	interoperability. The existing EHR systems are structured in very different ways. The data is both written and stored in different ways.
+There are however similar industries that have the same issue but have solutions to work around this problem to make it more transparent way. Within the European Union there is a border management system where each EU member state perform their operational tasks independently based on a regulatory framework managed by the European Commision. By using a set framework and a set standard all the different system can be merged in one format in a central unit. This framework should include a certain semantics so that the data can be transferred in a smooth way between the systems. The systems layout doesn’t need to change as long as what they send to the central unit follows the set standard.
+
+\subsubsection{Technical}
+In a system this big there is a risk that a lot of data will be handles back and forth. There are regulations on where data is stored and that a patient can request it's deletion. To be able to follow these regulations a central database could be used. Each EHR system stores the data they have in their system but also stores the same information in the central database. That way the central database keeps a complete record for each patient. The data however never get copied from the central database. When looking at a patients record in any of the EHR systems it reads from the central server. With a system set up like this data stored will only be stored at two places, in the EHR system where it was created and in the central database. This makes a deletion of data easy.
+The system also has to be secure, no unauthorized users should be able to access data. As the users are using the old EHR systems, where they have authentication to able to access information, all that is needed is that every EHR system fulfil a required standard for security. The whole system can also be kept in a intranet to avoid intrusion even further.
+
+\subsubsection{Feasability}
+One of the problems with implementing a system like this is to get all the systems to unit and accept a set standard to be used. Some of the systems has to change more then others.
+Having a large central database for all EHR data (Sweden) could be considered hard to manage but according to Johan Thorvid it should be feasible.
+
+\subsubsection{Usability implications}
+This integrated solution is supposed to have as small implication as possible for the users. There might be some small changes as the systems that they are currently using may have to change a bit to be able to meet the standards that are going to be used. As the semantics has to match some of the users may have to change how they write. However with a integrated solution the user can do all the work in the system they are currently using. Most of the old systems will however still be intact and the users can use the old knowledge and experience when navigating.
 
 \newpage
 

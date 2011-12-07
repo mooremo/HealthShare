@@ -17,7 +17,6 @@
 \usepackage[acronym]{glossaries} % make a separate list of acronyms
 \makeglossaries
 
-%testing
 % Index
 \usepackage{makeidx}
 \makeindex
@@ -27,20 +26,34 @@
 \input{./title.tex}
 
 \tableofcontents
+
 \newpage
 
 \begin{abstract}
 
+\newglossaryentry{interoperability}{name={interoperability}, description={The ability of diverse systems and organizations to work together. Please see section~\ref{sec:interopDefinition} for the meaning within healthcare}}
 
-\newglossaryentry{Electronic Healthcare Record}{name={Electronic Healthcare Record}, description={a systematic collection of electronic health information about individual patients or populations recorded in a digital format that is capable of being shared across different health care settings, by being embedded in network-connected enterprise-wide information systems}}
+\newglossaryentry{Health Care Provider}{name={Health Care Provider}, description={an individual or an institution that provides health care services in a systematic way}}
+
+\newacronym[\glsshortpluralkey=HCPs ,\glslongpluralkey= Health Care Providers]{HCP}{HCP}{\gls{Health Care Provider}}
+
+\newglossaryentry{Electronic Medical Record}{name={Electronic Medical Record}, description={a digitalized, systematic documentation of a single patient's medical history and care across time within one particular \gls{HCP} jurisdiction}}
+
+\newacronym[\glsshortpluralkey=EMRs ,\glslongpluralkey= Electronic Medical Records]{EMR}{EMR}{\gls{Electronic Medical Record}}
+
+\newglossaryentry{Electronic Healthcare Record}{name={Electronic Healthcare Record}, description={an \gls{EMR} or a collection of \glspl{EMR} that can be shared across networks between different \glspl{HCP}}}
 
 \newacronym[\glsshortpluralkey=EHRs ,\glslongpluralkey= Electronic Healthcare Records]{EHR}{EHR}{\gls{Electronic Healthcare Record}}
+
+\newglossaryentry{Personal Health Record}{name={Personal Health Record}, description={a health record where health data is maintained and owned by the individual it pertains to, rather than an institution or a hospital}}
+
+\newacronym[\glsshortpluralkey=PHRs ,\glslongpluralkey= Personal Health Records]{PHR}{PHR}{\gls{Personal Health Record}}
 
 \glspl{EHR} are rapidly expanding in their use and their benefits are well known. Significant reduction in the cost of care, improved quality of care, and improved record keeping are just a few of the benefits of using an \gls{EHR}. It is for these reasons that many medical institutions are rapidly adopting \glspl{EHR}. 
 
 An explosion of innovation has stemmed from this rapid adoption and has produced many different solutions from many different providers. Unfortunately, these solutions tend to store and transmit the information that they collect in formats that are not compatible with each other. In order to maximize the benefit received from these \glspl{EHR} they must be able to share information between different systems and locations.
 
-This paper reports on the various aspects of the creating a framework for \gls{EHR} interoperability.
+This paper reports on the various aspects of achieving \gls{EHR} \gls{interoperability}.
 \end{abstract}
 
 \newpage
@@ -49,10 +62,7 @@ This paper reports on the various aspects of the creating a framework for \gls{E
 
 \section*{Temporary section: How to do Glossary Entries}
 
-Look at the {\LaTeX} for this section to see how add glossary entries and how to use them in the text.
-
-\newglossaryentry{interoperability}{name={interoperability}, description={The ability of diverse systems and organizations to work together. Please see section~\ref{sec:interopDefinition} for the meaning within healthcare}}
-
+Look at the {\LaTeX} for the Abstract section to see how add glossary entries and how to use them in the text.
 
 An \gls{interoperability} entry and \gls{EHR}. Second use: \gls{EHR}.
 
@@ -63,10 +73,12 @@ Plural: First use: \glspl{EHR}. Second use: \glspl{EHR}.
 \newpage
 
 \section{Introduction}
-Define the problem and in what context (maybe contextualize, write a story, describe a scenario? a concrete relevant scenario that occurs with persons involved)
-
+\label{sec:Introduction}
 
 \subsection{Background}
+Hospitals within Sweden use electronic computer systems to store and track patient health data. Different hospitals or medical facilities use systems developed by different companies or different customized solutions from the same company. The end result is a complex network of systems that are unable to communicate with each other. When a patient moves or visits a hospital while on vacation the individual doctors must manually send patient data to each other. This is a complicated and error-prone process that potentially wastes the time and energy of everyone involved.
+
+Define the problem and in what context (maybe contextualize, write a story, describe a scenario? a concrete relevant scenario that occurs with persons involved)
 
 The setting of problems in \gls{EHR}/EMR \gls{interoperability} situations. Describe what the problems related to \gls{interoperability} are within healthcare. The situation in Uppsala County, why we are doing this. What is being done on \gls{interoperability} in other areas. Describe the problems related to interoperating \glspl{EHR}.
 describe the ideal interoperating system
@@ -93,9 +105,21 @@ instructions for different audiences, so people who already know, or don't care 
 \newpage
 
 \section{Method}
-\section{Reserach}
+\label{sec:Method}
+
 \subsection{Project Organization}
- (How, and our own organization)
+{\bf Project group}
+The Healthshare project was carried out during the autumn of 2011 as a collaborative course between Rose-Hulman Institute of Technology, IN, USA and Uppsala University, Sweden.
+The project group consisted of XX students, X from Rose-Hulman Institute of Technology and X from Uppsala University. To encourage cooperation between USA and Sweden responsibility was equally distributed over the two Universities.
+
+The project was organized in a hierarchical organization structure with two project managers with the outmost responsibility, one from Sweden and one from USA. The project was then divided into four teams containing a mix of both Rose-Hulman and Uppsala students. Each team then had a team leader answering to the project managers.
+%Insert a table/figure of project organization and members
+
+{\bfExternal actors}
+%Does Benny work for the University Hospital or the County Council
+The project was carried in cooperation with and as a service to a client, Benny Eklund, TITLE at Uppsala University Hospital/County Council.
+
+%Write something brief about Cary, Åsa and Mats.
 
 \subsection{Interviews}
 \subsubsection{Phone interviews}
@@ -108,26 +132,38 @@ Based on the relevant literature, interview templates were produced before conta
 (preparations, structure, outlines/protocols, focus of the interviews.
 How did we prepare the interviews, how were/weren't they structured, transcribed?)
 
+\subsubsection{Regular interviews}
+
+Based on the relevant litterature, interview templates were produced before contact was initiated. The templates were then adapted to fit with the specific individual ranges of knowledge and sent to them beforehand to allow for them to prepare. Contact was initiated through both phone calls and email conversations, to book the time of meeting and sending the interview questions.
+\\\\
+During the actual interview, typically we'd be one or two people interviewing a single person as was the case for the EPJ interviews \cite{EPJ1} \cite{EPJ2}. For the Empirica interview~\cite{Empirica}, we interviewed two people at once, which was more time efficient but led to that the most experienced of the two interviewees did most of the talking.
+\\\\
+The CeHis interview~\cite{CeHis} was performed by four people, with four people being interviewed, two of them participating through speakerphone. This meant that it became a hybrid between a phone interview and a regular interview, resulting in that the ones physically present participated more actively. 
+\\\\
+The interviews were structured to focus on which problems exist today, how they are currently being dealt with and how different organizations and projects correspond to this. The interviews that were recorded were transcribed and translated to english, these transcripts are available in a seperate document available from the project coordinators.
+
 \subsection{Information search}
 Reading, methods for searching for information
 
 \newpage
 
 \section{What the people involved want}
+\label{sec:People}
 (maybe move to introduction if too small)
 \begin{itemize}
 \item physicians
 \item nurses
 \item patients
 \item administrative personal
-in order to make the adoption of a new system as smooth as possible it is important that we make sure that the final system is able to easily integrate with the already existing systems for EHR handling. This can be done in a few different ways, one of the main ways of doing it is to develop a module that would extend the different EHR systems that already exist and are in use.\cite{EPJ2} For Cambio Cosmic there is already such a module made for integration with NPÖ, however this module is not currently used at the Akademiska hospital in Uppsala\cite{EPJ1}.
+in order to make the adoption of a new system as smooth as possible it is important that we make sure that the final system is able to easily integrate with the already existing systems for \gls{EHR} handling. This can be done in a few different ways, one of the main ways of doing it is to develop a module that would extend the different \gls{EHR} systems that already exist and are in use.\cite{EPJ2} For Cambio Cosmic there is already such a module made for integration with NPÖ, however this module is not currently used at the Akademiska hospital in Uppsala\cite{EPJ1}.
 \\\\
-If we decide to implement an extension module for the sharing of EHRs it is important to make sure that the look and feel are similar to the system that already exists. This is crucial in order make the system popular. 
+If we decide to implement an extension module for the sharing of \glspl{EHR} it is important to make sure that the look and feel are similar to the system that already exists. This is crucial in order make the system popular. 
 \\\\
-A system for EHR sharing could also be made as an external system, however if this is done Susanne stresses the need for it to still be somewhat integrated with the existing system. For example this could be done by implementing an exporting feature into the already existing system that would export the information of the active patient into the new system. This would simplify the use of the new system since it would eliminate the need of inputting the patient information multiple times.
+A system for \gls{EHR} sharing could also be made as an external system, however if this is done Susanne stresses the need for it to still be somewhat integrated with the existing system. For example this could be done by implementing an exporting feature into the already existing system that would export the information of the active patient into the new system. This would simplify the use of the new system since it would eliminate the need of inputting the patient information multiple times.
 \\\\
-Another very important issue to consider is the need to be able to remove certain information about a particular patient. For example, a patient who have received psychiatric care might not want that information to be left on the the patients EHR after treatment have been completed\cite{EPJ1}.
+Another very important issue to consider is the need to be able to remove certain information about a particular patient. For example, a patient who have received psychiatric care might not want that information to be left on the the patients \gls{EHR} after treatment have been completed\cite{EPJ1}.
 \item the public
+The general public want a system that inexpensive especially if a solution involves the use of government funds.
 \item politicians
 \item technicians
 \item legal authorities
@@ -137,6 +173,7 @@ Another very important issue to consider is the need to be able to remove certai
 \newpage
 
 \section{Interoperability}
+\label{sec:Interoperability}
 
 \subsection{Introduction} % Introduction to what this chapter should be about. (relevant, not too long, not too short) ...Should this really be a subsection or just text?
 
@@ -144,19 +181,19 @@ Another very important issue to consider is the need to be able to remove certai
 \label{sec:interopDefinition}
 
 \subsection{Current situation} %What the current situation is regarding \gls{interoperability}. Why it is a big problem.
-Today in Sweden the electronic interoperability among hospitals is limited. This is also very true for the sharing of EHRs. The sharing of EHRs today are done in mainly two ways.
+Today in Sweden the electronic \gls{interoperability} among hospitals is limited. This is also very true for the sharing of \glspl{EHR}. The sharing of \glspl{EHR} today are done in mainly two ways.
 \\\\
-One of them works in such a way that if an EHR needs to be sent from one hospital to another one, the first hospital makes a print out of the EHR and then anonymize this one before the document is sent via fax to the other hospital. When the second hospital receives the document contact is made between the hospitals and the identifying information is communicated to the second hospital.\cite{EPJ2} The reason for anonymization is to make sure that even if a fax is accidentally sent to the wrong address it will not be possible to distinguish which patient the information is relevant to.
+One of them works in such a way that if an \gls{EHR} needs to be sent from one hospital to another one, the first hospital makes a print out of the \gls{EHR} and then anonymize this one before the document is sent via fax to the other hospital. When the second hospital receives the document contact is made between the hospitals and the identifying information is communicated to the second hospital.\cite{EPJ2} The reason for anomyzation is to make sure that even if a fax is accidently sent to the wrong address it will not be possible to distinguish which patient the information is relevant to.
 \\\\
-The second way that a transfer of an EHR between hospitals is conducted today is that the EHR is sent with the patient during transport, for example if a patient needs to be moved from Uppsala to Stockholm the patient and the corresponding EHR can be sent on the same ambulance to Stockholm\cite{EPJ2}. Problems with this is that it can become stressful during a patient transportation since it can become a time issue, since the writing of the summary might have to be done while the ambulance is ready to go\cite{EPJ2}.
+The second way that a transfer of an \gls{EHR} between hospitals is conducted today is that the \gls{EHR} is sent with the patient during transport, for example if a patient needs to be moved from Uppsala to Stockholm the patient and the corresponding \gls{EHR} can be sent on the same ambulance to Stockholm\cite{EPJ2}. Problems with this is that it can become stressful during a patient transportation since it can become a time issue, since the writing of the summary might have to be done while the ambulance is ready to go\cite{EPJ2}.
 \\\\
-A lot of work is done to increase the interoperability, for example the National strategy for eHealth Sweden, which was launched in 2006 aims to increase the interoperability by bringing laws and regulations in Sweden in line with the extended use of information and communication technologies (ICT). It also aims to facilitate interoperable ICT systems and make access to information across organisational boundaries\cite{NationalStrategy}. 
+A lot of work is done to increase the \gls{interoperability}, for example the National strategy for eHealth Sweden, which was launched in 2006 aims to increase the interoperability by bringing laws and regulations in Sweden in line with the extended use of information and communication technologies (ICT). It also aims to facilitate interoperable ICT systems and make access to information across organisational boundaries\cite{NationalStrategy}. 
 \\\\
-Currently the main initiative for the electronic sharing of patient records that are in used today is something called NPÖ, "Nationell Patient Översikt" ("National Patient Summary"). NPÖ is a project that was started during 2004 by what was then called Carelink\cite{ViktorJernelov}. The goal of the NPÖ-system is to provide the different caregivers, such as hospitals with mirrored information from the different EHR systems \cite{ViktorJernelov}. It works in such a way that when a caregiver wants to connect with the NPÖ system the caregiver can get information about a patient via a web service. 
+Currently the main initiative for the electronic sharing of patient records that are in used today is something called NPÖ, "Nationell Patient Översikt" ("National Patient Summary"). NPÖ is a project that was started during 2004 by what was then called Carelink\cite{ViktorJernelov}. The goal of the NPÖ-system is to provide the different caregivers, such as hospitals with mirrored information from the different \gls{EHR} systems \cite{ViktorJernelov}. It works in such a way that when a caregiver wants to connect with the NPÖ system the caregiver can get information about a patient via a web service. 
 \\\\
-One of the main technical problems with the NPÖ-system is the removal of information from the system. As it is today if you remove some part of information from the local EHR and you also want the same information removed from the NPÖ-system you have to do this manually.
+One of the main technical problems with the NPÖ-system is the removal of information from the system. As it is today if you remove some part of information from the local \gls{EHR} and you also want the same information removed from the NPÖ-system you have to do this manually.
 \\\\
-Many patients today expect a high level of electronic interoperability when it comes to their patient records\cite{EPJ2}, something that is not really there today. The reason for that is assumed might be a lack of familiarity of the current laws in place as well as thinking that patient data is shared between the different counties. This means that there is a risk of misunderstandings if the patient assumes that their patient records are accessible through every hospital in Sweden even though they might just be able to get a summary through the NPÖ-system.
+Many patients today expect a high level of electronic \gls{interoperability} when it comes to their patient records\cite{EPJ2}, something that is not really there today. The reason for that is assumed might be a lack of familiarity of the current laws in place as well as thinking that patient data is shared between the different counties. This means that there is a risk of misunderstandings if the patient assumes that their patient records are accessible through every hospital in Sweden even though they might just be able to get a summary through the NPÖ-system.
 
 \section{Technicians}
 
@@ -164,7 +201,8 @@ Many patients today expect a high level of electronic interoperability when it c
 
 To achieve European wide solutions for cross-border transfer of patient information certain requirements need to be fulfilled. There has to be an agreement on the definitions of data sets for both patient summaries and e-prescription, a legal framework for data transfer, a technical framework to connect the systems at each level and a working semantic \gls{interoperability}. \cite{epSOS1}
 
-\subsection{Standardized care plans}
+\subsection{Care plans}
+[Emil and Sam: Explaining what it is.]
 
 %Subsections on different \gls{interoperability} solutions.
 \subsection{Solution 1}
@@ -174,6 +212,7 @@ To achieve European wide solutions for cross-border transfer of patient informat
 \newpage
 
 \section{Technical Standards}
+\label{sec:TechnicalStandards}
 
 \subsection{What is a Technical Standard for Computer Software?}
 A technical standard is a recognized and established requirement about software systems that establishes the ``way things should be done." They are responsible for everything from the uniformity of web browsers (although not all browsers strictly conform to the standard) to the ability for nearly any laptop to connect wirelessly to any access point. Such standards specify aspects of a program such as a common format for a file or data transfer that allow different developers to develop separate software programs while allowing for \gls{interoperability} between the different systems. Software standards are the foundation for the \gls{interoperability} of different software systems.
@@ -181,7 +220,7 @@ A technical standard is a recognized and established requirement about software 
 \subsection{The Creation of a Standard}
 Typically for different parties (software development companies) to agree on a specific software standard they create a software standards organization that consist of members and representatives of the various software companies who contribute ideas and opinions about making a single, unified standard addressing the data \gls{interoperability} problem that needs to be addressed.
 
-\subsubsection{ Examples of Software Standards Organizations}
+\subsubsection{Examples of Software Standards Organizations}
 
 \begin{itemize}
 \item World Wide Web Consortium (W3C) - Responsible for web standards such as HTML, HTTP, and XML 
@@ -189,7 +228,7 @@ Typically for different parties (software development companies) to agree on a s
 \item Internet Engineering Task Force (IETF) - Responsible for providing standards for new Internet related technology 
 \end{itemize}
 
-\subsection{ Adherence to Standards}
+\subsection{Adherence to Standards}
 Adherence to a particular software standard can be either mandatory required or voluntarily followed. For example, in the United States banking software must conform to security standards and regulations set forth by the Federal Deposit Insurance Corporation (FDIC). Any system that does not conform to these standards faces legal action by the federal government and as such is not allowed for use by U.S. banks. On the other end of the spectrum, the standards set forth by the W3C as to how a web browser should interpret and render various web pages is a completely voluntary standard and while most popular, modern browsers do conform in the most part to these standards there are many cases where some (if not all) do not completely achieve compliance. However, they face no legal retaliation for not complying with the W3C's standards as the standards are voluntarily adhered to and not legally mandated.
 
 \subsection{Software Standards and EHR Software}
@@ -206,6 +245,7 @@ The only other option for sharing healthcare records would be to have a unified 
 \newpage
 
 \section{Adoption of future systems}
+\label{sec:Future}
 
 %Current limitations and obstacles
 
@@ -214,13 +254,31 @@ Security? Limitations for what that can technically be done?
 
 
 \subsection{Legal}
-What does the laws allow? 
+
+\newglossaryentry{Health Care Provider}{name={Health Care Provider}, description={an individual or an institution that provides health care services in a systematic way}}
+
+\newacronym[\glsshortpluralkey=HCPs ,\glslongpluralkey= Health Care Providers]{HCP}{HCP}{\gls{Health Care Provider}}
 
 The new Swedish legislation provides new opportunities, but not obligations. \cite{RiR19}
 
+\glspl{EHR} exist to promote patient safety, high quality health care and minimized cost. It is also supposed to be a source of information for the patient (ch 3, § 2). A patient journal must be kept for each patient and may not be common to several patients. The one writing in the journal is responsible for that part. All journal entries must be written in Swedish. \cite{PatientDataAct}
+\\\\
+The patient is not required to give his or her consent for the \gls{HCP} to act according to what the Patient Data Law dictates, except for an EHR to be shared from one caregiver to another, when gaining electronic access to records of another care unit or during unified journaling. Patients may refuse to be part of organized records (kvalitetsregister). To remove parts of a journal there has to be convincing reasons, the part being removed can't be necessary for future health care and there should be no public interest in keeping the information. Journal data may be blocked from unified journaling access but the information saying that data has been blocked and by who should still be available. A caregiver may have access to documented information only if he or she participates in the care of the patient or for other reasons need this information for their work in health care. The law also regulates periodical checking of the logs. The patient has rights to obtain certain parts of his or her medical journal and information on who has accessed it in the past.\cite{PatientDataAct}
+\\\\
+The Personal Data Privacy Act (1998:204) applies to the parts of the records that are managed automatically and stored in a structured fashion. The National Board of Health and Welfare has rights and obligations regarding apprehension of journals in the event of legal violations.\cite{PatientDataAct}
+\\\\
+According to the Swedish Patient Safety Act (2010:659), a caregiver must immediately inform a patient who has suffered a medical injury
+about the injury, planned preventive measures, complaint and compensation
+options and the patient councils activity. Information on the information provided shall be recorded in the patient record.\cite{PatientSafetyAct}
+\\\\
+If with regard to the purpose of ongoing health care is of considerable importance
+that the data is not provided to the patient, then the caregiver is not allowed to
+do so. Same thing applies if there is risk of violence or permanent damage to the
+patient, should the information be disclosed. Also (unless enforced by law), a caregiver is not allowed to disclose details of health or personal conditions about a patient to outsiders.\cite{PatientSafetyAct}
+
 \subsection{Organizational}
 
-== current organizational issues that limit the adoption of interoperating systems. ==
+[Emil and Erik: Current organizational issues that limit the adoption of interoperating systems.]
 
 %Here are related items from the Empirica interview
 \begin{itemize}
@@ -233,6 +291,7 @@ The new Swedish legislation provides new opportunities, but not obligations. \ci
 \newpage
 
 \section{Results/ Discussion}
+\label{sec:Results}
 
 \subsection{Prerequisites for increased interoperability}
 
@@ -241,7 +300,7 @@ The new Swedish legislation provides new opportunities, but not obligations. \ci
 \newpage
 
 \section{Conclusions}
-
+\label{sec:Conclusions}
 
 \newpage
 

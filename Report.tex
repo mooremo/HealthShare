@@ -37,6 +37,7 @@
 
 \newacronym[\glsshortpluralkey=EMRs ,\glslongpluralkey= Electronic Medical Records]{EMR}{EMR}{\gls{Electronic Medical Record}}
 
+
 \newglossaryentry{Electronic Healthcare Record}{name={Electronic Healthcare Record}, description={an \gls{EMR} or a collection of \glspl{EMR} that can be shared across networks between different \glspl{HCP}}}
 
 \newacronym[\glsshortpluralkey=EHRs ,\glslongpluralkey= Electronic Healthcare Records]{EHR}{EHR}{\gls{Electronic Healthcare Record}}
@@ -305,6 +306,14 @@ Adherence to a particular software standard can be either mandatory required or 
 
 \subsection{Software Standards and EHR Software}
 With the growing ubiquitousness of the Internet, computers, and modern technology as well as the geographic diversity of medical talent and information it is doubtless that someday a standard specifying the transmission, storage, and format of electronic healthcare records will be developed; the benefit of such a standard is too great to be ignored for long. Such a standard will require and large organization to oversee and develop as patent data is widely varied and medical breakthroughs are discovered daily requiring such a standard to be constantly updated and modified to stay relevant. 
+
+\newacronym {IHTSDO}{IHTSDO}{International Health Terminology Standards Development Organisation}
+\newacronym {SNOMED}{SNOMED CT}{Systematized Nomenclature of Medicine - Clinical Terms}
+
+\subsection{Terminology}
+In order for interoperability to be useful, everyone reading the \gls{EHR} need to have a common understanding of the information in it. One way to achieve this is by using the clinical terminology system \gls{SNOMED}. 
+
+\gls{IHTSDO} is a non-profit organisation dealing with standards, at the moment 17 countries are members of the organisation, among these Sweden, the United Kingdom and the United States of America. \gls{IHTSDO} acquired \gls{SNOMED} in 2007 this made it more accessible for a wider audience. \gls{SNOMED} is currently availible in US English, UK English, Spanish, Danish and Swedish and is being translated into French, Lithuanian and several other languages as well. 
 
 \subsection{Ideal EHR Standard}
 All medical institutions have different needs and demands  are often very significant; This makes it exceedingly difficult to create a "one-size fits all" \gls{EHR}. An ideal \gls{EHR} standard will follow the trend of historically successful interfaces, that is that it will closely replicate the old paper version. It would also store the records in a standardized format as this maximizes interoperability and data mobility but allow for the interfaces to the system to be customized to the specific institution. Customizing each \gls{EHR} for the specific institution does add overhead development and maintenance costs but maximizes the work flow productivity at each facility while maintaining interoperability. 

@@ -313,7 +313,7 @@ In order for interoperability to be useful, everyone reading the \gls{EHR} needs
 
 \gls{SNOMED} is built up on 311 000 active concepts and is continuously growing. The basic concept behind \gls{SNOMED} is that each medical term has its own unique ID and all these terms are connected by semantic relationships. On \gls{IHTSDO}s website they describe the relationships like this: One type of link is the “IS\_A” relationship. This is used to define a concepts position within a hierarchy, e.g. Diabetes Mellitus IS\_A disorder of glucose regulation."\cite{ihtsdocomp}. 
 
-By having unique identifiers for all terms, translation between different languages is possible. Every language has the same identifier on their respective term, so when they store a record it is stored as just numbers. This is only happening back-end so the user will just think that the medical record they read is written in their own language. 
+By having unique identifiers for all terms, translation between different languages is possible. Every language has the same identifier on their respective term, so when they store a record it is stored as just numbers. This only happens in the back-end so the user will see the medical record written in their own language.
 
 \gls{SNOMED} is centrally updated twice a year where they add new terms and set some terms inactive. In order to support previous versions they never delete terms, but instead mark them as inactive and suggest using the newest term.%\cite{annavik}
 
@@ -343,28 +343,24 @@ Additionally, because \gls{XML} formatted data is used, \glspl{SOAP} systems are
 The new Swedish legislation provides new opportunities, but not obligations. \cite{RiR19}
 
 \glspl{EHR} exist to promote patient safety, high quality health care and minimized cost. It is also supposed to be a source of information for the patient (ch 3, § 2). A patient journal must be kept for each patient and may not be common to several patients. The one writing in the journal is responsible for that part. All journal entries must be written in Swedish. \cite{PatientDataAct}
-\\\\
-The patient is not required to give his or her consent for the \gls{HCP} to act according to what the Patient Data Law dictates, except for an \gls{EHR} to be shared from one caregiver to another, when gaining electronic access to records of another care unit or during unified journaling. Patients may refuse to be part of organized records (kvalitetsregister). To remove parts of a journal there has to be convincing reasons, the part being removed can't be necessary for future health care and there should be no public interest in keeping the information. Journal data may be blocked from unified journaling access but the information saying that data has been blocked and by who should still be available. 
 
-A caregiver may have access to documented information only if he or she participates in the care of the patient or for other reasons need this information for their work in health care. The law also regulates periodical checking of the logs. The patient has rights to obtain certain parts of his or her medical journal and information on who has accessed it in the past.\cite{PatientDataAct}
-\\\\
+The patient is not required to give his or her consent for the \gls{HCP} to act according to what the Patient Data Law dictates, except for an \gls{EHR} to be shared from one caregiver to another, when gaining electronic access to records of another care unit or during unified journaling. Patients may refuse to be part of organized records (kvalitetsregister). To remove parts of a journal there needs to be convincing reasons, the part being removed can't be necessary for future health care, and there should be no public interest in keeping the information. Journal data may be blocked from unified journaling access but the information saying that data has been blocked and by who should still be available. 
+
+A caregiver may only have access to documented information if they directly participate in the care of the patient or need this information for their work in health care. The law also regulates periodic checking of the logs. The patient has rights to obtain certain parts of their medical journal and information on who has accessed it in the past.\cite{PatientDataAct}
+
 The Personal Data Privacy Act (1998:204) applies to the parts of the records that are managed automatically and stored in a structured fashion. The National Board of Health and Welfare has rights and obligations regarding apprehension of journals in the event of legal violations.\cite{PatientDataAct}
-\\\\
-According to the Swedish Patient Safety Act (2010:659), a caregiver must immediately inform a patient who has suffered a medical injury
-about the injury, planned preventive measures, complaint and compensation
+
+According to the Swedish Patient Safety Act (2010:659), a caregiver must immediately inform a patient who has suffered a medical injury about the injury, planned preventive measures, complaint and compensation
 options and the patient councils activity. Information on the information provided shall be recorded in the patient record.\cite{PatientSafetyAct}
-\\\\
-If with regard to the purpose of ongoing health care is of considerable importance
-that the data is not provided to the patient, then the caregiver is not allowed to
-do so. Same thing applies if there is risk of violence or permanent damage to the
-patient, should the information be disclosed. Also (unless enforced by law), a caregiver is not allowed to disclose details of health or personal conditions about a patient to outsiders.\cite{PatientSafetyAct}
+
+If, with regard to the purpose of ongoing health care, it is of considerable importance that the data is not provided to the patient, then the caregiver is not allowed to do so. The same applies if there is risk of violence or permanent damage to the patient should the information be disclosed. Unless required to by law, a caregiver is not allowed to disclose details of health or personal conditions about a patient to outsiders.\cite{PatientSafetyAct}
 
 \subsection{Organizational issues}
 %[Emil and Erik: Current organizational issues that limit the adoption of interoperating systems.]
 It is important to realize that in order to successfully implement a new system for \gls{EHR} sharing we need to have all the layers of the organization involved~\cite{Empirica} including all the different types of employees such as doctors and nurses etcetera. They must commit to the change of system in order for the switch to go well, since it changes the way they work and what responsibilities they have~\cite{Empirica}.
 
  In order to get all the different layers of the organization interested in the system it's important to involve them in the development of the system~\cite{Empirica}. Instead of having just the managers talking to the developers, all of the layers should be involved in the development stage of the system so that they feel like they have a say about the system that they will eventually use.
-\\\\
+
 When developing \gls{EHR} systems it is important to have clear objectives, ability to continuously revise changes and most importantly strong project leaders with the backing of the top level management and politics~\cite{Empirica}. This ties in to the previous topic of having all the layers of the organization involved in the development of the system. The employees might not be sure of exactly what they want so we need to make sure that when implementing a new feature or changing an existing one it is easy to make changes to the implementation in case of a misunderstanding between the developers and the employee who requested the feature.
 
 \subsection{Usability issues}

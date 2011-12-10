@@ -332,11 +332,11 @@ The only other option that acheives interoperability for sharing healthcare reco
 
 The technical limitations for an \glspl{EHR} system are multi-faceted. Two separate approaches to a solution are outlined in the United States’ Department of Health and Human Services paper Health Information Technology: Initial Set of Standards, Implementation Specifications, and Certification Criteria for Electronic Health Record Technology. \cite{AMA} 
 
-One solution is to use a \gls{SOAP} which is a specification for exchanging structures information. This setup relies on the \gls{XML}, a remote procedure call, and the \gls{HTTP}. This system creates several layers of specifications for layer formats. This solution is very dependent on multiple different systems, which creates a problem for dependency. If one of the needed layers for specification goes down or malfunctions than the system as a whole will not work. 
+One solution is to use \gls{SOAP} which is a specification for exchanging structured information. This setup relies on \gls{XML}, a remote procedure call, and \gls{HTTP}. Significant existing software infrastructure and development already exists and SOAP is a way to re-use that has already been done. This solution is dependent on multiple different systems and if one of the needed layers malfunctions the system as a whole will stop working. 
 
-Additionally, because of the use of the \gls{XML} format, the \glspl{SOAP} protocol will be slower than other options. This might cause a scalability problem for a large system. Also when relying on \glspl{HTTP} as a transport protocol the roles of the interacting parties are fixed therefore only the client can use the services of the other. These limitations to the design may cause future problems implementing a \glspl{SOAP} style system on a large scale.
+Additionally, because \gls{XML} formatted data is used, \glspl{SOAP} systems are usually slower and more data-heavy than other options. This might cause a scalability problem for a large system. These limitations to the design may cause future problems implementing a \glspl{SOAP} style system on a large scale.
 
-
+\gls{SOAP} is a trade-off however: the ability to work pratically everywhere and stand on top of hundredes of existing standards comes with significant overhead and additional complexity. Very few other systems, however, have the ability to deal with data as complicated as what is found in \glspl{EHR}
 
 \subsection{Legal issues}
 

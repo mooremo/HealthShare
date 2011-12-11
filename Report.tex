@@ -27,7 +27,7 @@
 
 \begin{abstract}
 
-\newglossaryentry{interoperability}{name={Interoperability}, description={The ability of diverse systems and organizations to work together. Please see section~\ref{sec:interopDefinition} for the meaning within healthcare}}
+\newglossaryentry{interoperability}{name={Interoperability}, description={The ability of diverse systems and organizations to work together. Please see section~\ref{sec:interopDefinition} for the meaning within health care}}
 
 \newglossaryentry{Health Care Provider}{name={Health Care Provider}, description={an individual or an institution that provides health care services in a systematic way}}
 
@@ -107,7 +107,7 @@ These are, of course, just suggestions and you are free to read whatever section
 
 \subsection{Project Organization}
 \subsubsection{Project group}
-The Healthshare project was carried out during the fall of 2011 as a collaborative course between Rose-Hulman Institute of Technology, IN, USA and Uppsala University, Sweden.
+The HealthShare project was carried out during the fall of 2011 as a collaborative course between Rose-Hulman Institute of Technology, IN, USA and Uppsala University, Sweden.
 The project group consisted of 18 students, 8 from Rose-Hulman Institute of Technology and 10 from Uppsala University. To encourage cooperation between USA and Sweden responsibility was equally distributed between the two Universities.
 
 The project was organized in a hierarchical organization structure with two project managers, one from Sweden and one from USA. The project was then divided into four teams containing a mix of both Rose-Hulman and Uppsala students. Each team then had a team leader answering to the project managers.
@@ -262,7 +262,7 @@ To achieve European wide solutions for cross-border transfer of patient informat
 \label{sec:TechnicalStandards}
 
 \subsection{What is a Technical Standard for Computer Software?}
-A technical standard is a set of recognized and established requirements about software systems that establishes the ``way things should be done". Standards are responsible for the uniformity of web browsers (although not all browsers strictly conform to the standard), the ability for laptops laptop or tablet to connect wirelessly to any access point, and the ability to connect laptops to almost any projector. Software standards specify aspects of a program such as: the format for data storage, format for data transfer, and data layout. This allow different developers, working for different companes, to develop different software programs while still allowing for \gls{interoperability} between them. Software standards are the foundation for software \gls{interoperability}.
+A technical standard is a set of recognized and established requirements about software systems that establishes the ``way things should be done". Standards are responsible for the uniformity of web browsers (although not all browsers strictly conform to the standard), the ability for laptops laptop or tablet to connect wirelessly to any access point, and the ability to connect laptops to almost any projector. Software standards specify aspects of a program such as: the format for data storage, format for data transfer, and data layout. This allow different developers, working for different companies, to develop different software programs while still allowing for \gls{interoperability} between them. Software standards are the foundation for software \gls{interoperability}.
 
 \subsection{The Creation of a Standard}
 For different parties (software development companies) to agree on software standards they typically create an organization consisting of representatives from the the various software companies. This gives them a forum to contribute ideas and opinions about making a single, unified standard addressing the data \gls{interoperability} problem that needs to be addressed.
@@ -318,10 +318,10 @@ By having unique identifiers for all terms, translation between different langua
 \gls{SNOMED} is centrally updated twice a year where they add new terms and set some terms inactive. In order to support previous versions they never delete terms, but instead mark them as inactive and suggest using the newest term.%\cite{annavik}
 
 \subsection{Ideal EHR Standard}
-All medical institutions have different needs and demands which often very significanty. This makes it exceedingly difficult to create a "one-size fits all" \gls{EHR}. An ideal \gls{EHR} standard will follow the trend of historically successful interfaces and will closely replicate the old paper version. It would also store the records in a standardized format as this maximizes interoperability and data mobility but also allows for the interfaces to the system to be customized for a specific institution. Customizing each \gls{EHR} for a specific institution adds overhead development and maintenance costs but maximizes the work flow productivity at each facility while maintaining interoperability. 
+All medical institutions have different needs and demands which often very significantly. This makes it exceedingly difficult to create a "one-size fits all" \gls{EHR}. An ideal \gls{EHR} standard will follow the trend of historically successful interfaces and will closely replicate the old paper version. It would also store the records in a standardized format as this maximizes interoperability and data mobility but also allows for the interfaces to the system to be customized for a specific institution. Customizing each \gls{EHR} for a specific institution adds overhead development and maintenance costs but maximizes the work flow productivity at each facility while maintaining interoperability. 
 
 \subsection{An Alternative to a Future EHR Standard}
-The only other option that acheives interoperability for sharing healthcare records would be a single unified software system that doctors all over the world would use to view and modify patient records. Such a solution is unrealistic for two reasons: there are already too many \gls{EHR} software companies to reasonably plan for one new company to globally take over the entire \gls{EHR} industry, and with anti-trust laws as well as fair competition clauses in many countries (such as the United States and Sweden) a single organization would not be legally allowed to be the sole producer of \gls{EHR} software systems.
+The only other option that achieves interoperability for sharing healthcare records would be a single unified software system that doctors all over the world would use to view and modify patient records. Such a solution is unrealistic for two reasons: there are already too many \gls{EHR} software companies to reasonably plan for one new company to globally take over the entire \gls{EHR} industry, and with anti-trust laws as well as fair competition clauses in many countries (such as the United States and Sweden) a single organization would not be legally allowed to be the sole producer of \gls{EHR} software systems.
 
 \newpage
 
@@ -336,7 +336,7 @@ One solution is to use \gls{SOAP} which is a specification for exchanging struct
 
 Additionally, because \gls{XML} formatted data is used, \glspl{SOAP} systems are usually slower and more data-heavy than other options. This might cause a scalability problem for a large system. These limitations to the design may cause future problems implementing a \glspl{SOAP} style system on a large scale.
 
-\gls{SOAP} is a trade-off however: the ability to work pratically everywhere and stand on top of hundredes of existing standards comes with significant overhead and additional complexity. Very few other systems, however, have the ability to deal with data as complicated as what is found in \glspl{EHR}
+\gls{SOAP} is a trade-off however: the ability to work practically everywhere and stand on top of hundreds of existing standards comes with significant overhead and additional complexity. Very few other systems, however, have the ability to deal with data as complicated as what is found in \glspl{EHR}
 
 \subsection{Legal issues}
 
@@ -428,7 +428,7 @@ On the other hand a decentralized system where the information is kept at each i
 A possible addition to a system like this could be to implement an interface for patients to access their Personal Health Records from their home computers. This would be a useful way for patients to obtain the various medical records that are shown to schools, employers, or whoever they may need to share medical information with. Additional beneficial features could also be implemented into the health records to extend its functionality with self-care functionality and allow patients to carry out preliminary test before visiting their health care unit. \glspl{PHR} become a sensitive issue as it means making patient records available on the Internet.
 
 \subsection{Security}
-The system needs to be secure, no unauthorized users should be able to access data. Different levels of security can be used but a standard of security level for authentication in the system must be set. In a integrated system the users are using the \gls{EHR} systems, where they have authentication to able to access information, all that is needed is that every EHR system fulfil the required standard for security. In a standalone system the system itself will have the meet the same requirements as the existing \gls{EHR} systems. 
+The system needs to be secure, no unauthorized users should be able to access data. Different levels of security can be used but a standard of security level for authentication in the system must be set. In a integrated system the users are using the \gls{EHR} systems, where they have authentication to able to access information, all that is needed is that every EHR system fulfill the required standard for security. In a standalone system the system itself will have the meet the same requirements as the existing \gls{EHR} systems. 
 The communication in the system could be kept in a intranet or on the Internet. If a intranet is used the security will be higher and less or no encryption will be needed. However if intranet is used there could be complications when implementing a \gls{PHR} system as you would need to get access to the intranet somehow via Internet.
 
 \subsubsection{Requirement domains}
@@ -452,7 +452,7 @@ The involvement of end-users can be included in the agile development by letting
 \subsubsection{Security Testing}
 During the interviews the issue regarding security came up as an important factor to consider in an interoperable system. It is always important to handle the security with great care when it comes to patient information, but the security issues might be a lot greater when dealing with a system of bigger size such as when multiple \glspl{EHR} is interoperating. One example of a feature that might need improvement is the access control of patient information due to the fact that an interoperable system will increase the amount reachable information. Ordinary methods for checking access control such as going through logs might be inefficient and costly and new methods might be needed.
 
-\subsubsection{Feasability}
+\subsubsection{Feasibility}
 One of the problems with implementing a system like this is to get all the systems to unit and accept a set standard to be used. Some of the systems has to change more then others.
 Having a large central database for all \gls{EHR} data (Sweden) could be considered hard to manage but according to Johan Thorvid it should be feasible.
 

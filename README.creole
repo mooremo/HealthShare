@@ -3,15 +3,6 @@
 
 == Computing in a Global Society ==
 
-|=Name              |=Email address                 |
-| Matt Moore        | mooremo@rose-hulman.edu       |
-| Josh Jones        | jonesjg@rose-hulman.edu       |
-| Phil Scherer      | scherepn@rose-hulman.edu      |
-| Romel Ayalew      | romel.ayalew@gmail.com        |
-| Emil Wall         | emwa3503@student.uu.se        |
-| Robert Loof       | robert__86@hotmail.com        |
-| John Patterson    | tpattersonjohn@gmail.com      |
-
 * [[https://healthshare.teamlab.com/|TeamLabs]]
 * [[http://www.uu.se/en/|Uppsala Universitet]]
 * [[http://www.rose-hulman.edu/|Rose-Hulman Institute of Technology]]

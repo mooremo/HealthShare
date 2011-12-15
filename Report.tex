@@ -33,6 +33,14 @@
 
 \newacronym[\glsshortpluralkey=HCPs ,\glslongpluralkey= Health Care Providers]{HCP}{HCP}{\gls{Health Care Provider}}
 
+\newglossaryentry{Swedish Association of Local Authorities and Regions}{name={Swedish Association of Local Authorities and Regions}, description={represents the governmental, professional and employer-related interests of Sweden's 290 municipalities and 20 county councils which include the regions of Gotland, Halland, Västra Götaland and Skåne}}
+
+\newacronym{SALAR}{SALAR}{\gls{Swedish Association of Local Authorities and Regions}}
+
+\newglossaryentry{Center for eHealth in Sweden}{name={Center for eHealth in Sweden}, description={governed by representatives of county councils and regions, \gls{SALAR}, municipalities and private care providers}}
+
+\newacronym{CeHis}{CeHis}{\gls{Center for eHealth in Sweden}}
+
 \newglossaryentry{Electronic Medical Record}{name={Electronic Medical Record}, description={a digitalized, systematic documentation of a single patient's medical history and care across time within one particular \gls{HCP} jurisdiction}}
 
 \newacronym[\glsshortpluralkey=EMRs ,\glslongpluralkey= Electronic Medical Records]{EMR}{EMR}{\gls{Electronic Medical Record}}
@@ -255,7 +263,15 @@ Of course, each of these solutions comes with both advantages and disadvantages.
 To achieve European wide solutions for cross-border transfer of patient information certain requirements need to be fulfilled. There has to be an agreement on the definitions of data sets for both patient summaries and e-prescription, a legal framework for data transfer, a technical framework to connect the systems at each level, and a working semantic \gls{interoperability}. \cite{epSOS1}
 
 \subsection{Care plans}
-[Emil: Explaining what it is.]
+%Lastly, care plans will be described and it will be discussed how standardizing them could potentially help the interoperability of \gls{EHR} systems
+%TODO: Add bibliography entry and use it in the other parts of the report
+In health care, nursing care plans are used to prioritize diagnoses, set up goals and decide on nursing interventions. Preferably, a classification system is used to improve consistency of terminology. Care plans are also being used within social services to clarify purpose, duration, needs and planned actions within inpatient care of young people. In Sweden this is required by law \cite{SocialServices}.
+
+There is an initiative from \gls{CeHis} to standardize these care plans at a national level in Sweden, to support equal care and patient safety. Preceded by research on the feasibility of a national information structure, the purpose is to to define use cases, clarify and verify the applications of standardized care plans compared to the currently existing local ones \cite{CeHis}.
+
+If NPÖ would adapt to the idea of standardized care plans then it might not only help with the semantic interoperability but also in increasing NPÖs impact on the effectiveness of HCP work routines, thereby increasing the overall benefit of the system at a regional level. \cite{Cambio}
+
+Designing EHR systems to encourage the users to follow standardized care plans increases interoperability. When using a standardized care plan, the user needs to document only the deviations from the plan and the small amount of data relevant to them such as observations. The documentation process should be as automated as possible, to enable the health care professional to devote more time to the patient instead of administrative work. This also reduces the tendency of medical staff documenting for their own sake instead of for the one that will treat the patient next. \cite{Cambio}
 
 \newpage
 

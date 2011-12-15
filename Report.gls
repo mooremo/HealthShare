@@ -1,5 +1,9 @@
 \glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
 \begin{theglossary}\glossaryheader
+\glsgroupheading{C}\relax \glsresetentrylist %
+\glossaryentryfield{Center for eHealth in Sweden}{\glsnamefont{Center for eHealth in Sweden}}{governed by representatives of county councils and regions, \gls {SALAR}, municipalities and private care providers}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{11}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{21}}}\glsgroupskip
 \glsgroupheading{E}\relax \glsresetentrylist %
 \glossaryentryfield{Electronic Healthcare Record}{\glsnamefont{Electronic Healthcare Record}}{an \gls {EMR} or a collection of \glspl {EMR} that can be shared across networks between different \glspl {HCP}}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{21}}}%
@@ -17,12 +21,12 @@
 		\setentrycounter[]{page}\glsnumberformat{21}}}%
 \glossaryentryfield{Hypertext Transfer Protocol}{\glsnamefont{Hypertext Transfer Protocol}}{a networking protocol for distributed, collaborative, hypermedia information systems}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{12}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{21}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{22}}}\glsgroupskip
 \glsgroupheading{I}\relax \glsresetentrylist %
 \glossaryentryfield{Institute of Electrical and Electronics Engineers}{\glsnamefont{Institute of Electrical and Electronics Engineers}}{is a non-profit professional association headquartered in New York City that is dedicated to advancing technological innovation and excellence}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{8}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{21}}}%
-\glossaryentryfield{interoperability}{\glsnamefont{Interoperability}}{The ability of diverse systems and organizations to work together. Please see section~\ref {sec:interopDefinition} for the meaning within healthcare}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{22}}}%
+\glossaryentryfield{interoperability}{\glsnamefont{Interoperability}}{The ability of diverse systems and organizations to work together. Please see section~\ref {sec:interopDefinition} for the meaning within health care}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{1}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{8}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{10\delimR 12}}}\glsgroupskip
@@ -32,7 +36,9 @@
 \glsgroupheading{S}\relax \glsresetentrylist %
 \glossaryentryfield{Simple Object Access Protocol}{\glsnamefont{Simple Object Access Protocol}}{is a protocol specification for exchanging structured information in the implementation of Web Services in computer networks}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{14}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{22}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{22}}}%
+\glossaryentryfield{Swedish Association of Local Authorities and Regions}{\glsnamefont{Swedish Association of Local Authorities and Regions}}{represents the governmental, professional and employer-related interests of Sweden's 290 municipalities and 20 county councils which include the regions of Gotland, Halland, Västra Götaland and Skåne}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{21}}}\glsgroupskip
 \glsgroupheading{W}\relax \glsresetentrylist %
 \glossaryentryfield{World Wide Web Consortium}{\glsnamefont{World Wide Web Consortium}}{An international group responsible for web standards such as \gls {HTML}, \gls {HTTP}, and \gls {XML} networking protocol for distributed, collaborative, hypermedia information systems}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{12}\delimN 

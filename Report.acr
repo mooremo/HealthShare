@@ -1,10 +1,13 @@
 \glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
 \begin{theglossary}\glossaryheader
+\glsgroupheading{C}\relax \glsresetentrylist %
+\glossaryentryfield{CeHis}{\glsnamefont{CeHis}}{\gls {Center for eHealth in Sweden}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{11}}}\glsgroupskip
 \glsgroupheading{E}\relax \glsresetentrylist %
 \glossaryentryfield{EHR}{\glsnamefont{EHR}}{\gls {Electronic Healthcare Record}}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{1}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{4\delimR 10}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{13\delimR 18}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{12\delimR 18}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{21}}}%
 \glossaryentryfield{EMR}{\glsnamefont{EMR}}{\gls {Electronic Medical Record}}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{17}\delimN 
@@ -27,7 +30,7 @@
 		\setentrycounter[]{page}\glsnumberformat{21}}}\glsgroupskip
 \glsgroupheading{I}\relax \glsresetentrylist %
 \glossaryentryfield{ICT}{\glsnamefont{ICT}}{Information and Communication Technology}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{8\delimN 9}}}%
+		\setentrycounter[]{page}\glsnumberformat{8}}}%
 \glossaryentryfield{IEEE}{\glsnamefont{IEEE}}{\gls {Institute of Electrical and Electronics Engineers}}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{8}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{12}}}%
@@ -39,6 +42,8 @@
 \glossaryentryfield{PHR}{\glsnamefont{PHR}}{\gls {Personal Health Record}}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{17}}}\glsgroupskip
 \glsgroupheading{S}\relax \glsresetentrylist %
+\glossaryentryfield{SALAR}{\glsnamefont{SALAR}}{\gls {Swedish Association of Local Authorities and Regions}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{21}}}%
 \glossaryentryfield{SNOMED}{\glsnamefont{SNOMED CT}}{Systematized Nomenclature of Medicine - Clinical Terms}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{13}}}%
 \glossaryentryfield{SOAP}{\glsnamefont{SOAP}}{\gls {Simple Object Access Protocol}}{\relax }{\glossaryentrynumbers{\relax 

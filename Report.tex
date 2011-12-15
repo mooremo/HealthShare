@@ -389,7 +389,7 @@ There are many potential reasons for this lack of attention on \gls{EHR} usabili
 
 \subsection{Types of solutions and implications for the end user}
 
-\subsubsection{Integrated vs. standalone application}
+\subsubsection{Integrated vs. Standalone Application}
 When designing an interoperating EMR system the choice is either whether integrate interoperating functionality into the existing EHR application or to create a standalone solution capable of retrieving all information available about a patient.
 
 A standalone system could be implemented either as a desktop application or in a web application. From a usability perspective a standalone application could cause a few usability issues. The standalone solution does not take advantage of the users knowledge of the legacy system as they have to learn a new user interface specific for the interoperating system. A workaround for this could be to allow individual hospitals to customize the end user interface to accommodate differences in user needs. 
@@ -410,8 +410,6 @@ One of the problems with implementing a system like this is getting all the syst
 
 \newacronym[\glsshortpluralkey=HCUs ,\glslongpluralkey= Health Care Units]{HCU}{HCU}{Health Care Unit}
 
-
-
 To achieve interoperability in a \gls{EHR} system patient information has to be made available throughout all connected health care units. This raises a few concerns regarding the ownership of data, and who actually controls the data and keeps track of existing copies etc. The information could either be kept in a centralized or decentralized manner.
 
 Keeping the data centralized will require large amounts of data storage and intensive traffic between the connected health care units. The amount of data to be kept centrally can be reduce as up to 60\% of the storage at local hospitals are used for version tracking. Storing the data centrally could also decrease the search and retrieval time for accessing a health record as the information is kept closer to each individual \gls{HCU}.
@@ -427,7 +425,7 @@ A possible addition to a system like this could be to implement an interface for
 The system needs to be secure, no unauthorized users should be able to access data. Different levels of security can be used but a standard of security level for authentication in the system must be set. In a integrated system the users are using the \gls{EHR} systems, where they have authentication to able to access information, all that is needed is that every EHR system fulfill the required standard for security. In a standalone system the system itself will have the meet the same requirements as the existing \gls{EHR} systems. 
 The communication in the system could be kept in a intranet or on the Internet. If a intranet is used the security will be higher and less or no encryption will be needed. However if intranet is used there could be complications when implementing a \gls{PHR} system as you would need to get access to the intranet somehow via Internet.
 
-\subsubsection{Requirement domains}
+\subsubsection{Requirement Domains}
 Deploying an interoperating system requires the involved health care providers to agree on communicating in specific ways. This will render a set of requirements to be forced on each hospital. These requirements can be divided into different domains depending on their importance. For example how to communicate with the central system would be a mandatory requirement. Other requirements could be recommended or optional, giving the individual hospitals guidance and a higher degree of freedom for how to implement an \gls{EMR}.
 
 The system also has to be secure, no unauthorized users should be able to access data. As the users are using the old \gls{EHR} systems, where they have authentication to able to access information, all that is needed is that every \gls{EHR} system fulfill a required standard for security. The whole system can also be kept in a intranet to avoid intrusion even further.
@@ -452,7 +450,7 @@ During the interviews the issue regarding security came up as an important facto
 One of the problems with implementing a system like this is to get all the systems to unit and accept a set standard to be used. Some of the systems has to change more then others.
 Having a large central database for all \gls{EHR} data (Sweden) could be considered hard to manage but according to Johan Thorvid it should be feasible.
 
-\subsubsection{Usability implications}
+\subsubsection{Usability Implications}
 This integrated solution is supposed to have as small implication as possible for the users. There might be some small changes as the systems that they are currently using may have to change a bit to be able to meet the standards that are going to be used. As the semantics has to match some of the users may have to change how they write. However with a integrated solution the user can do all the work in the system they are currently using. Most of the old systems will however still be intact and the users can use the old knowledge and experience when navigating.
 
 \newpage

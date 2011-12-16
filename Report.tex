@@ -357,7 +357,9 @@ With the growing ubiquity of the Internet, computers, and modern technology as w
 \newacronym {CEN}{CEN}{\gls{The European Committee for Standardization}}
 
 \subsection{Terminology}
-In order for interoperability to be useful, everyone reading the \gls{EHR} needs to have a common understanding of the information in it. One way to achieve this is by using \gls{SNOMED}, a standardized clinical terminology system.
+In order for interoperability to be useful, everyone reading the \gls{EHR} needs to have a common understanding of the information in it. One way to achieve this is by using a common a standardized clinical terminology system.
+
+\subsubsection{SNOMED CT}
 
 \gls{IHTSDO} is a non-profit organization dealing with standards and at the moment 17 countries are members of the organization; among these is Sweden, the United Kingdom, and the United States of America. \gls{IHTSDO} acquired \gls{SNOMED} in 2007 and made it more accessible for a wider audience. \gls{SNOMED} is currently available in US English, UK English, Spanish, Danish, and Swedish and is being translated into French, Lithuanian, and several other languages as well\cite{ihtsdolang}.
 
@@ -367,6 +369,7 @@ By having unique identifiers for all terms, translation between different langua
 
 \gls{SNOMED} is centrally updated twice a year where they add new terms and set some terms inactive. In order to support previous versions they never delete terms, but instead mark them as inactive and suggest using the newest term.%\cite{annavik}
 
+\subsubsection{The HL7, ISO and CEN standards}
 \gls{HL7}, \gls{ISO} and \gls{CEN} are the main health informatic standards development organizations. They have developed HL7 version 3 and \gls{EN13606} which are meant to supplement the \gls{SNOMED} standard in providing prerequisites for \gls{EHR} \gls{interoperability}.
 
 HL7 version 3 and \gls{EN13606} form one step in accomplishing national information structures. From the interview with Johan Thorwid \cite{Cambio} we learned that the HL7 v2.3 is hard to implement and incomplete due to the additional support information needed for the application to be truly useful. HL7 3.0 was designed with the aim of dealing with this issue – it was supposed to support all healthcare workflows. Among other things, it uses concepts similar to the archetypes and templates of openEHR and specifies different communication formats, but was never adopted in Sweden. In Sweden \gls{EN13606} is used instead. HL7 version 3 is however used in England \cite{Cambio} and within epSOS \cite{epSOS}.

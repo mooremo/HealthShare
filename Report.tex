@@ -173,7 +173,7 @@ Methods of research ranged from reading articles written by outside sources abou
 
 \newpage
 
-\section{Users and stakholders of  \gls{EHR} systems} 
+\section{Users and stakeholders of  \gls{EHR} systems} 
 \label{sec:People}
 There are both direct and indirect stakeholders of \gls{EHR} systems. The direct stakeholders are the people that actively use the system, which are physicians, nurses, and hospital officer staff such as receptionists, clerical and billing personnel. The most important indirect stakeholders are the patients. 
 
@@ -267,7 +267,7 @@ Many patients today expect a high level of electronic \gls{interoperability} whe
 
 \subsubsection{NPÖ adapter}
 
-\newglossaryentry{EN13606}{name={EN13606 Electronic Health Record Communication}, description={Defines a rigorous and stable information architecture for communicating part or all of the \gls{EHR} of a single patient}}
+\newglossaryentry{EN13606}{name={EN 13606}, description={A European \gls{EHR} Communication Standard by \gls{CEN} and \gls{ISO}. Defines an information architecture for communicating part or all of a single patient's \gls{EHR}}}
 
 Cosmic has a CCP language module on top of it which allows other systems to extract information from it. On top of the CCP module, Cosmic has built something called NPÖ adapter. This NPÖ adapter takes the data that the CCP module produces and translates it to \gls{EN13606} format which is needed to communicate with NPÖ. The NPÖ Adapter is illustrated in figure 1. As can be seen in the figure communication between \gls{EHR} systems and the NPÖ adapter can be in any format, but the NPÖ adapter communicates with NPÖ in \gls{EN13606} format. The reason for doing this is to avoid having the \gls{EN13606} as a communication format between the \gls{EHR} systems and the NPÖ adapter. This is because the \gls{EN13606} is a complex and abstract format. It is therefore an advantage to use a simpler format to between the \gls{EHR} systems and the NPÖ adapter. Another advantage is that there only needs to be one transformation: the 13606 transformation between the Local Connection Point and NPÖ  \cite{ViktorJernelov}. (see Figure 1) 
 
@@ -347,16 +347,29 @@ With the growing ubiquity of the Internet, computers, and modern technology as w
 \newacronym {IHTSDO}{IHTSDO}{International Health Terminology Standards Development Organization}
 \newacronym {SNOMED}{SNOMED CT}{Systematized Nomenclature of Medicine - Clinical Terms}
 
+\newglossaryentry{Health Level 7}{name={Health Level 7}, description={A standard organization focusing on the development of international healthcare informatics interoperability standards}}
+\newacronym {HL7}{HL7}{\gls{Health Level 7}}
+
+\newglossaryentry{The International Organization for Standardization}{name={A standard setting organization concerned not only with health informatic standards}}
+\newacronym {ISO}{ISO}{\gls{The European Committee for Standardization}}
+
+\newglossaryentry{The European Committee for Standardization}{name={The European Committee for Standardization}, description={Aims to provide infrastructures for the development, maintenance and distribution of coherent sets of standards and specifications in Europe}}
+\newacronym {CEN}{CEN}{\gls{The European Committee for Standardization}}
+
 \subsection{Terminology}
 In order for interoperability to be useful, everyone reading the \gls{EHR} needs to have a common understanding of the information in it. One way to achieve this is by using \gls{SNOMED}, a standardized clinical terminology system.
 
 \gls{IHTSDO} is a non-profit organization dealing with standards and at the moment 17 countries are members of the organization; among these is Sweden, the United Kingdom, and the United States of America. \gls{IHTSDO} acquired \gls{SNOMED} in 2007 and made it more accessible for a wider audience. \gls{SNOMED} is currently available in US English, UK English, Spanish, Danish, and Swedish and is being translated into French, Lithuanian, and several other languages as well\cite{ihtsdolang}.
 
-\gls{SNOMED} is built up on 311 000 active concepts and is continuously growing. The basic concept behind \gls{SNOMED} is that each medical term has its own unique ID and all these terms are connected by semantic relationships. On \gls{IHTSDO}s website they describe the relationships like this: One type of link is the “IS\_A” relationship. This is used to define a concepts position within a hierarchy, e.g. Diabetes Mellitus IS\_A disorder of glucose regulation."\cite{ihtsdocomp}. 
+\gls{SNOMED} is built up on 311 000 active concepts and is continuously growing. The basic concept behind \gls{SNOMED} is that each medical term has its own unique ID and all these terms are connected by semantic relationships. On \gls{IHTSDO}s website they describe the relationships like this: One type of link is the “IS\_A” relationship. This is used to define a concepts position within a hierarchy, e.g. Diabetes Mellitus IS\_A disorder of glucose regulation."\cite{ihtsdocomp}. If healthcare information and patient data is structured differently at different \glspl{HCP}, searching for specific data in a patient journal and exporting data to other systems gets harder, \gls{SNOMED} aims to address this problem.
 
 By having unique identifiers for all terms, translation between different languages is possible. Every language has the same identifier on their respective term, so when they store a record it is stored as just numbers. This only happens in the back-end so the user will see the medical record written in their own language.
 
 \gls{SNOMED} is centrally updated twice a year where they add new terms and set some terms inactive. In order to support previous versions they never delete terms, but instead mark them as inactive and suggest using the newest term.%\cite{annavik}
+
+\gls{HL7}, \gls{ISO} and \gls{CEN} are the main health informatic standards development organizations. They have developed HL7 version 3 and \gls{EN13606} which are meant to supplement the \gls{SNOMED} standard in providing prerequisites for \gls{EHR} \gls{interoperability}.
+
+HL7 version 3 and \gls{EN13606} form one step in accomplishing national information structures. From the interview with Johan Thorwid \cite{Cambio} we learned that the HL7 v2.3 is hard to implement and incomplete due to the additional support information needed for the application to be truly useful. HL7 3.0 was designed with the aim of dealing with this issue – it was supposed to support all healthcare workflows. Among other things, it uses concepts similar to the archetypes and templates of openEHR and specifies different communication formats, but was never adopted in Sweden. In Sweden \gls{EN13606} is used instead. HL7 version 3 is however used in England \cite{Cambio} and within epSOS \cite{epSOS}.
 
 \subsection{Ideal EHR Standard}
 All medical institutions have different needs and demands which often very significantly. This makes it exceedingly difficult to create a "one-size fits all" \gls{EHR}. An ideal \gls{EHR} standard will follow the trend of historically successful interfaces and will closely replicate the old paper version. It would also store the records in a standardized format as this maximizes interoperability and data mobility but also allows for the interfaces to the system to be customized for a specific institution. Customizing each \gls{EHR} for a specific institution adds overhead development and maintenance costs but maximizes the work flow productivity at each facility while maintaining interoperability. 

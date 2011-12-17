@@ -101,10 +101,10 @@ Depending on your background, some portions of this document may be redundant or
 These are, of course, just suggestions and you are free to read whatever sections you wish.
 
 \begin{description}
-\item[Administrators] The main sections of interests is the sections on interoperability~\ref{sec:interoperability} (focus on 4.4 and 4.5). Skip the section on technical standards unless you are interested. Section six focuses on the adoption of a future system, read 6.2-6.4 about the non-technical issues. The results section is very important, focus on 7.1 and 7.2. Section eight describes the conclusions, read this.
-\item[Doctors] Read section 3.1. Read section 4.3-4.6 to understand the current situation and possible solutions. 5.5-5.7 describes what we see as the optimal solution. Section 6.2-6.4 describes the non-technical issues with a future system. In the results section focus on 7.2-7.3 and 7.4.2.
-\item[Politicians] Read section three which focuses on the users and stake holders. Read section four as well, focus on 4.5 which describes the prerequisites for international interoperability. Read section 6.2-6.4 which describes the non-technical issues with a future system. Read section 7.1 in the results section, also read the conclusions.
-\item[Public] Section four describes the current situation and defines interoperability, read 4.1 to 4.5. Read 5.1-5.2 to understand what a standard is. Read sections 6.1-6.4 to understand the issues with a future system. In the results section read 7.1-7.2. The conclusions are relevant so read this section.
+\item[Administrators] Read the section on interoperability~\ref{sec:Interoperability} (focus on ~\ref{sec:interopSolutions} and ~\ref{sec:interopPrereq}). Skip the section on technical standards unless you are interested. Section ~\ref{sec:Future} focuses on the adoption of a future system, read ~\ref{sec:futureLegal}-~\ref{sec:futureUsability} about the non-technical issues. The results section is very important, focus on ~\ref{sec:resultsPrereq} and ~\ref{sec:resultsEndUser}. Section ~\ref{sec:Conclusions} describes the conclusions, read this.
+\item[Doctors] Read section ~\ref{sec:peopleDirect}. Read section ~\ref{sec:interopCurrent}-~\ref{sec:interopPlans} to understand the current situation and possible solutions.~\ref{sec:TechnicalStandardsTerminology}-~\ref{sec:TechnicalStandardsAlternative} describes what we see as the optimal solution. Section ~\ref{sec:futureLegal}.-~\ref{sec:futureUsability} describes the non-technical issues with a future system. In the results section focus on ~\ref{sec:resultsEndUser}-~\ref{sec:resultsSecurity} and ~\ref{sec:resultsUsabilityTesting}.
+\item[Politicians] Read section ~\ref{sec:People} which focuses on the users and stake holders. Read section ~\ref{sec:Interoperability} as well, focus on ~\ref{sec:interopPrereq} which describes the prerequisites for international interoperability. Read section ~\ref{sec:futureLegal}-~\ref{sec:futureUsability} which describes the non-technical issues with a future system. Read section ~\ref{sec:resultsPrereq} in the results section, also read the conclusions in section ~\ref{sec:Conclusions}.
+\item[Public] Section ~\ref{sec:Interoperability} describes the current situation and defines interoperability, read \label{sec:interopIntro} to \label{sec:interopPrereq}. Read ~\ref{sec:technicalStandardsWhatIs}-~\ref{sec:technicalStandardsCreation} to understand what a standard is. Read sections 6.1-6.4 to understand the issues with a future system. In the results section read 7.1-7.2. The conclusions are relevant so read this section.
 \item[Technicians] Section four and five are very relevant since they describe the interoperability standards as well as the technical standards than can be used. Section 6.1 describes the technical limitations of a future system, read this as well. The results section is very important, read the entire section, also read the conclusion.
 
 According to the technician's point of view \cite{FarzinYazdi}, the importance of interoperability between \glspl{EHR} is high because it is easier to exchange information between \glspl{EHR} when those are connected together \cite{FarzinYazdi}. If \glspl{EHR} are not connected to each other, there is risk for staffs to do their job twice in order to complete their tasks i.e. they should copy the original patitent data from primary \gls{EHR} to the secondary \gls{EHR} \cite{FarzinYazdi}. In other words they should do this task manually and there is risk for mistakes and it will take longer time comparing to the \glspl{EHR} that are connected to each other \cite{FarzinYazdi}.
@@ -178,17 +178,17 @@ Methods of research ranged from reading articles written by outside sources abou
 There are both direct and indirect stakeholders of \gls{EHR} systems. The direct stakeholders are the people that actively use the system, which are physicians, nurses, and hospital officer staff such as receptionists, clerical and billing personnel. The most important indirect stakeholders are the patients. 
 
 \subsubsection{Direct Stakeholders}
-
+\label{sec:peopleDirect}
 According to a study made by \cite{Rebecka Janols} this group of stakeholders have different primary education and care responsibilities, hence they may use the system differently depending on their individual knowledge, needs and what kind of health issue. For instance nurses may use the system to document patient health issue or the preformed diagnostic test, whereas the physicians use the \gls{EHR} system to interpret the diagnostic test and to subscribe medication. This group of stakeholders has to be confident that their \gls{EHR} system can effectively show their patient’s illness and progress properly. This group especially the nurses are often in and out for exam in testing rooms. At this time they need to be aware that any information left appearing on the computer screen on an unattended terminal may be seen by other person who is unauthorized to see. 
 The other group is the clerical and billing staffs. These staff members do not document patient health issues, however they spend time setting appointments, send letters to referring physicians and inspecting charges that will be submitted to insurance companies. These groups often control when and who the patent health issue is sent to outside of the boundaries of the particular medical facility. This is an area where privacy can be violated, since there is a chance that a medical record can be sent to wrong people by mistake. 
 
 \subsubsection{Indirect Stakeholders}
-
+\label{sec:peopleIndirect}
 Patients are the most important indirect stakeholders when it comes to \gls{EHR} systems and patient health issue. As  \cite{Friedman:2006}  states many \gls{EHR} systems have been design without considering patient privacy, hence patients are considered as indirect stakeholders. Today all systems are integrated through the whole care process, which makes it is easy to see everybodys information, this may be a problem since the medical records could be accessed or violated by unauthorized person. According to \cite{PatientDataAct} only persons who need the information in their work to provide care for a patient have the right to read the patient’s medical records. However, unauthorized care givers with different qualifications may get the permission to read  about a  patient. Despite this security problem many patient in a resecnt study said that they are willing to make some concessions when it comes to their privacy in order to make their patient health issue more accessible with the goal of better healthcare due to greater transparency  \cite{Merrill}.
 
 
 \subsection{Workflow Implications}
-
+\label{sec:peopleWorkflow}
 Establishing an acceptable user-centered \gls{EHR} system is a challenging task for healthcare providers because there are many different stakeholders with different need. As stated the EHR workflow effects for the direct stakeholders (physicians, nurses, practitioners, etc.) may vary by type of patient care facility and professional responsibility. However, the most stated changes EHRs elevations involve increased efficiencies, improved accuracy, timeliness, availability and productivity?.
 
 Challenges that  \gls{EHR}'s may present to workflow process include: increased documentation time e.g. slow system response, system crashes, multiple screens etc. decreased indirect communication, and reduced critical thinking over the overuse of checkboxes and other automated documentation. The biggest issues is the system crashes, this is because caregivers, especially at in-patient facilities, will not know what treatment are needed or if medications are due if the system crashes. 
@@ -211,7 +211,7 @@ Another very important issue to consider is the need to be able to remove certai
 \label{sec:Interoperability}
 
 \subsection{Introduction} 
-
+\label{sec:interopIntro}
 One of the most important, and most prominent, issues that were encountered while working on this project was interoperability.  The goal of this section of the report is to familiarize the reader with the concept of interoperability and inform them of how it affects the problem at hand.  In addition, the possible solutions to the different interoperability problems are also included in this section of the report.  Lastly, care plans will be described and it will be discussed how standardizing them could potentially help the interoperability of \gls{EHR} systems.
 
 \subsection{Definition within Healthcare} 
@@ -225,9 +225,7 @@ Interoperability is the ability of multiple systems to exchange information and 
 \label{sec:interopDefinition}
 
 \subsection{Current Situation} %What the current situation is regarding \gls{interoperability}. Why it is a big problem.
-In Sweden the electronic \gls{interoperability} among hospitals is currently limited. Today we can have problems with semantic \gls{interoperability} since different hospitals might use the same word to mean different things. We can also have the opposite problem, that different hospitals use different words to mean the same things.~\cite{Empirica}
-
-Today the sharing of \glspl{EHR} between hospitals is limited. When two hospitals need to share an \gls{EHR} it is done in mainly two different ways: \cite{EPJ2}
+We also have some problems when it comes to the sharing of \glspl{EHR}, since the electronic interoperability is limited. When two hospitals need to share an \gls{EHR} it is done in two ways.\cite{EPJ2}
 
 The first way is that if an \gls{EHR} needs to be sent from one hospital to another one, the first hospital makes a print out of the \gls{EHR} and then anonymize this document before the document is sent via fax to the other hospital. When the second hospital receives the document contact is made between the hospitals and the identifying information is communicated to the second hospital.\cite{EPJ2} The reason for anonymization is to make sure that even if a fax is accidentally sent to the wrong address it will not be possible to distinguish which patient the information is relevant to.\cite{EPJ2}
 
@@ -237,6 +235,7 @@ The second way that a transfer of an \gls{EHR} between hospitals is conducted to
 
 A lot of work is done to increase the \gls{interoperability}, for example the National strategy for eHealth Sweden, which was launched in 2006 aims to increase the interoperability by bringing laws and regulations in Sweden in line with the extended use of \glspl{ICT}. It also aims to facilitate interoperable \gls{ICT} systems and make access to information across organizational boundaries\cite{NationalStrategy}. 
 
+\label{sec:interopCurrent}
 \subsubsection{NPÖ} %Written by Sam & Romel according to interview with Viktor Jernelöv from NPÖ.
 Currently the main initiative for the electronic sharing of patient records that are in used today is something called NPÖ, "Nationell Patient Översikt" ("National Patient Summary"). NPÖ is a project that was started during 2004 under the name Carelink\cite{ViktorJernelov}. The goal of the NPÖ-system is to provide the different caregivers, such as hospitals with mirrored information from the different \gls{EHR} systems \cite{ViktorJernelov}.The project conducted a pilot test during the period 2005-2006, which was deployed in the county of Norrbotten, Stockholm, Jönköping and västergötland in Sweden.
 
@@ -278,6 +277,7 @@ Cosmic has a CCP language module on top of it which allows other systems to extr
 \end{figure}\
 
 \subsection{Solutions}
+\label{sec:interopSolutions}
 There are two takes on the solution to interoperability that are generally accepted.  Since interoperability is essentially making sure that two or more systems can exchange information, the two most popular solutions are to either make sure that all systems are capable of using the same data formats (Syntactic) or there exists some way for the systems to automatically interpret other data formats used that they do not support (Semantic).
 
 Of course, each of these solutions comes with both advantages and disadvantages.  While semantic interoperability might be quicker and less work at first, it is not practical if the number of systems is going to be expanded because then the automation process must be updated every time a new format is added.  Additionally, implementing semantic interoperability only requires that you know the output of the system for the changes to be made while syntactic interoperability requires complete knowledge of the workings of the system as a whole for the changes to be made.  In return, syntactic interoperability is more work up front but does not require any of the existing systems to be modified when new systems are added.
@@ -285,8 +285,10 @@ Of course, each of these solutions comes with both advantages and disadvantages.
 \subsection{Prerequisites for International Interoperability}
 
 To achieve European wide solutions for cross-border transfer of patient information certain requirements need to be fulfilled. There has to be an agreement on the definitions of data sets for both patient summaries and e-prescription, a legal framework for data transfer, a technical framework to connect the systems at each level, and a working semantic \gls{interoperability}. \cite{epSOS1}
+\label{sec:interopPrereq}
 
 \subsection{Care plans}
+\label{sec:interopPlans}
 %Lastly, care plans will be described and it will be discussed how standardizing them could potentially help the interoperability of \gls{EHR} systems
 %TODO: Add bibliography entry and use it in the other parts of the report
 In health care, nursing care plans are used to prioritize diagnoses, set up goals and decide on nursing interventions. Preferably, a classification system is used to improve consistency of terminology. Care plans are also being used within social services to clarify purpose, duration, needs and planned actions within inpatient care of young people. In Sweden this is required by law \cite{SocialServices}.
@@ -303,9 +305,11 @@ Designing EHR systems to encourage the users to follow standardized care plans i
 \label{sec:TechnicalStandards}
 
 \subsection{What is a Technical Standard for Computer Software?}
+\label{sec:technicalStandardsWhatIs}
 A technical standard is a set of recognized and established requirements about software systems that establishes the ``way things should be done". Standards are responsible for the uniformity of web browsers (although not all browsers strictly conform to the standard), the ability for laptops laptop or tablet to connect wirelessly to any access point, and the ability to connect laptops to almost any projector. Software standards specify aspects of a program such as: the format for data storage, format for data transfer, and data layout. This allow different developers, working for different companies, to develop different software programs while still allowing for \gls{interoperability} between them. Software standards are the foundation for software \gls{interoperability}.
 
 \subsection{The Creation of a Standard}
+\label{sec:technicalStandardsCreation}
 For different parties (software development companies) to agree on software standards they typically create an organization consisting of representatives from the the various software companies. This gives them a forum to contribute ideas and opinions about making a single, unified standard addressing the data \gls{interoperability} problem that needs to be addressed.
 
 \subsubsection{Examples of Software Standards Organizations}
@@ -357,6 +361,7 @@ With the growing ubiquity of the Internet, computers, and modern technology as w
 \newacronym {CEN}{CEN}{\gls{The European Committee for Standardization}}
 
 \subsection{Terminology}
+\label{sec:TechnicalStandardsTerminology}
 In order for interoperability to be useful, everyone reading the \gls{EHR} needs to have a common understanding of the information in it. One way to achieve this is by using a common a standardized clinical terminology system.
 
 \subsubsection{SNOMED CT}
@@ -378,6 +383,7 @@ HL7 version 3 and \gls{EN13606} form one step in accomplishing national informat
 All medical institutions have different needs and demands which often very significantly. This makes it exceedingly difficult to create a "one-size fits all" \gls{EHR}. An ideal \gls{EHR} standard will follow the trend of historically successful interfaces and will closely replicate the old paper version. It would also store the records in a standardized format as this maximizes interoperability and data mobility but also allows for the interfaces to the system to be customized for a specific institution. Customizing each \gls{EHR} for a specific institution adds overhead development and maintenance costs but maximizes the work flow productivity at each facility while maintaining interoperability. 
 
 \subsection{An Alternative to a Future EHR Standard}
+\label{sec:TechnicalStandardsAlternative}
 The only other option that achieves interoperability for sharing healthcare records would be a single unified software system that doctors all over the world would use to view and modify patient records. Such a solution is unrealistic for two reasons: there are already too many \gls{EHR} software companies to reasonably plan for one new company to globally take over the entire \gls{EHR} industry, and with anti-trust laws as well as fair competition clauses in many countries (such as the United States and Sweden) a single organization would not be legally allowed to be the sole producer of \gls{EHR} software systems.
 
 \newpage
@@ -394,7 +400,7 @@ One solution is to use \gls{SOAP} which is a specification for exchanging struct
 Additionally, because \gls{XML} formatted data is used, \glspl{SOAP} systems are usually slower and more data-heavy than other options. This might cause a scalability problem for a large system. These limitations to the design may cause future problems implementing a \glspl{SOAP} style system on a large scale.
 
 \gls{SOAP} is a trade-off however: the ability to work practically everywhere and stand on top of hundreds of existing standards comes with significant overhead and additional complexity. Very few other systems, however, have the ability to deal with data as complicated as what is found in \glspl{EHR}
-
+\label{sec:futureTechnical}
 \subsection{Legal Issues}
 
 The new Swedish legislation provides new opportunities, but not obligations. \cite{RiR19}
@@ -411,7 +417,7 @@ According to the Swedish Patient Safety Act (2010:659), a caregiver must immedia
 options and the patient councils activity. Information on the information provided shall be recorded in the patient record.\cite{PatientSafetyAct}
 
 If, with regard to the purpose of ongoing health care, it is of considerable importance that the data is not provided to the patient, then the caregiver is not allowed to do so. The same applies if there is risk of violence or permanent damage to the patient should the information be disclosed. Unless required to by law, a caregiver is not allowed to disclose details of health or personal conditions about a patient to outsiders.\cite{PatientSafetyAct}
-
+\label{sec:futureLegal}
 \subsection{Organizational Issues}
 %[Emil and Erik: Current organizational issues that limit the adoption of interoperating systems.]
 In order to successfully implement a new system for \gls{EHR} sharing all the layers of the organizational effort must be involved~\cite{Empirica} including doctors, nurses, administrators, etcetera. Since this will change the way people work and what responsibilities they have~\cite{Empirica} everyone involved must commit to the system change effort in order for the switch to go well.
@@ -419,7 +425,7 @@ In order to successfully implement a new system for \gls{EHR} sharing all the la
 In order to get all layers of the organization interested in the integration process it is important to involve them in the development of the system~\cite{Empirica}. Instead of having just the managers talking to the developers, all of the layers should be involved in the development stage of the system so that they feel like they have a say about the system that they will eventually use.
 
 When developing \gls{EHR} systems it is important to have clear objectives, ability to continuously revise, and most importantly strong project leaders with the backing of top level management and politicians~\cite{Empirica}. This ties in to the previous topic of having all the layers of the organization involved in the development of the system. When implementing new features or changing existing ones developers need to ensure that they listen and understand what users want. Users are seldom completely certain of exactly what they want and that makes it easy to make changes based on misunderstandings.
-
+\label{sec:futureOrganizational}
 \subsection{Usability Issues}
 %[Romel: One problem is to identify the people responsible for the systems usability.]
 The aim of establishing a successful \gls{EHR} system is to improve efficiency, effectiveness, and support the clinicians in their practice to perform high quality care. Clinical professions have different clinical practices and use the system differently. This can cause problems because some of them feel the system does not support their clinical practice. Usability has thus been cited as a major factor in both acceptance and effectiveness of \gls{EHR}s in the clinical settings. Some of the key usability issues in EHR are listed below:
@@ -431,7 +437,7 @@ The aim of establishing a successful \gls{EHR} system is to improve efficiency, 
 \end{itemize}
 
 There are many potential reasons for this lack of attention on \gls{EHR} usability. One problem is to identify the people responsible for the systems usability. Janols et al [?] had examined how a large Swedish county with several healthcare units works with usability problems in the \gls{EHR} [?] deployment process. They showed that there is confusion about the responsibility for usability issues with the organization. The confusion is because some of the stakeholders consider the\gls{EHR} system to be an IT system, not an integral part of the healthcare process. Others consider it to be a core business system and therefore the core business responsibility. This confusion and uncertainty about responsibility leads to an unsustainable work situation for the care staff that needs an effective \gls{EHR} system to perform a high quality work.
-
+\label{sec:futureUsability}
 %Here are related items from the Empirica interview
 %\begin{itemize}
 %\item When it comes to \gls{interoperability}, technical issues and standard specifications are subordinated to legal and organizational %issues. The organizational issues include common understanding from people involved in the process and getting the commitment from %doctors and nurses. 
@@ -446,9 +452,9 @@ There are many potential reasons for this lack of attention on \gls{EHR} usabili
 \label{sec:Results}
 
 \subsection{Prerequisites for increased interoperability}
-
+\label{sec:resultsPrereq}
 \subsection{Types of solutions and implications for the end user}
-
+\label{sec:resultsEndUser}
 \subsubsection{Integrated vs. Standalone Application}
 When designing an interoperating EMR system the choice is either whether integrate interoperating functionality into the existing EHR application or to create a standalone solution capable of retrieving all information available about a patient.
 
@@ -460,6 +466,7 @@ A solution integrating into the existing \gls{EHR} systems on the other hand tak
 There might still be need for changes in the existing systems as they way information is handled need to conform to common semantic standards. This would render changes both in the end user interface and the behavior of how they interact with the system. Integrating interoperability into existing systems does not increase the end users need for multitasking or burdens the short-time memory. It also supports diversification in the end user interfaces encouraging competitiveness and customization.
 
 \subsubsection{Standards}
+\label{sec:resultsStandards}
 To make a system that interoperate between different \gls{EHR} systems a standard have to be set and forced onto the systems. This standard creates means for the \gls{EHR} systems to share data in a way that all the systems can interpret and handle it. There are several standards currently in development.
 
 Before sending the data to other \gls{EHR} systems, an interface or adapter is needed to transform the data into a set standard. NPÖ uses an adapter to translate information from the originating systems into a set of common standards. 
@@ -467,7 +474,7 @@ Before sending the data to other \gls{EHR} systems, an interface or adapter is n
 One of the problems with implementing a system like this is getting all the systems to unite and accept and use a set standard. To be able to make this work the different systems need to use the same semantics and therefore some users may have to change the way they are editing data in the \gls{EHR} system. The interface of the systems also might be forced to change the way information is entered and presented to conform to specific semantics and standards. Some \gls{EHR} systems will be more affected by the standard than others, and will therefore have to change more.
 
 \subsubsection{Data Locality}
-
+\label{sec:resultsLocality}
 \newacronym[\glsshortpluralkey=HCUs ,\glslongpluralkey= Health Care Units]{HCU}{HCU}{Health Care Unit}
 
 To achieve interoperability in a \gls{EHR} system patient information has to be made available throughout all connected health care units. This raises a few concerns regarding the ownership of data, and who actually controls the data and keeps track of existing copies etc. The information could either be kept in a centralized or decentralized manner.
@@ -479,9 +486,11 @@ Allowing patient information to be stored centrally will also require that \gls{
 On the other hand a decentralized system where the information is kept at each individual health-care unit allows higher control of the patients information. When requested by a secondary \gls{HCU} the information will only reside outside of the system for a temporary time. There would still be a need for centrally indexing where information is available to avoid flooding hospitals with requests for patient information. A benefit from having a decentralized system is that it to some extent guarantees that the retrieved information is up to date as it is retrieved upon access.
 
 \subsubsection{Personal Health Records}
+\label{sec:resultsPHR}
 A possible addition to a system like this could be to implement an interface for patients to access their Personal Health Records from their home computers. This would be a useful way for patients to obtain the various medical records that are shown to schools, employers, or whoever they may need to share medical information with. Additional beneficial features could also be implemented into the health records to extend its functionality with self-care functionality and allow patients to carry out preliminary test before visiting their health care unit. \glspl{PHR} become a sensitive issue as it means making patient records available on the Internet.
 
 \subsection{Security}
+\label{sec:resultsSecurity}
 The system needs to be secure, no unauthorized users should be able to access data. Different levels of security can be used but a standard of security level for authentication in the system must be set. In a integrated system the users are using the \gls{EHR} systems, where they have authentication to able to access information, all that is needed is that every EHR system fulfill the required standard for security. In a standalone system the system itself will have the meet the same requirements as the existing \gls{EHR} systems. 
 The communication in the system could be kept in a intranet or on the Internet. If a intranet is used the security will be higher and less or no encryption will be needed. However if intranet is used there could be complications when implementing a \gls{PHR} system as you would need to get access to the intranet somehow via Internet.
 
@@ -499,6 +508,7 @@ One of the most important things learned from these interviews was that the deve
 Agile development is an iterative and incremental development process where the work is done in small steps and every step is evaluated. The small steps could be subparts of the final system. Starting off with a smaller part of the system, ensuring that this part works and then move on by adding more features or go on to the next part of system might be more successful than trying to complete the whole system at once. However, this could be very time consuming and is not an option if there is a short amount of time to complete the system. It is therefore important to consider the amount of time and resources that can be spent on the project against the size of the iterative steps in the agile development.
 
 \subsubsection{Usability Testing}
+\label{sec:resultsUsabilityTesting}
 Another important aspect that came up during the interviews was the involvement of the end-user in the development process. The end-user in an interoperable system between \glspl{EHR} is the users of the \glspl{EHR} such physicians, nurses etc. If the development of the interoperable system can not be done only in the back-end, meaning that the end-user's systems will be affected, their opinions will be of importance. In this case the change in the systems might be made in a way that does not affect the end-users negatively if their opinions are taken into consideration in the development. Even if there is no need for noticeable changes their opinions can still be of importance when it comes to what kind of patient information that is most important to share in the interoperable system if it is unmanageable to share all information. 
 
 The involvement of end-users can be included in the agile development by letting them take part in the evaluation of the sub-parts where their opinions matter. 

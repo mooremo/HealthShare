@@ -13,6 +13,7 @@
 \usepackage{pdfpages}
 \usepackage{pdflscape}
 \usepackage[utf8]{inputenc}
+\usepackage{verbatim}  % for multiline comments
 
 \usepackage[acronym]{glossaries} % make a separate list of acronyms
 \makeglossaries
@@ -436,7 +437,7 @@ The aim of establishing a successful \gls{EHR} system is to improve efficiency, 
 \item Does not support work routines - flaws in design leading to threatening situations:  e.g. unclarity about dosage in the  prescription module.
 \end{itemize}
 
-There are many potential reasons for this lack of attention on \gls{EHR} usability. One problem is to identify the people responsible for the systems usability. Janols et al [?] had examined how a large Swedish county with several healthcare units works with usability problems in the \gls{EHR} [?] deployment process. They showed that there is confusion about the responsibility for usability issues with the organization. The confusion is because some of the stakeholders consider the\gls{EHR} system to be an IT system, not an integral part of the healthcare process. Others consider it to be a core business system and therefore the core business responsibility. This confusion and uncertainty about responsibility leads to an unsustainable work situation for the care staff that needs an effective \gls{EHR} system to perform a high quality work.
+There are many potential reasons for this lack of attention on \gls{EHR} usability. One problem is to identify the people responsible for the systems usability. Janols \cite{Janols} examined how a large Swedish county with several healthcare units works with usability problems in the \gls{EHR} \cite{Janols} deployment process. They showed that there is confusion about the responsibility for usability issues with the organization. The confusion is because some of the stakeholders consider the\gls{EHR} system to be an IT system, not an integral part of the healthcare process. Others consider it to be a core business system and therefore the core business responsibility. This confusion and uncertainty about responsibility leads to an unsustainable work situation for the care staff that needs an effective \gls{EHR} system to perform a high quality work.
 \label{sec:futureUsability}
 %Here are related items from the Empirica interview
 %\begin{itemize}
@@ -517,8 +518,8 @@ The involvement of end-users can be included in the agile development by letting
 During the interviews the issue regarding security came up as an important factor to consider in an interoperable system. It is always important to handle the security with great care when it comes to patient information, but the security issues might be a lot greater when dealing with a system of bigger size such as when multiple \glspl{EHR} is interoperating. One example of a feature that might need improvement is the access control of patient information due to the fact that an interoperable system will increase the amount reachable information. Ordinary methods for checking access control such as going through logs might be inefficient and costly and new methods might be needed.
 
 \subsubsection{Feasibility}
-One of the problems with implementing a system like this is to get all the systems to unit and accept a set standard to be used. Some of the systems has to change more then others.
-Having a large central database for all \gls{EHR} data (Sweden) could be considered hard to manage but according to Johan Thorvid it should be feasible.
+One of the problems with implementing a system like this is to get all the systems to unite and accept a set standard to be used. Some of the systems has to change more then others.
+Having a large central database for all \gls{EHR} data (Sweden) could be considered hard to manage but from what we've heard from e.g. Johan Thorvid \cite{Cambio} it should be feasible.
 
 \subsubsection{Usability Implications}
 This integrated solution is supposed to have as small implication as possible for the users. There might be some small changes as the systems that they are currently using may have to change a bit to be able to meet the standards that are going to be used. As the semantics has to match some of the users may have to change how they write. However with a integrated solution the user can do all the work in the system they are currently using. Most of the old systems will however still be intact and the users can use the old knowledge and experience when navigating.
@@ -528,6 +529,23 @@ This integrated solution is supposed to have as small implication as possible fo
 \section{Conclusions}
 \label{sec:Conclusions}
 
+Creating an interoperable system is a big and complex process that involves many different stakeholders. The development of such a system depends not only on the users and developers but also legal and financial authorities. Knowledge and technology for creating such a system exists, the main problem is to overcome the organizational issues. One also needs to take into consideration the payback period of constructing an interoperable system and be prepared for unforeseen costs.
+
+Due to the large number of stakeholders and the workflow implications, it is of paramount importance to take into account that the new system must support the work processes of \glspl{HCP}. Apart from carefully designing the system interfaces based on successful standards and \gls{EHR} systems, standardized care plans should be established, to accomodate not only the interoperability issues but also streamlining the work and ensuring patient safety and equal care.
+
+%TODO: write about (unifying) standards at global/regional level, the considerations mentioned at the end of the presentation
+
+%Working with change and development regarding health care the process is usually time consuming and needs to be structured and planned carefully. 
+
+\begin{comment}
+These are the topics that we think might be important in the conclusion:
+•	Cost
+•	Efficiency
+•	The people involved
+•	Solution aspects (7.2.1 in the report)
+•	Aspects regarding the future, the timeline of the project etc. 
+•	Complex problem
+\end{comment}
 
 
 \newpage

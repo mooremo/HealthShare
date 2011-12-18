@@ -44,7 +44,9 @@
 \glsgroupheading{T}\relax \glsresetentrylist %
 \glossaryentryfield{The European Committee for Standardization}{\glsnamefont{The European Committee for Standardization}}{Aims to provide infrastructures for the development, maintenance and distribution of coherent sets of standards and specifications in Europe}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{15}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{24\delimN 25}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{24\delimN 25}}}%
+\glossaryentryfield{top level interface}{\glsnamefont{top level interface}}{format of communication between regions and nations}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{23}}}\glsgroupskip
 \glsgroupheading{W}\relax \glsresetentrylist %
 \glossaryentryfield{World Wide Web Consortium}{\glsnamefont{World Wide Web Consortium}}{An international group responsible for web standards such as \gls {HTML}, \gls {HTTP}, and \gls {XML} networking protocol for distributed, collaborative, hypermedia information systems}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{14}\delimN 

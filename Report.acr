@@ -11,7 +11,7 @@
 		\setentrycounter[]{page}\glsnumberformat{1\delimN 2}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{4\delimR 12}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{14\delimR 21}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{24}}}%
+		\setentrycounter[]{page}\glsnumberformat{23\delimN 24}}}%
 \glossaryentryfield{EMR}{\glsnamefont{EMR}}{\gls {Electronic Medical Record}}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{20}}}\glsgroupskip
 \glsgroupheading{F}\relax \glsresetentrylist %

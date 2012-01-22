@@ -154,9 +154,9 @@ During the actual interview, typically there would be one or two people intervie
 
 The CeHis interview~\cite{CeHis} was performed by four people, with four people being interviewed, two of them participating through speaker phone. This meant that it became a hybrid between a phone interview and a regular interview, resulting in that the ones physically present participated more actively.
 
-The hospital staff interview \cite{FarzinYazdi} was performed in Uppsala (Sweden) by one person, with one person being interviewed. All the relevant questions were gathered by three persons, and then the questions and also follow up questions being asked during the interview. Finally, the interview is transcribed to English as a document. 
+The hospital staff interview \cite{FarzinYazdi} was performed by one person, with one person being interviewed. The interview is transcribed to English and it is available in subsection ~\ref{sec:techMotiv}. 
 
-The NPÖ interview \cite{ViktorJernelov} was performed in Stockholm (Sweden) by two people, with one person being interviewed. The questions for this interview were gathered from three persons via e-mail and two distance meetings. The interview is translated to English and it is transcribed as a document.
+The NPÖ interview \cite{ViktorJernelov} was performed by two people, with one person being interviewed.The interview is transcribed to English and it is available in subsection ~\ref{sec:npoInterv} and ~\ref{sec:npoIntervi}. 
 
 The interviews were structured to focus on which problems exist today, how they are currently being dealt with, and how different organizations and projects correspond to it. The interviews that were recorded were transcribed and translated to English and transcripts are available in a separate document available from the project coordinators.
 
@@ -233,6 +233,7 @@ The second way that a transfer of an \gls{EHR} between hospitals is conducted to
 A lot of work is being done to increase \gls{interoperability}. For example, the national strategy for eHealth Sweden, which was launched in 2006 aims to increase the interoperability by bringing laws and regulations in Sweden in line with the extended use of \glspl{ICT}. It also aims to facilitate interoperable \gls{ICT} systems and make access to information across organizational boundaries. \cite{NationalStrategy} 
 
 \subsubsection{NPÖ} %Written by Sam & Romel according to interview with Viktor Jernelöv from NPÖ.
+\label{sec:npoInterv}
 Currently the main initiative for the electronic sharing of patient records that are in used today is something called NPÖ, "Nationell Patient Översikt" ("National Patient Summary"). NPÖ is a project that was started during 2004 under the name Carelink\cite{ViktorJernelov}. The project conducted a pilot test during the period 2005-2006, which was deployed in the county of Norrbotten, Stockholm, Jönköping, and Västergötland in Sweden.
 
 The goal of the NPÖ system is to provide different caregivers (such as hospitals) with mirrored information from different \gls{EHR} systems \cite{ViktorJernelov}. It works in such a way that when a caregiver wants to connect with the NPÖ system the caregiver can get information about a patient via a web service. Currently it is not possible to add or edit information in NPÖ, however NPÖ can be used to view patient information from different \gls{EHR} systems. This could be useful, for example, in an ambulance where nurses in the ambulance can use their mobile devices to login to NPÖ and look at the patients medical record.  
@@ -257,9 +258,9 @@ Each of these information amount is delimitation of a specific area. The first i
 One of the main technical problems with the NPÖ is handling the removal of information from the system. Whenever a caregiver deletes information in the local \gls{EHR} system they have to delete the same information in NPÖ manually. Since they delete information from the core database in a local \gls{EHR} system it is difficult to recover deleted information because the system does not recall of ever having it. This is a problem if it is deleted by accident. Many caregivers solve this problem by making someone an administrator who deals with only deleting information on both local \gls{EHR} systems and NPÖ  \cite{ViktorJernelov}.
 
 Many patients today expect a high level of electronic \gls{interoperability} when it comes to their patient records\cite{EPJ2}, something that does not exist today. One reason for this shortfall is a lack of familiarity with the current laws in place as well as thinking that patient data is shared between different counties \cite{EPJ2}. This creates risks of misunderstanding if the patient assumes their patient records are accessible through every hospital in Sweden even though just a summary of their data is available through the NPÖ-system.
-
+\label{sec:npoInterv}
 \subsubsection{NPÖ adapter}
-
+\label{sec:npoIntervi}
 \newglossaryentry{EN13606}{name={EN 13606}, description={A European \gls{EHR} Communication Standard by \gls{CEN} and \gls{ISO}. Defines an information architecture for communicating part or all of a single patient's \gls{EHR}}}
 
 Cosmic has a CCP language module on top of it which allows other systems to extract information from it. On top of the CCP module, Cosmic has built something called NPÖ adapter. This NPÖ adapter takes the data that the CCP module produces and translates it to \gls{EN13606} format which is needed to communicate with NPÖ. The NPÖ Adapter is illustrated in figure 1. As can be seen in the figure communication between \gls{EHR} systems and the NPÖ adapter can be in any format, but the NPÖ adapter communicates with NPÖ in \gls{EN13606} format. The reason for doing this is to avoid having the \gls{EN13606} as a communication format between the \gls{EHR} systems and the NPÖ adapter. This is because the \gls{EN13606} is a complex and abstract format. It is therefore an advantage to use a simpler format to between the \gls{EHR} systems and the NPÖ adapter. Another advantage is that there only needs to be one transformation: the 13606 transformation between the Local Connection Point and NPÖ  \cite{ViktorJernelov}. (see Figure 1) 
@@ -269,6 +270,7 @@ Cosmic has a CCP language module on top of it which allows other systems to extr
   \centering
     \includegraphics[width=0.55\textwidth]{Images/npoNewAdapt}
 \end{figure}\
+\label{sec:npoIntervi}
 
 \subsection{Solutions}
 \label{sec:interopSolutions}
@@ -283,7 +285,7 @@ To achieve European wide solutions for cross-border transfer of patient informat
 \label{sec:interopPrereq}
 
 \subsection{Motivation}
-
+\label{sec:techMotiv}
 According to the technician's point of view \cite{FarzinYazdi}, the importance of interoperability between \glspl{EHR} is high because it is easier to exchange information between \glspl{EHR} when those are connected together \cite{FarzinYazdi}. If \glspl{EHR} are not connected to each other, there is risk for staffs to do their job twice in order to complete their tasks i.e. they should copy the original patient data from primary \gls{EHR} to the secondary \gls{EHR} \cite{FarzinYazdi}. In other words they should do this task manually and there is risk for mistakes and it will take longer time comparing to the \glspl{EHR} that are connected to each other \cite{FarzinYazdi}.
 
 At Karolinska hospital in Sweden, the employees use three different \glspl{EHR} which are neither not connected to each other nor those are not connected to the analyzer machines (the machines are online) \cite{FarzinYazdi}. This makes the work much harder and confusing because they have to decide which \gls{EHR} to choose. This working routine will result in many incorrect data registration. Since analyzer machines are not connected to \glspl{EHR} then technicians are not able to validate analyzed samples. The validation must be done manually and the result also must be written manually in \gls{EHR}\cite{FarzinYazdi}.  It is natural that a connection between the \glspl{EHR} will decrease incorrect data registration. The employees at Karolinska hospital in Sweden are very much aware about this problem \cite{FarzinYazdi}.
@@ -293,6 +295,7 @@ In Denmark, the new system didn't integrate with the old system at all. All the 
 One of the big problems that technicians are faced with it, is that sometimes confusions occur when two different employees with different backgrounds exchange information i.e. an employee doesn't know the code of the examination and he/she only knows the proper name of analyze but the name is unknown for other staffs so in this case there is risk to misunderstand each other \cite{FarzinYazdi}. Today, it is important that the code, unit and the name of each analyze be standardized \cite{FarzinYazdi}.
 
 Using new \gls{EHR} system makes employees feel uncomfortable since they are get used to work with the previous \gls{EHR} system. One of the most complains about using new \gls{EHR} system is that, employees should adapt themselves to the new platform that it is unfamiliar for them \cite{FarzinYazdi}. The other reason is that they don’t really know if all the functionalities from previous system are also available in the new system or not. Hospital staffs should also learn about new features that were not available in the previous system \cite{FarzinYazdi}.
+\label{sec:techMotiv}
 
 \subsection{Care plans}
 \label{sec:interopPlans}

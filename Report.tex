@@ -85,18 +85,32 @@ This paper reports on the various aspects of achieving \gls{EHR} \gls{interopera
 \label{sec:Introduction}
 
 \subsection{Background}
-\glspl{HCP} within Sweden use electronic computer systems to store and track patient health data. There are many different customized solutions for the various aspects of this, resulting in a complex network of systems that are unable to communicate with each other. When a patient moves or visits a hospital while on vacation the individual doctors must manually send patient data to each other. This is a complicated and error-prone process that potentially wastes the time and energy of everyone involved.
+%\glspl{HCP} within Sweden use electronic computer systems to store and track patient health data. There are many different customized solutions for the various aspects of this, resulting in a complex network of systems that are unable to communicate with each other. When a patient moves or visits a hospital while on vacation the individual doctors must manually send patient data to each other. This is a complicated and error-prone process that potentially wastes the time and energy of everyone involved.
+
+ %Added by Daniel and Henrik 22/1-12
+\glspl{HCP} all around the world have different needs and preferences. Depending on the location, specialization and size of the hospital they all have different views on what data is important and should be stored in a patients \gls{EHR}. On top of this they want a \gls{EHR} system matching what they need to as low cost as possible. This has opened up a market for developing \gls{EHR} systems all of which have different structure. As a consequence most hospitals end up with different \gls{EHR} systems. This creates problems when a patient is visiting a new hospital, which might need information from the patients old hospital. The different \gls{EHR} systems are unable to communicate with each other due to the structural differences, both regarding communication protocols as well as regarding what data/information should be included. 
+
+Right now the process of retrieving the patients \gls{EHR} is handled manually 
+%\ref{Datainspektionen år 2000, Överföring av personuppgifter inom vården och omsorgen av de äldre, http://www.datainspektionen.se/Documents/rapport-aldrevard.pdf} 
+and is both complicated and time-consuming as well as unreliable in the sence that errors could easily occur. The consequences of an error could potentially be severe. The patient could for example be in a very time critical condition and relies on the physician being able to quickly access all neccessary medical information. Another critical situation could occur if a physician recieves wrong information about the patient, leading to mistreatment or medication errors that could be fatal.
 
 %Define the problem and in what context (maybe contextualize, write a story, describe a scenario? a concrete relevant scenario that occurs with persons involved)
 
 %The setting of problems in \gls{EHR}/EMR \gls{interoperability} situations. Describe what the problems related to \gls{interoperability} are within healthcare. The situation in Uppsala County, why we are doing this. What is being done on \gls{interoperability} in other areas. Describe the problems related to interoperating \glspl{EHR}.
 
 %Describe the ideal interoperating system
-
+ %Added by Daniel and Henrik 22/1-12
 \subsection{Purpose and Scope}
-A world wide problem in medical records is a way to efficiently share patient medical records. Many patient records are electronically stored and the potential exists to make them accessible to patients and doctors using different systems. Enabling the sharing of \glspl{EHR} on a large scale could improve the treatment patients receive by increasing the information doctors have access to when they make medical decisions. With the ability for nurses and doctors to read a patient's medical history from different \gls{EHR} systems they could potentially increase the speed and accuracy of treatment. There are many ethical, legal, and behavioral obstacles associated with this initiative.
+All over the world sharing \glspl{EHR} efficiently is a problem. Enabling the sharing of \glspl{EHR} on a large scale could improve the quality of the treatment patients receive. By increasing the information physicians have access to, they can more accuratly make an assessment before making medical decisions.  
 
-The HealthShare project conducted interviews and research into \gls{EHR} development in Europe and the Unites States over the past three months for the purpose of understanding the issues associated with building more successful, widespread \glspl{EHR} in the future. By inspecting current systems and talking to experts in the \gls{EHR} field, the project team worked to analyze the tremendous amount of \gls{EHR} knowledge and form a focused picture of a successful path to follow. Perhaps most essential to the development of \glspl{EHR} is the issue of interoperability. HealthShare specifically devoted many resources towards researching the intricate relationship between interoperability and \gls{EHR} systems. The lack of knowledge of this relationship has ruined many past \gls{EHR} projects and is of the utmost importance for progress in this sector of medicine.
+Many patient records are stored electronically in different \gls{EHR} systems. Regardless of what \gls{EHR} system is used, the task of making them accessible to patients and physicians is theoretically feasible. By providing the nurses and physicians with the ability to access a patient's medical history from different \gls{EHR} systems, the speed and accuracy of treatment could potentially be increased. However, there are many ethical, legal, and behavioral obstacles to overcome in order to achieve this interoperability.
+
+%A world wide problem in medical records is a way to efficiently share patient medical records. Many patient records are electronically stored and the potential exists to make them accessible to patients and doctors using different systems. Enabling the sharing of \glspl{EHR} on a large scale could improve the treatment patients receive by increasing the information doctors have access to when they make medical decisions. With the ability for nurses and doctors to read a patient's medical history from different \gls{EHR} systems they could potentially increase the speed and accuracy of treatment. There are many ethical, legal, and behavioral obstacles associated with this initiative.
+
+This report will try to function as a guideline for achieving interoperability between \glspl{EHR} and for the purpose of understanding the issues associated with building more successful, widespread \glspl{EHR} in the future. 
+
+We will not go too much in-depth into how current \glspl{EHR} work. Since almost all end-users have their own opinion about what information is most important for the \gls{EHR} systems to contain, and the fact that we are computer science students and do not have the medical expertise needed to address this matter, this will not be included in the report.
+%The HealthShare project conducted interviews and research into \gls{EHR} development in Europe and the Unites States over the past three months for the purpose of understanding the issues associated with building more successful, widespread \glspl{EHR} in the future. By inspecting current systems and talking to experts in the \gls{EHR} field, the project team worked to analyze the tremendous amount of \gls{EHR} knowledge and form a focused picture of a successful path to follow. Perhaps most essential to the development of \glspl{EHR} is the issue of interoperability. HealthShare specifically devoted many resources towards researching the intricate relationship between interoperability and \gls{EHR} systems. The lack of knowledge of this relationship has ruined many past \gls{EHR} projects and is of the utmost importance for progress in this sector of medicine.
 
 
 
@@ -121,7 +135,7 @@ These are, of course, just suggestions and you are free to read whichever sectio
 
 \subsection{Project Organization}
 \subsubsection{Project Group}
-The HealthShare project was carried out during the fall of 2011 as a collaborative course between Rose-Hulman Institute of Technology, IN, USA and Uppsala University, Sweden.
+The HealthShare project was carried out during the fall of 2011 as a collaborative course between Rose-Hulman Institute of Technology, Indiana, USA and Uppsala University, Sweden.
 The project group consisted of 18 students, 8 from Rose-Hulman Institute of Technology and 10 from Uppsala University. To encourage cooperation between USA and Sweden responsibility was equally distributed between the two Universities.
 
 The project was organized in a hierarchical organization structure with two project managers, one from Sweden and one from USA. The project was then divided into four teams containing a mix of both Rose-Hulman and Uppsala students. Each team then had a team leader answering to the project managers.
@@ -142,7 +156,7 @@ The initial objective was to find suitable people to interview, which was done b
 
 The focus of the interviews was, as mentioned, dependent on the profession of the interviewee. Overall focus, however, was always on \glspl{EHR} and the possibility of interoperability between them. The different types of questions asked varied between administrative and technical, but always covered the overall focus. 
 
-Before the start of the interview it was important to make sure that there was paper to take notes and write down answers on. The interviews did not follow the structure of the questions prepared beforehand; all the prepared questions were covered, but usually not in any particular order. The most important thing was to get the interviewee to talk as much as possible. After the interview, transcription and translation of the information gathered and a summary was written.
+Before the start of the interview it was important to make sure to be well prepared depending on the character of the interview and the interviewee. The interviews did not follow the structure of the questions prepared beforehand; all the prepared questions were covered, but usually not in any particular order. The most important thing was to get the interviewee to talk as much as possible. After the interview, transcription and translation of the information gathered and a summary was written.
 
 Interviews were performed with representatives of Cambio \cite{Cambio}, and epSOS \cite{epSOS}.
 

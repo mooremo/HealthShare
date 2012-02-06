@@ -483,6 +483,17 @@ There are many potential reasons for this lack of attention on \gls{EHR} usabili
 \subsubsection{Integrated vs. Standalone Application}
 When designing an interoperating \gls{EMR} system the choice is either whether integrate interoperating functionality into the existing \gls{EHR}application or to create a standalone solution capable of retrieving all information available about a patient.
 
+\begin{center}
+	\begin{tabular} { | l | p{5cm} | p{5cm} |}
+	\hline
+	& Existing gls{EHR} & Standalone Application \\ \hline
+	Complexity of work environment & Using a single application lowers the burden on the memory of the end users. Adding additional features makes the already existing system more complex. & Requires the end users to multitask which burdens their memory. \\ \hline
+	Learning vs. knowing & Benefits from existing system knowledge. & The end user has to learn a new system in addition to systems already in use. \\ \hline
+	User behaviour & Changes to existing systems interferes with the users current usage preferences. & Maintains the legacy system intact, but requires changes in behaviour of the end users to adapt to a work environment with additional applications. \\ 
+	\hline
+	\end{tabular}
+\end{center}
+
 A standalone system could be implemented either as a desktop application or in a web application. From a usability perspective a standalone application could cause a few usability issues. The standalone solution does not take advantage of the users knowledge of the legacy system as they have to learn a new user interface specific for the interoperating system. A workaround for this could be to allow individual hospitals to customize the end user interface to accommodate differences in user needs. 
 Another issue is that a standalone application forces the end user to multi-task between the legacy \gls{EHR} system and the new interoperating application. This increases the complexity of the work environment as it does not take advantage of cognitive abilities available to humans, and adds an additional burden on the memory. 
 
@@ -506,7 +517,7 @@ One of the obstacles for implementing a system upon a common standard is getting
 
 Achieving interoperability in a \gls{EHR} system implies that patient information is made available throughout all connected health care units. This raises a few concerns regarding the ownership of data, and who actually controls the data and keeps track of existing copies etc. The choice stands between wether information should be kept in a centralized or decentralized manner. This raises several issues concerning ownership and control of the data, as well as affecting the overall system performance.
 
-Keeping the data centralized will require large amounts of data storage and intensive traffic between the connected health care units. The amount of data to be kept centrally can be reduce as up to 60\% of the storage at local hospitals are used for version tracking. Storing the data centrally could also decrease the search and retrieval time for accessing a health record as the information is kept closer to each individual \gls{HCU} \cite{Cambio}.
+Keeping the data centralized will require large amounts of data storage and intensive traffic between the connected health care units. According to an interview with Johan Thorvid \cite{Cambio}, the amount of data to be kept centrally can be reduced much as up to 60\% of the storage at local hospitals are used for version tracking. Storing the data centrally could also decrease the search and retrieval time for accessing a health record as the information is kept closer to each individual \gls{HCU} \cite{Cambio}.
 
 Allowing patient information to be stored centrally will also require that \gls{HCU} allows giving up some of their control over the data. One possibility is that the system might be required to provide functionality for \glspl{HCU} to remove information available in the central domain upon patient requests. Another issue would be to ensure that data is consistent between individual health-care and the central system, as patient information is updated. An implemented system also has to ensure that updates are comitted to the central system within acceptable time for the \glspl{HCU} to be capable carry out their responsibilities to patients.
 
@@ -522,9 +533,14 @@ Any system maintaining sensitive personal information needs to be secure and pro
 The implementation of \gls{PHR} features in the system, accesible on the Internet, would require exposing a subset of the information to the Internet.
 
 \subsubsection{Requirement Domains}
-Deploying an interoperating system requires the involved health care providers to agree on communicating in specific ways. This will render a set of requirements to be forced on each hospital. These requirements can be divided into different domains depending on their importance. For example, how to communicate with the central system would be a mandatory requirement. Other requirements could be recommended or optional, giving the individual hospitals guidance and a higher degree of freedom for how to implement an \gls{EMR}.
+Deploying an interoperating system requires the involved health care providers to agree on communicating in specific ways. This will render a set of requirements to be forced on each hospital. 
 
-The system also has to be secure, no unauthorized users should be able to access data. As the users are using the old \gls{EHR} systems, where they have authentication to able to access information, all that is needed is that every \gls{EHR} system fulfill a required standard for security. The whole system can also be kept in a intranet to avoid intrusion even further.
+A similar interoperability problem was solved when deploying a system for border management within the European Union. Border management systems involves both private and government actors from different nations. The specification of the system was then divided into different domains with different levels of mandatory, optional and recommended requirements based on how they interact with other parts of the system. \cite{BorderMgmt}
+%% Reference: Border Management Modernization, The World Bank, 2011, ISBN 978-0-8213-8596-8, Gerard McLinden et. al.
+
+Requirements can be divided into different domains depending on their importance. For example, how to communicate with the central system would be a mandatory requirement. Other requirements could be recommended or optional, giving the individual hospitals guidance and a higher degree of freedom for how to implement an \gls{EMR}.
+
+
 
 \subsection{Recommended Development Methodologies}
 The interviews with administrative personal and technicians were focused on what they thought would be required to create interoperability between \glspl{EHR} rather than what they would want in such a system. 

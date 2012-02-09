@@ -3,56 +3,57 @@
 \glsgroupheading{C}\relax \glsresetentrylist %
 \glossaryentryfield{Center for eHealth in Sweden}{\glsnamefont{Center for eHealth in Sweden}}{governed by representatives of county councils and regions, \gls {SALAR}, municipalities and private care providers}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{13}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{25}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{26}}}\glsgroupskip
 \glsgroupheading{E}\relax \glsresetentrylist %
 \glossaryentryfield{Electronic Healthcare Record}{\glsnamefont{Electronic Healthcare Record}}{an \gls {EMR} or a collection of \glspl {EMR} that can be shared across networks between different \glspl {HCP}}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{25}}}%
+		\setentrycounter[]{page}\glsnumberformat{26}}}%
 \glossaryentryfield{Electronic Medical Record}{\glsnamefont{Electronic Medical Record}}{a digitalized, systematic documentation of a single patient's medical history and care across time within one particular \gls {HCP} jurisdiction}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{19}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{25}}}%
+		\setentrycounter[]{page}\glsnumberformat{20}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{26}}}%
 \glossaryentryfield{EN13606}{\glsnamefont{EN 13606}}{A European \gls {EHR} Communication Standard by \gls {CEN} and \gls {ISO}. Defines an information architecture for communicating part or all of a single patient's \gls {EHR}}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{12}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{15}}}%
+		\setentrycounter[]{page}\glsnumberformat{16}}}%
 \glossaryentryfield{Extensible Markup Language}{\glsnamefont{Extensible Markup Language}}{a set of rules for encoding documents in machine-readable form}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{14}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{25}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{15}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{26}}}\glsgroupskip
 \glsgroupheading{H}\relax \glsresetentrylist %
 \glossaryentryfield{Health Care Provider}{\glsnamefont{Health Care Provider}}{an individual or an institution that provides health care services in a systematic way}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{25}}}%
+		\setentrycounter[]{page}\glsnumberformat{26}}}%
 \glossaryentryfield{Health Level 7}{\glsnamefont{Health Level 7}}{A standard organization focusing on the development of international health care informatics interoperability standards}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{15}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{25}}}%
+		\setentrycounter[]{page}\glsnumberformat{16}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{26}}}%
 \glossaryentryfield{Hypertext Transfer Protocol}{\glsnamefont{Hypertext Transfer Protocol}}{a networking protocol for distributed, collaborative, hypermedia information systems}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{14}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{25}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{15}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{26}}}\glsgroupskip
 \glsgroupheading{I}\relax \glsresetentrylist %
 \glossaryentryfield{Institute of Electrical and Electronics Engineers}{\glsnamefont{Institute of Electrical and Electronics Engineers}}{is a non-profit professional association headquartered in New York City that is dedicated to advancing technological innovation and excellence}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{10}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{25}}}%
+		\setentrycounter[]{page}\glsnumberformat{26}}}%
 \glossaryentryfield{interoperability}{\glsnamefont{Interoperability}}{The ability of diverse systems and organizations to work together. Please see section~\ref {sec:interopDefinition} for the meaning within health care}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{1}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{10\delimN 11}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{13\delimR 15}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{13}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{15\delimN 16}}}\glsgroupskip
 \glsgroupheading{O}\relax \glsresetentrylist %
 \glossaryentryfield{openEHR}{\glsnamefont{openEHR}}{is an open standard specification in health informatics that describes the management and storage, retrieval and exchange of health data in \glspl {EHR}}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{15}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{16}}}\glsgroupskip
 \glsgroupheading{P}\relax \glsresetentrylist %
 \glossaryentryfield{Personal Health Record}{\glsnamefont{Personal Health Record}}{a health record where health data is maintained and owned by the individual it pertains to, rather than an institution or a hospital}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{25}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{26}}}\glsgroupskip
 \glsgroupheading{S}\relax \glsresetentrylist %
 \glossaryentryfield{Simple Object Access Protocol}{\glsnamefont{Simple Object Access Protocol}}{is a protocol specification for exchanging structured information in the implementation of Web Services in computer networks}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{25}}}%
+		\setentrycounter[]{page}\glsnumberformat{18}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{26}}}%
 \glossaryentryfield{Swedish Association of Local Authorities and Regions}{\glsnamefont{Swedish Association of Local Authorities and Regions}}{represents the governmental, professional and employer-related interests of Sweden's 290 municipalities and 20 county councils which include the regions of Gotland, Halland, Västra Götaland and Skåne}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{24\delimN 25}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{25\delimN 26}}}\glsgroupskip
 \glsgroupheading{T}\relax \glsresetentrylist %
 \glossaryentryfield{The European Committee for Standardization}{\glsnamefont{The European Committee for Standardization}}{Aims to provide infrastructures for the development, maintenance and distribution of coherent sets of standards and specifications in Europe}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{15}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{25}}}%
+		\setentrycounter[]{page}\glsnumberformat{16}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{26}}}%
 \glossaryentryfield{top level interface}{\glsnamefont{top level interface}}{format of communication between regions and nations}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{23}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{24}}}\glsgroupskip
 \glsgroupheading{W}\relax \glsresetentrylist %
 \glossaryentryfield{World Wide Web Consortium}{\glsnamefont{World Wide Web Consortium}}{An international group responsible for web standards such as \gls {HTML}, \gls {HTTP}, and \gls {XML} networking protocol for distributed, collaborative, hypermedia information systems}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{14}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{25}}}%
+		\setentrycounter[]{page}\glsnumberformat{15}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{26}}}%
 \end{theglossary}\glossarypostamble

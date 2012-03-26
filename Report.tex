@@ -47,9 +47,9 @@
 \newacronym[\glsshortpluralkey=EMRs ,\glslongpluralkey= Electronic Medical Records]{EMR}{EMR}{\gls{Electronic Medical Record}}
 
 
-\newglossaryentry{Electronic Healthcare Record}{name={Electronic Healthcare Record}, description={an \gls{EMR} or a collection of \glspl{EMR} that can be shared across networks between different \glspl{HCP}}}
+\newglossaryentry{Electronic Health Record}{name={Electronic Health Record}, description={an \gls{EMR} or a collection of \glspl{EMR} that can be shared across networks between different \glspl{HCP}}}
 
-\newacronym[\glsshortpluralkey=EHRs ,\glslongpluralkey= Electronic Healthcare Records]{EHR}{EHR}{\gls{Electronic Healthcare Record}}
+\newacronym[\glsshortpluralkey=EHRs ,\glslongpluralkey= Electronic Health Records]{EHR}{EHR}{\gls{Electronic Health Record}}
 
 
 \newglossaryentry{openEHR}{name={openEHR}, description={is an open standard specification in health informatics that describes the management and storage, retrieval and exchange of health data in \glspl{EHR}}}
@@ -91,7 +91,7 @@ This paper reports on the various aspects of achieving \gls{EHR} \gls{interopera
 %\glspl{HCP} within Sweden use electronic computer systems to store and track patient health data. There are many different customized solutions for the various aspects of this, resulting in a complex network of systems that are unable to communicate with each other. When a patient moves or visits a hospital while on vacation the individual doctors must manually send patient data to each other. This is a complicated and error-prone process that potentially wastes the time and energy of everyone involved.
 
  %Added by Daniel and Henrik 22/1-12
-\glspl{HCP} all around the world have different needs and preferences. Depending on the location, specialization and size of the hospital they all have different views on what data is important and should be stored in a patients \gls{EHR}. On top of this they want a \gls{EHR} system matching what they need to as low cost as possible. This has opened up a market for developing \gls{EHR} systems all of which have different structure. As a consequence most hospitals end up with different \gls{EHR} systems. This creates problems when a patient is visiting a new hospital, which might need information from the patients old hospital. The different \gls{EHR} systems are unable to communicate with each other due to the structural differences, both regarding communication protocols as well as regarding what data/information should be included. 
+\glspl{HCP} all around the world have different needs and preferences. Depending on the location, specialization and size of the hospital they all have different views on what data is important and should be stored in a patients Electronic Health Records (\gls{EHR}). On top of this they want a \gls{EHR} system matching what they need to as low cost as possible. This has opened up a market for developing \gls{EHR} systems all of which have different structure. As a consequence most hospitals end up with different \gls{EHR} systems. This creates problems when a patient is visiting a new hospital, which might need information from the patients old hospital. The different \gls{EHR} systems are unable to communicate with each other due to the structural differences, both regarding communication protocols as well as regarding what data/information should be included. 
 
 Right now the process of retrieving the patients \gls{EHR} is handled manually \cite{DataInsp} 
 %\ref{Datainspektionen år 2000, Överföring av personuppgifter inom vården och omsorgen av de äldre, http://www.datainspektionen.se/Documents/rapport-aldrevard.pdf} 
@@ -171,7 +171,7 @@ Methods of research ranged from reading articles written by outside sources abou
 
 \newpage
 
-\section{Users and stakeholders of Electnoic Healthcare Record}
+\section{Users and stakeholders of Electronic Health Record}
 \label{sec:People}
 There are both direct and indirect stakeholders of \gls{EHR} systems. Direct stakeholders are people that actively use the system: physicians, nurses, receptionists, and clerical and billing personnel. indirect stakeholders are people who do not use the system, but are benefited by its use: eg. patients.
 
@@ -190,7 +190,7 @@ Patients are the most important indirect stakeholders when it comes to \gls{EHR}
 
 \subsection{Work Flow Implications}
 \label{sec:peopleWorkflow}
-Establishing an acceptable user-centered \gls{EHR} system is a challenging task for health care providers because there are many different stakeholders with different need. As stated the \gls{EHR} work flow effects for the direct stakeholders (physicians, nurses, practitioners, etc.) may vary by type of patient care facility and professional responsibility. However, the most mentioned \glspl{EHR} changes involve increased efficiencies, improved accuracy, timelines, availability, and productivity \cite{Allan}. These changes were mentioned because the basic system was a source of frustration and dissatisfaction for nurse, physicians and even managers. According to Allan \cite{Allan} the nursing leaders in an inner city hospital undertook a redesign process to create an effective and efficient system for documentation that also provide data for monitoring care processes, patient outcomes, and staff performance. Challenges that \gls{EHR}'s may present to work flow process include: increased documentation time (e.g. slow system response, system crashes, multiple screens, etc.) and reduced critical thinking through the overuse of check boxes and other automated documentation. The biggest issue is system crashes. This is because caregivers, especially at in-patient facilities such as mental health facilities where patients live there, will not know what treatments are needed or if medications are due if the system crashes. 
+Establishing an acceptable user-centered \gls{EHR} system is a challenging task for health care providers because there are many different stakeholders with different needs. As stated the \gls{EHR} work flow effects for the direct stakeholders (physicians, nurses, practitioners, etc.) may vary by type of patient care facility and professional responsibility. However, the most mentioned \glspl{EHR} changes involve increased efficiency and productivity as well as improved documentation consistency \cite{Allan}. These changes were mentioned because the basic system was a source of frustration and dissatisfaction for nurse, physicians and even managers. According to Allan \cite{Allan} the nursing leaders in an inner city hospital undertook a redesign process to create an effective and efficient system for documentation that also provide data for monitoring care processes, patient outcomes, and staff performance. Challenges that \gls{EHR}'s may present to work flow process include: increased documentation time (e.g. slow system response, system crashes, multiple screens, etc.) and reduced critical thinking through the overuse of check boxes and other automated documentation. The biggest issue is system crashes. This is because caregivers, especially at in-patient facilities such as mental health facilities where patients live there, will not know what treatments are needed or if medications are due if the system crashes. 
 
 What is interesting is that, the national attention and rapid adoption of \gls{EHR}s came at a time when the nurses were experiencing a significant decrease in workforce and an increase in workload \cite{Mitre}. In order to help compensate for this workforce disagreement, \gls{EHR} implementations must correspond with workflow redesigns to ensure increased efficiencies to generate improvements in quality of care. 
 
@@ -211,7 +211,7 @@ Another very important issue to consider is the need to be able to remove certai
 
 \subsection{Introduction} 
 \label{sec:interopIntro}
-One of the most important and prominent issues we worked on during this project was interoperability. The goal of this section of the report is to familiarize the reader with the concept of interoperability and inform them of how it affects the problem at hand. Additionaly, possible solutions to the different interoperability problems are also included in this section of the report.  Lastly, care plans will be described and it will be discussed how standardizing them could potentially help the interoperability of \gls{EHR} systems.
+One of the most important and prominent issues we worked on during this project was interoperability. The goal of this section of the report is to familiarize the reader with the concept of interoperability and inform them of how it affects the problem at hand. Additionaly, possible solutions to the different interoperability problems are also included in this section of the report.  Lastly, care plans will be described and it will be discussed how standardizing them could potentially help the interoperability of Electronic Health Record (\gls{EHR}) systems.
 
 \subsection{Definition within Health Care} 
 \label{sec:interopDefinition}
@@ -439,7 +439,7 @@ If, with regard to the purpose of ongoing health care, it is of considerable imp
 %[Emil and Erik: Current organizational issues that limit the adoption of interoperating systems.]
 This section is very much based on an interview conducted with Reinhard Hammerschmidt, a research consultant, and Jess Heywood a junior research consultant, at the research and consulting firm Empirica. The interview was conducted by two students in Uppsala in October 2011.
 \\\\
-In order to successfully implement a new system for Electronic Healthcare Records (\glspl{EHR}) sharing all the layers of the organizational effort must be involved including practitioners, nurses, administrators, etc. Since this will change the way people work and what responsibilities they have everyone involved must commit to the system change effort in order for the switch to go well.
+In order to successfully implement a new system for Electronic Health Records (\glspl{EHR}) sharing all the layers of the organizational effort must be involved including practitioners, nurses, administrators, etc. Since this will change the way people work and what responsibilities they have everyone involved must commit to the system change effort in order for the switch to go well.
 
 In order to get all layers of the organization interested in the integration process it is important to involve them in the development of the system. Instead of having just the managers talking to the developers, all of the layers should be involved in the development stage of the system so that they feel like they have a say about the system that they will eventually use.
 

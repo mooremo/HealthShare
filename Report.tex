@@ -118,7 +118,7 @@ We will not go too much in-depth into how current \glspl{EHR} work. Since almost
 
 
 \subsection{Reading Instructions}
-Depending on your background, some portions of this document may be redundant or not applicable. This represents a summary of what HealthShare, you can read more about us and the project organization in section~\ref{sec:ProjectGroup}, feels would be the most relevant sections for different audiences.
+Depending on your background, some portions of this document may be redundant or not applicable. This represents a summary of what HealthShare (please feel free to read more about us and the project organization in section~\ref{sec:ProjectGroup}) feels would be the most relevant sections for different audiences.
 
 These are, of course, just suggestions and you are free to read whichever sections you wish.
 
@@ -284,13 +284,9 @@ On top of the CCP module, Cosmic has built something called NPÖ adapter. This N
 \label{sec:interopSolutions}
 There are two takes on the solution to interoperability that are generally accepted.  Since interoperability is essentially making sure that two or more systems can exchange information, the two most popular solutions are to either make sure that all systems are capable of using the same data formats (Syntactic) or there exists some way for the systems to automatically interpret other data formats that they do not support (Semantic).
 
-Of course, each of these solutions comes with both advantages and disadvantages.  While semantic interoperability might be quicker and less work at first, it is not practical if the number of systems is going to be expanded because then the automation process must be updated every time a new format is added.  On the other hand, implementing semantic interoperability only requires that you know the output of the system for the changes to be made while syntactic interoperability requires complete knowledge of the workings of the system as a whole for the changes to be made.  In return, syntactic interoperability is more work up front but does not require any of the existing systems to be modified when new systems are added.
-
-\subsection{Prerequisites for International Interoperability}
-\label{sec:resultsPrereq}
+Of course, each of these solutions comes with both advantages and disadvantages.  While semantic interoperability might be quicker and less work at first, it is not practical if the number of systems is going to be expanded. In this case, each addition of a new data format requires the automatic interpretetion process to be updated.  On the other hand, implementing semantic interoperability only requires that you know the output of the system for the changes to be made, while syntactic interoperability requires complete knowledge of the system as a whole for the changes to be made.  In return, syntactic interoperability is more work up front but does not require any of the existing systems to be modified when new systems are added.
 
 To achieve European wide solutions for cross-border transfer of patient information certain requirements need to be fulfilled. There has to be an agreement on the definitions of data sets for both patient summaries and e-prescription, a legal framework for data transfer, a technical framework to connect the systems at each level, and a working semantic \gls{interoperability}. \cite{epSOS1}
-\label{sec:interopPrereq}
 
 \subsection{Motivation}
 \label{sec:techMotiv}
@@ -303,7 +299,7 @@ At Rigs hospital in Copenhagen (Denmark), the employees use two different \glspl
 One of the big problems that technicians are faced with it, is that sometimes confusions occur when two different employees with different backgrounds exchange information i.e. an employee doesn't know the code of the examination and he/she only knows the proper name of analyze but the name is unknown for other staffs so in this case there is risk to misunderstand each other \cite{FarzinYazdi}. Today, it is important that the code, unit and the name of each analyze be standardized \cite{FarzinYazdi}.
 
 Using new \gls{EHR} system makes employees feel uncomfortable since they are get used to work with the previous \gls{EHR} system. One of the most complains about using new \gls{EHR} system is that, employees should adapt themselves to the new platform that it is unfamiliar for them \cite{FarzinYazdi}. The other reason is that they don’t really know if all the functionalities from previous system are also available in the new system or not. Hospital staffs should also learn about new features that were not available in the previous system \cite{FarzinYazdi}.
-\label{sec:techMotiv}
+%\label{sec:techMotiv}
 
 \subsection{Care plans}
 \label{sec:interopPlans}
@@ -470,12 +466,13 @@ There are many potential reasons for this lack of attention on \gls{EHR} usabili
 
 \newpage
 
-\section{Results/ Discussion}
+\section{Results/ Discussion}%Should be Discussion of Implementation Aspects
 \label{sec:Results}
-\subsection{Types of solutions and implications for the end user}
+\subsection{Types of solutions and implications for the end user}%Remove
 \label{sec:resultsEndUser}
-\subsubsection{Integrated vs. Standalone Application}
-When designing an interoperating \gls{EMR} system the choice is either whether integrate interoperating functionality into the existing \gls{EHR}application or to create a standalone solution capable of retrieving all information available about a patient.
+
+\subsubsection{Integrated vs. Standalone Application} %Should be subsection, not subsubsection // Emil 26 march
+When designing an interoperating \gls{EHR} system the choice is to either integrate interoperating functionality into an existing \gls{EHR} application or to create a standalone application capable of retrieving e.g. distributed patient information and make it accessible to the individual systems.
 
 \begin{center}
 	\begin{tabular} { | l | p{4.5cm} | p{4.5cm} |}
@@ -495,17 +492,17 @@ A solution integrating into the existing \gls{EHR} systems on the other hand tak
 
 There might still be need for changes in the existing systems as they way information is handled need to conform to common semantic standards. This would render changes both in the end user interface and the behavior of how they interact with the system. Integrating interoperability into existing systems does not increase the end users need for multitasking or burdens the short-time memory. It also supports diversification in the end user interfaces encouraging competitiveness and customization.
 
-\subsubsection{Standards}
+\subsubsection{Standards}%Should be subsection, not subsubsection // Emil 26 march
 \label{sec:resultsStandards}
-To make a system that interoperate between different \gls{EHR} systems a standard have to be set and forced onto the systems. 
+To make a system that interoperate between different Electronic Health Record (EHR) systems a standard have to be set and forced onto the systems. 
 
-One way to achieve interoperability between \gls{EHR} is for different systems to come together and agree upon a common standard. Such a standard might be forced upon already existing systems. Such a standard creates means for the \gls{EHR} systems to share data in a way that all the systems can interpret and process. There are several standards currently in development concerning \gls{EHR}'s.
+One way to achieve interoperability between \gls{EHR} systems is for different vendors to agree on common standards. Such standards might be forced upon already existing systems and creates means for the \gls{EHR} systems to share data in a way that all the systems can interpret and process. There are currently several overlapping standards in development concerning \glspl{EHR}.
 
-Before sending the data to other \gls{EHR} systems, an interface or adapter is needed to transform the data into a set standard. NPÖ uses an adapter to translate information from the originating systems into a set of common standards. 
+Before sending the data to other \gls{EHR} systems, an interface or adapter is needed to transform the data into a set standard. The Swedish National Patient Overview (Nationell patientöversikt, NPÖ) uses an adapter to translate information from the originating systems into a set of common standards. 
 
-One of the obstacles for implementing a system upon a common standard is getting several different actors from varying backgrounds to unite and agree on a solution. To be able to make this work the different systems need to use the same semantics and therefore some users may have to change the way they are editing data in the \gls{EHR} system. The interface of the systems also might be forced to change the way information is entered and presented to conform to specific semantics and standards. In the end this situation would lead to implications on the end users behaviour when interacting with the system. Some \gls{EHR} systems will be more affected by required changes than others, therefore rendering a different levels of changes to the end users behaviour.
+One of the obstacles for implementing a system upon a common standard is getting several different actors from varying backgrounds to unite and agree on a solution. To be able to make this work the different systems need to use the same semantics for medical terms and therefore some users may have to change what words they use when they enter data into their \gls{EHR} system. The interface of the systems might also change, since the way information is entered and presented will have to conform to the standards. In the end this situation would lead to implications on the end users behaviour when interacting with the system. Some \gls{EHR} systems will be affected by required changes to a greater extent than others, thereby leading to a higher degree of imposed changes to the end users behaviour than for the systems not so heavily affected.
 
-\subsubsection{Data Locality}
+\subsubsection{Data Locality}%Should be subsection, not subsubsection // Emil 26 march
 \label{sec:resultsLocality}
 \newacronym[\glsshortpluralkey=HCUs ,\glslongpluralkey= Health Care Units]{HCU}{HCU}{Health Care Unit}
 
@@ -558,7 +555,7 @@ One of the problems with implementing a system like this is to get all the syste
 Having a large central database for all \gls{EHR} data (Sweden) could be considered hard to manage but from what we've heard from e.g. Johan Thorvid \cite{Cambio} it should be feasible.
 
 \subsubsection{Usability Implications}
-This integrated solution is supposed to have as small implication as possible for the users. There might be some small changes as the systems that they are currently using may have to change a bit to be able to meet the standards that are going to be used. As the semantics have to match, some users may need to change how they write. However with a integrated solution the user can do all the work in the system they are currently using. Most of the old systems will still be intact and the users can use the old knowledge and experience when navigating.
+This integrated solution is supposed to have as small implication as possible for the users. There might be some small changes as the systems that they are currently using may have to change a bit to be able to meet the standards that are going to be used. As the semantics of medical terms have to match, some users may need to change how they write. However with an integrated solution the user can do all the work in the system they are currently using. Most of the old systems will still be intact and the users can use the old knowledge and experience when navigating.
 
 \newpage
 

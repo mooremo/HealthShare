@@ -466,12 +466,12 @@ There are many potential reasons for this lack of attention on \gls{EHR} usabili
 
 \newpage
 
-\section{Results/ Discussion}%Should be Discussion of Implementation Aspects
+\section{Discussion of Implementation Aspects}%Used to be Results/Discussion
 \label{sec:Results}
-\subsection{Types of solutions and implications for the end user}%Remove
+%\subsection{Types of solutions and implications for the end user}%Remove
 \label{sec:resultsEndUser}
 
-\subsubsection{Integrated vs. Standalone Application} %Should be subsection, not subsubsection. New title:   Integrate Functionality vs. Standalone Application    // Emil 26 march
+\subsection{Integrate Functionality vs. Standalone Application} %Used to be Integrated vs. Standalone Application   // Emil 26 march
 When designing an interoperating \gls{EHR} system the choice is to either integrate interoperating functionality into an existing \gls{EHR} application or to create a standalone application capable of retrieving e.g. distributed patient information and make it accessible to the individual systems.
 
 \begin{center}
@@ -492,7 +492,7 @@ A solution integrating into the existing \gls{EHR} systems on the other hand tak
 
 There might still be need for changes in the existing systems as they way information is handled need to conform to common semantic standards. This would render changes both in the end user interface and the behavior of how they interact with the system. Integrating interoperability into existing systems does not increase the end users need for multitasking or burdens the short-time memory. It also supports diversification in the end user interfaces encouraging competitiveness and customization.
 
-\subsubsection{Standards}%Should be subsection, not subsubsection. New title:     Use of Standards     // Emil 26 march
+\subsection{Use of Standards} % Used to be "Standards" // Emil 26 march
 \label{sec:resultsStandards}
 To make a system that interoperate between different Electronic Health Record (EHR) systems a standard have to be set and forced onto the systems. 
 
@@ -502,7 +502,7 @@ Before sending the data to other \gls{EHR} systems, an interface or adapter is n
 
 One of the obstacles for implementing a system upon a common standard is getting several different actors from varying backgrounds to unite and agree on a solution. To be able to make this work the different systems need to use the same semantics for medical terms and therefore some users may have to change what words they use when they enter data into their \gls{EHR} system. The interface of the systems might also change, since the way information is entered and presented will have to conform to the standards. In the end this situation would lead to implications on the end users behaviour when interacting with the system. Some \gls{EHR} systems will be affected by required changes to a greater extent than others, thereby leading to a higher degree of imposed changes to the end users behaviour than for the systems not so heavily affected.
 
-\subsubsection{Data Locality}%Should be subsection, not subsubsection. New title:    Data Location Policy  // Emil 26 march
+\subsection{Data Location Policy} % Used to be Data Locality // Emil 26 march
 \label{sec:resultsLocality}
 \newacronym[\glsshortpluralkey=HCUs ,\glslongpluralkey= Health Care Units]{HCU}{HCU}{Health Care Unit}
 
@@ -514,16 +514,22 @@ Allowing patient information to be stored centrally will also require that \gls{
 
 On the other hand a decentralized system where the information is kept at each individual health-care unit allows higher control of the patients information. When requested by a secondary \gls{HCU} the information would only reside outside of the system for a temporary time. There might still be a need for a central index of what information that is available at each \gls{HCU}, to avoid large amounts of data traffic flooding hospitals with requests for patient information. A benefit from having a decentralized system is that it to some extent guarantees that the retrieved information is up to date as it is retrieved upon access, assuming that the index is kept up to date.
 
-\subsubsection{Personal Health Records}% Should be moved to after usability testing, under Development Stratedy. New title:    7.5.4 Internet Access or Not  // Emil 26 march
-\label{sec:resultsPHR}
-A possible addition to an interoperable \gls{EHR} system is be to implement an interface for patients to access information stored in it through their Personal Health Records (PHR) from their home computers. This would be a useful way for patients to obtain the various medical records that are shown to schools, employers, or whoever they may need to share medical information with. Additional beneficial features could also be implemented into the health records to extend its functionality with self-care functionality and allow patients to carry out preliminary test before visiting their Health Care Provider (HCP). If \glspl{PHR} are made available on the Internet, then this becomes a very sensitive issue.
-
-\subsection{Security} % Should be 7.4 Security Considerations
+\subsection{Security Considerations}
 \label{sec:resultsSecurity}
 Any system maintaining sensitive personal information needs to be secure and protect the data from unauthorized access. This is certainly true for Electronic Health Record (EHR) systems, but there are additional issues to address. Different levels of security can be used, but a minimum standard security level for authentication in the system must be set among all interoperating systems. This to ensure that the required security level of one Health Care Provider (HCP) is maintained as the data travels to another \gls{HCP}. In an integrated system all users must authenticate themselves to be able to access information. It is therefore required that every \gls{EHR} system fulfills the required standard for security. In a standalone system the system itself will have to meet the same requirements as the existing \gls{EHR} systems. The communication between different parts of the interoperating system could be handled either over an intranet or on the Internet. An intranet allows a higher degree of control in terms of who can connect to the system, as you are in control of who that has access to the intranet. As an intranet grows, with the possibility of communication across border, it becomes harder to maintain this control, increasing the need for encryption and other protective mechanisms. The alternative is to handle communication over the Internet with a high degree of security in terms of state of the art encryption and authentication. On the Internet the threat of malicious traffic and software increases. New threats constantly arise across the Internet in varying forms, stressing the need to update and maintain the security in the interoperating system.
 The implementation of \gls{PHR} features in the system, accesible on the Internet, would require exposing a subset of the information to the Internet.
 
-\subsubsection{Requirement Domains} % New title:  7.5.2 Using Communication Requirement Domains    , move to correct place (after Agile methods, under Development Strategy)
+
+
+\subsection{Development Strategy}
+The interviews with administrative personal and technicians were focused on what they thought would be required to create interoperability between Electronic Health Records (\glspl{EHR}) rather than what they would want in such a system. 
+
+One of the most important things learned from these interviews was that development of an interoperable system would be very complex. It is hard to set a definite end in such a big development process and the process should be considered on-going where the focus lie on completing sub-goals rather than only shooting for the final goal. These characteristics imply that an agile development method would be suitable for such a task.
+
+\subsubsection{Agile Methods} %\subsubsection{AGILE}
+Agile development is an iterative and incremental development process where the work is done in small steps and every step is evaluated. The small steps could be subparts of the final system. Starting off with a smaller part of the system, ensuring that this part works and then move on by adding more features or go on to the next part of system might be more successful than trying to complete the whole system at once. However, agile development can be very time consuming and is not an option if there is a short amount of time to complete the project. It is therefore important to consider and evaluate the amount of time and resources available for the project, and weigh this against the overhead caused by the iterative methodology in agile development.
+
+\subsubsection{Using Communication Requirement Domains} %\subsubsection{Requirement Domains} % New title:  7.5.2 Using Communication Requirement Domains    , move to correct place (after Agile methods, under Development Strategy)
 Deploying an interoperating system requires the involved Health Care Providers (HCP) to agree on communicating in specific ways. This will render a set of communication requirements to be forced on each hospital. 
 
 A similar interoperability problem was solved when deploying a system for border management within the European Union. Border management systems involves both private and government actors from different nations. The specification of the system was then divided into different domains with different levels of mandatory, optional and recommended requirements based on how they interact with other parts of the system. \cite{BorderMgmt}
@@ -531,21 +537,17 @@ A similar interoperability problem was solved when deploying a system for border
 
 Communication requirements can be divided into different domains depending on their importance. For example, how to communicate with a central system would be a mandatory requirement. Other such requirements could be recommended or optional, giving the individual \glspl{HCP} guidance and a higher degree of freedom for how to implement communication between Electronic Health Record (EHR) subsystems. 
 
-
-
-\subsection{Recommended Development Methodologies}
-The interviews with administrative personal and technicians were focused on what they thought would be required to create interoperability between Electronic Health Records (\glspl{EHR}) rather than what they would want in such a system. 
-
-One of the most important things learned from these interviews was that development of an interoperable system would be very complex. It is hard to set a definite end in such a big development process and the process should be considered on-going where the focus lie on completing sub-goals rather than only shooting for the final goal. These characteristics imply that an agile development method would be suitable for such a task.
-
-\subsubsection{AGILE}
-Agile development is an iterative and incremental development process where the work is done in small steps and every step is evaluated. The small steps could be subparts of the final system. Starting off with a smaller part of the system, ensuring that this part works and then move on by adding more features or go on to the next part of system might be more successful than trying to complete the whole system at once. However, agile development can be very time consuming and is not an option if there is a short amount of time to complete the project. It is therefore important to consider and evaluate the amount of time and resources available for the project, and weigh this against the overhead caused by the iterative methodology in agile development.
-
 \subsubsection{Usability Testing}
 \label{sec:resultsUsabilityTesting}
 Another important aspect that came up during the interviews was the involvement of the end-user in the development process. Physicians, nursers etc. are the end-users of the interoperable Electronic Health Record (\gls{EHR}) systems considered in this report. If the development of the interoperable system can not be done only in the back-end, meaning that the end-user's systems will be affected, their opinions will be of importance. In this case the change in the systems might be made in a way that does not affect the end-users negatively if their opinions are taken into consideration in the development. Even if there is no need for noticeable changes their opinions can still be of importance when it comes to what kind of patient information is most important to share in the interoperable system if it is unmanageable to share all information. 
 
 The involvement of end-users can be included in the agile development by letting them take part in the evaluation of the sub-parts where their opinions matter. 
+
+\subsubsection{Internet Access or Not}%\subsubsection{Personal Health Records}% Should be moved to after usability testing, under Development Stratedy. New title:    7.5.4 Internet Access or Not  // Emil 26 march
+\label{sec:resultsPHR}
+A possible addition to an interoperable \gls{EHR} system is be to implement an interface for patients to access information stored in it through their Personal Health Records (PHR) from their home computers. This would be a useful way for patients to obtain the various medical records that are shown to schools, employers, or whoever they may need to share medical information with. Additional beneficial features could also be implemented into the health records to extend its functionality with self-care functionality and allow patients to carry out preliminary test before visiting their Health Care Provider (HCP). If \glspl{PHR} are made available on the Internet, then this becomes a very sensitive issue.
+
+
 
 \subsubsection{Security Testing}
 During the interviews the issue regarding security came up as an important factor to consider in an interoperable system. It is always important to handle the security with great care when it comes to patient information, but the security issues might be a lot greater when dealing with a system of bigger size such as when multiple \glspl{EHR} is interoperating. One example of a feature that might need improvement is the access control of patient information due to the fact that an interoperable system will increase the amount of reachable information. Ordinary methods for checking access control such as going through logs might be inefficient and costly and new methods might be needed.

@@ -309,7 +309,7 @@ In health care, nursing care plans are used to prioritize diagnoses, set up goal
 
 From our interview conducted with Lars Midbøe, Kristi Dahlman, Marie Fogelberg Dahm and Helen Broberg from \gls{CeHis} in Stockholm in November 2011 we found out that there is an initiative from \gls{CeHis} to standardize these care plans at a national level in Sweden. Preceded by research on the feasibility of a national information structure, the purpose is to define use cases, support equal care and patient safety, and clarify and verify the applications of standardized care plans compared to the currently existing local ones \cite{CeHis}.
 
-If NPÖ would adapt to the idea of standardized care plans then it might not only help with the semantic interoperability but also in increasing NPÖs impact on the effectiveness of HCP work routines, thereby increasing the overall benefit of the system at a regional level \cite{Cambio}.
+If NPÖ would adapt to the idea of standardized care plans then it might not only help with the semantic interoperability but also in increasing NPÖs impact on the effectiveness of health care provider's (HCP) work routines, thereby increasing the overall benefit of the system at a regional level \cite{Cambio}.
 
 Designing \glspl{EHR} to encourage the users to follow standardized care plans increases interoperability. When using a standardized care plan, the user needs to document only the deviations from the plan and the small amount of data relevant to them such as observations. The documentation process should be as automated as possible, to enable the health care professional to devote more time to the patient instead of administrative work. This also reduces the tendency of medical staff documenting for their own sake instead of for the one that will treat the patient next \cite{Cambio}.
 
@@ -328,7 +328,7 @@ Software standards specify aspects of a program such as: the format for data sto
 \label{sec:technicalStandardsCreation}
 For different parties (software development companies) to agree on software standards they typically create an organization consisting of representatives from the the various software companies. This gives them a forum to contribute ideas and opinions about making a single, unified standard addressing the data \gls{interoperability} problem that needs to be addressed.
 
-\subsubsection{Examples of Software Standards Organizations}
+Below are some examples of Software Standards Organizations:
 
 \newglossaryentry{Simple Object Access Protocol}{name = {Simple Object Access Protocol}, description = {is a protocol specification for exchanging structured information in the implementation of Web Services in computer networks}}
 
@@ -352,7 +352,7 @@ For different parties (software development companies) to agree on software stan
 
 \begin{itemize}
 \item \gls{W3C} - Responsible for web standards such as \gls{HTML}, \gls{HTTP}, and \gls{XML} 
-\item Institute of Electrical and Electronics Engineers Standards Association (\gls{IEEE} Standards Association) - Responsible for a wide range of standards for engineering such as the 802.11 standard
+\item Institute of Electrical and Electronics Engineers (\gls{IEEE}) Standards Association - Responsible for a wide range of standards for engineering such as the 802.11 standard
 \item \gls{IETF} - Responsible for providing standards for new Internet related technology 
 \end{itemize}
 
@@ -362,7 +362,7 @@ For different parties (software development companies) to agree on software stan
 Adherence to a particular software standard can be either mandatory or voluntary. For example: in the United States banking software must conform to security standards and regulations set forth by the \gls{FDIC}. Any system that does not conform to these standards faces legal action by the United States federal government and as such is not allowed to be used by U.S. banks. On the other end of the spectrum are the standards set forth by the \gls{W3C} as to how a web browser should interpret and render various web pages. These are completely voluntary standards and while most popular, modern browsers conform to a majority of these standards, there are no browsers that achieve complete compliance. They face no legal action for not complying with the \gls{W3C} standards because they are voluntary, not legally mandated.
 
 \subsection{Software Standards and EHR Software}
-With the growing ubiquity of the Internet, computers, and modern technology as well as the geographic diversity of medical talent and information, it is doubtless that someday a standard specifying the transmission, storage, and format of electronic health care records will be developed; the benefit of such a standard is too great to be ignored. Because patent data is widely varied and medical breakthroughs are discovered daily, any standards regulating \glspl{EHR} will constant revision and modification to stay relevant. Such a standard will require a large international organization to oversee and develop.
+With the growing ubiquity of the Internet, computers, and modern technology as well as the geographic diversity of medical talent and information, it is doubtless that someday a standard specifying the transmission, storage, and format of electronic health care records will be developed; the benefit of such a standard is too great to be ignored. Because patent data is widely varied and medical breakthroughs are discovered daily, any standards regulating Electronic Health Records (\glspl{EHR}) will need constant revision and modification to stay relevant. Such a standard will require a large international organization to oversee and develop.
 
 \newacronym {IHTSDO}{IHTSDO}{International Health Terminology Standards Development Organization}
 \newacronym {SNOMED}{SNOMED CT}{Systematized Nomenclature of Medicine - Clinical Terms}
@@ -378,13 +378,13 @@ With the growing ubiquity of the Internet, computers, and modern technology as w
 
 \subsection{Terminology}
 \label{sec:TechnicalStandardsTerminology}
-In order for interoperability to be useful, everyone reading the \gls{EHR} needs to have a common understanding of the information in it. One way to achieve this is by using a common a standardized clinical terminology system.
+In order for interoperability to be useful, everyone reading the Electronic Health Record (\gls{EHR}) needs to have a common understanding of the information in it. One way to achieve this is by using a common a standardized clinical terminology system.
 
 \subsubsection{SNOMED CT}
 
-\gls{IHTSDO} is a non-profit organization dealing with standards and at the moment 17 countries are members of the organization; among these is Sweden, the United Kingdom, and the United States of America. \gls{IHTSDO} acquired \gls{SNOMED} in 2007 and made it more accessible for a wider audience. \gls{SNOMED} is currently available in US English, UK English, Spanish, Danish, and Swedish and is being translated into French, Lithuanian, and several other languages as well \cite{ihtsdolang}.
+\gls{IHTSDO} is a non-profit organization dealing with standards and at the moment 17 countries are members of the organization; among them are Sweden, the United Kingdom, and the United States of America. \gls{IHTSDO} acquired \gls{SNOMED} in 2007 and made it more accessible for a wider audience. \gls{SNOMED} is currently available in US English, UK English, Spanish, Danish, and Swedish and is being translated into French, Lithuanian, and several other languages as well \cite{ihtsdolang}.
 
-\gls{SNOMED} is built up on 311 000 active concepts and is continuously growing. The basic concept behind \gls{SNOMED} is that each medical term has its own unique ID and all these terms are connected by semantic relationships. On \gls{IHTSDO}s website they describe the relationships like this: One type of link is the “IS\_A” relationship. This is used to define a concepts position within a hierarchy, e.g. Diabetes Mellitus IS\_A disorder of glucose regulation."\cite{ihtsdocomp}. If health care information and patient data is structured differently at different \glspl{HCP}, searching for specific data in a patient journal and exporting data to other systems gets harder, \gls{SNOMED} aims to address this problem.
+\gls{SNOMED} is built up on 311 000 active concepts and is continuously growing. The basic concept behind \gls{SNOMED} is that each medical term has its own unique ID and all these terms are connected by semantic relationships. On \gls{IHTSDO}s website they describe the relationships like this: One type of link is the “IS\_A” relationship. This is used to define a concepts position within a hierarchy, e.g. Diabetes Mellitus IS\_A disorder of glucose regulation."\cite{ihtsdocomp}. If health care information and patient data is structured differently at different health care providers (\glspl{HCP}), searching for specific data in a patient journal and exporting data to other systems gets harder, \gls{SNOMED} aims to address this problem.
 
 By having unique identifiers for all terms, translation between different languages is possible. Every language has the same identifier on their respective term, so when they store a record it is stored as just numbers. This only happens in the back-end so the user will see the medical record written in their own language.
 
@@ -393,14 +393,14 @@ By having unique identifiers for all terms, translation between different langua
 \subsubsection{The HL7, ISO and CEN standards}
 \gls{HL7}, \gls{ISO} and \gls{CEN} are the main health informatics standards development organizations. They have developed \gls{HL7} version 3 and \gls{EN13606} which are meant to supplement the \gls{SNOMED} standard in providing prerequisites for \gls{EHR} \gls{interoperability}.
 
-\gls{HL7} version 3 and \gls{EN13606} form one step in accomplishing national information structures. From the interview with Johan Thorwid \cite{Cambio} we learned that the \gls{HL7} v2.3 is hard to implement and incomplete due to the additional support information needed for the application to be truly useful. \gls{HL7} 3.0 was designed with the aim of dealing with this issue – it was supposed to support all health care work flows. Among other things, it uses concepts similar to the archetypes and templates of \gls{openEHR} and specifies different communication formats, but was never adopted in Sweden. In Sweden \gls{EN13606} is used instead. \gls{HL7} version 3 is however used in England \cite{Cambio} and within epSOS \cite{epSOS}.
+\gls{HL7} version 3 and \gls{EN13606} form one step in accomplishing national information structures. From the interview with Johan Thorwid \cite{Cambio} we learned that the \gls{HL7} v2.3 is hard to implement and incomplete due to the additional support information needed for the application to be truly useful. \gls{HL7} 3.0 was designed with the aim of dealing with this issue – it was supposed to support all health care work flows. Among other things, it uses concepts similar to the archetypes and templates of \gls{openEHR}, an open standard specification in health care informatics, and it specifies different communication formats. However, it was never adopted in Sweden. In Sweden \gls{EN13606} is used instead. \gls{HL7} version 3 is however used in England \cite{Cambio} and within epSOS \cite{epSOS}.
 
 \subsection{Ideal EHR Standard}
 All medical institutions have different needs and demands which often very significantly. This makes it exceedingly difficult to create a "one-size fits all" \gls{EHR}. An ideal \gls{EHR} standard will follow the trend of historically successful interfaces and will closely replicate the old paper version. It would also store the records in a standardized format as this maximizes interoperability and data mobility but also allows for the interfaces to the system to be customized for a specific institution. Customizing each \gls{EHR} for a specific institution adds overhead development and maintenance costs but maximizes the work flow productivity at each facility while maintaining interoperability. 
 
 \subsection{An Alternative to a Future EHR Standard}
 \label{sec:TechnicalStandardsAlternative}
-The only other option that achieves interoperability for sharing health care records would be a single unified software system that doctors all over the world would use to view and modify patient records. Such a solution is unrealistic for two reasons: there are already too many \gls{EHR} software companies to reasonably plan for one new company to globally take over the entire \gls{EHR} industry, and with anti-trust laws as well as fair competition clauses in many countries (such as the United States and Sweden) a single organization would not be legally allowed to be the sole producer of \gls{EHR} software systems.
+The only other option that achieves interoperability for sharing health care records would be a single unified software system that practitioners all over the world would use to view and modify patient records. Such a solution is unrealistic for two reasons: there are already too many Electronic Health Record (\gls{EHR}) software companies to reasonably plan for one new company to globally take over the entire \gls{EHR} industry, and with anti-trust laws as well as fair competition clauses in many countries (such as the United States and Sweden) a single organization would not be legally allowed to be the sole producer of \gls{EHR} software systems.
 
 \newpage
 
@@ -419,7 +419,7 @@ Additionally, because \gls{XML} formatted data is used, \glspl{SOAP} systems are
 
 \subsection{Legal Issues}
 \label{sec:futureLegal}
-The Swedish Safety Data Act provides new opportunities, but not obligations. \cite{RiR19}\glspl{EHR} exist to promote patient safety, high quality health care and minimized cost. It is also supposed to be a source of information for the patient (ch 3, § 2). A patient journal must be kept for each patient and may not be common to several patients. The one writing in the journal is responsible for that part. All journal entries must be written in Swedish. \cite{PatientDataAct}
+The Swedish Safety Data Act provides new opportunities, but not obligations. \cite{RiR19}Electronic health records (\glspl{EHR}) exist to promote patient safety, high quality health care and minimized cost. It is also supposed to be a source of information for the patient (ch 3, § 2). A patient journal must be kept for each patient and may not be common to several patients. The one writing in the journal is responsible for that part. All journal entries must be written in Swedish. \cite{PatientDataAct}
 
 The patient is not required to give their consent for the \gls{HCP} to act according to what the Patient Data Law dictates, except for an \gls{EHR} to be shared from one caregiver to another, when gaining electronic access to records of another care unit or during unified journaling. Patients may refuse to be part of organized records (kvalitetsregister). To remove parts of a journal there needs to be convincing reasons, the part being removed can't be necessary for future health care, and there should be no public interest in keeping the information. Journal data may be blocked from unified journaling access but the information saying that data has been blocked and by who should still be available. 
 

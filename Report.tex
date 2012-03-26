@@ -15,7 +15,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage{verbatim}  % for multiline comments
 
-\usepackage[acronym]{glossaries} % make a separate list of acronyms
+\usepackage[nonumberlist]{glossaries} % make a separate list of acronyms
+%\usepackage[acronym,nonumberlist]{glossaries} % make a separate list of acronyms
 \makeglossaries
 
 % Index
@@ -373,7 +374,7 @@ With the growing ubiquity of the Internet, computers, and modern technology as w
 \newglossaryentry{The International Organization for Standardization}{name={The International Organization for Standardization}, description={A standard setting organization concerned not only with health informatic standards}}
 \newacronym {ISO}{ISO}{\gls{The International Organization for Standardization}}
 
-\newglossaryentry{The European Committee for Standardization}{name={The European Committee for Standardization}, description={Aims to provide infrastructures for the development, maintenance and distribution of coherent sets of standards and specifications in Europe}}
+\newglossaryentry{The European Committee for Standardization}{name={The European Committee for Standardization}, description={aims to provide infrastructures for the development, maintenance and distribution of coherent sets of standards and specifications in Europe}}
 \newacronym {CEN}{CEN}{\gls{The European Committee for Standardization}}
 
 \subsection{Terminology}
@@ -561,9 +562,9 @@ Creating an interoperable system is a big and complex process that involves many
 
 Due to the large number of stakeholders and the work flow implications, it is of paramount importance to take into account that any new system must support the work processes of Health Care Providers (HCPs), be reliable and accessible. Apart from carefully designing the system interfaces based on successful standards and Electronic Health Records (EHR) systems, standardized care plans should be established, to accommodate not only the interoperability issues but also streamlining the work and ensuring patient safety and equal care.
 
-\newglossaryentry{top level interface}{name={top level interface}, description={format of communication between regions and nations}, plural={ top level interfaces}}
+%\newglossaryentry{top level interface}{name={top level interface}, description={format of communication between regions and nations}, plural={ top level interfaces}}
 
-In order to accomplish secure, interoperable sharing of \glspl{EHR}, the \glspl{top level interface} need to be defined by standards. These may be developed at a regional level to fit the local needs but in order to be truly usable for large scale applications they should be developed at a global level. National stakeholders have to make educated decisions on which standards to use, possibly working together to merge the existing ones into a new set of standards that everyone uses, each standard complementing the other.
+In order to accomplish secure, interoperable sharing of \glspl{EHR}, the format of communication between regions and nations needs to be defined by standards. These may be developed at a regional level to fit the local needs but in order to be truly usable for large scale applications they should be developed at a global level. National stakeholders have to make educated decisions on which standards to use, possibly working together to merge the existing ones into a new set of standards that everyone uses, each standard complementing the other.
 
 For the vision to come true, evidence for the socio-economic gains must be determined and the goals of each individual effort must be feasible in terms of law, technical solutions, and organization. Currently, there seem to be no single
 organization willing to step forward and lead the development, possibly because of funding, power, and legal interpretation issues. Different organizations will have to work together backed by politicians. Initiatives like the recent G.E.-Microsoft Venture~\cite{Bits} are risky if not \glspl{HCP} and politicians are on board.

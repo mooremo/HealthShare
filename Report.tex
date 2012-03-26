@@ -492,6 +492,9 @@ A solution integrating into the existing \gls{EHR} systems on the other hand tak
 
 There might still be need for changes in the existing systems as they way information is handled need to conform to common semantic standards. This would render changes both in the end user interface and the behavior of how they interact with the system. Integrating interoperability into existing systems does not increase the end users need for multitasking or burdens the short-time memory. It also supports diversification in the end user interfaces encouraging competitiveness and customization.
 
+%Usability implications
+This integrated solution is supposed to have as small implication as possible for the users. There might be some small changes as the systems that they are currently using may have to change a bit to be able to meet the standards that are going to be used. As the semantics, the words and phrasings used and their corresponding meaning, have to match, some users may need to change how they write. However with a integrated solution the user can do all the work in the system they are currently using. Most of the old systems will still be intact and the users can use the old knowledge and experience when navigating.
+
 \subsection{Use of Standards} % Used to be "Standards" // Emil 26 march
 \label{sec:resultsStandards}
 To make a system that interoperate between different Electronic Health Record (EHR) systems a standard have to be set and forced onto the systems. 
@@ -519,6 +522,8 @@ On the other hand a decentralized system where the information is kept at each i
 Any system maintaining sensitive personal information needs to be secure and protect the data from unauthorized access. This is certainly true for Electronic Health Record (EHR) systems, but there are additional issues to address. Different levels of security can be used, but a minimum standard security level for authentication in the system must be set among all interoperating systems. This to ensure that the required security level of one Health Care Provider (HCP) is maintained as the data travels to another \gls{HCP}. In an integrated system all users must authenticate themselves to be able to access information. It is therefore required that every \gls{EHR} system fulfills the required standard for security. In a standalone system the system itself will have to meet the same requirements as the existing \gls{EHR} systems. The communication between different parts of the interoperating system could be handled either over an intranet or on the Internet. An intranet allows a higher degree of control in terms of who can connect to the system, as you are in control of who that has access to the intranet. As an intranet grows, with the possibility of communication across border, it becomes harder to maintain this control, increasing the need for encryption and other protective mechanisms. The alternative is to handle communication over the Internet with a high degree of security in terms of state of the art encryption and authentication. On the Internet the threat of malicious traffic and software increases. New threats constantly arise across the Internet in varying forms, stressing the need to update and maintain the security in the interoperating system.
 The implementation of \gls{PHR} features in the system, accesible on the Internet, would require exposing a subset of the information to the Internet.
 
+%Security Testing
+During the interviews the issue regarding security came up as an important factor to consider in an interoperable system. It is always important to handle the security with great care when it comes to patient information, but the security issues might be a lot greater when dealing with a system of bigger size such as when multiple \glspl{EHR} is interoperating. One example of a feature that might need improvement is the access control of patient information due to the fact that an interoperable system will increase the amount of reachable information. Ordinary methods for checking access control such as going through logs might be inefficient and costly and new methods might be needed.
 
 
 \subsection{Development Strategy}
@@ -546,18 +551,6 @@ The involvement of end-users can be included in the agile development by letting
 \subsubsection{Internet Access or Not}%\subsubsection{Personal Health Records}% Should be moved to after usability testing, under Development Stratedy. New title:    7.5.4 Internet Access or Not  // Emil 26 march
 \label{sec:resultsPHR}
 A possible addition to an interoperable \gls{EHR} system is be to implement an interface for patients to access information stored in it through their Personal Health Records (PHR) from their home computers. This would be a useful way for patients to obtain the various medical records that are shown to schools, employers, or whoever they may need to share medical information with. Additional beneficial features could also be implemented into the health records to extend its functionality with self-care functionality and allow patients to carry out preliminary test before visiting their Health Care Provider (HCP). If \glspl{PHR} are made available on the Internet, then this becomes a very sensitive issue.
-
-
-
-\subsubsection{Security Testing}
-During the interviews the issue regarding security came up as an important factor to consider in an interoperable system. It is always important to handle the security with great care when it comes to patient information, but the security issues might be a lot greater when dealing with a system of bigger size such as when multiple \glspl{EHR} is interoperating. One example of a feature that might need improvement is the access control of patient information due to the fact that an interoperable system will increase the amount of reachable information. Ordinary methods for checking access control such as going through logs might be inefficient and costly and new methods might be needed.
-
-\subsubsection{Feasibility}
-One of the problems with implementing interoperability is to get all the systems to unite and accept a set standard to be used. Some of the systems has to change more then others.
-Having a large central database for all \gls{EHR} data (Sweden) could be considered hard to manage but from what we have heard from e.g. Johan Thorvid \cite{Cambio} it should be feasible.
-
-\subsubsection{Usability Implications}
-This integrated solution is supposed to have as small implication as possible for the users. There might be some small changes as the systems that they are currently using may have to change a bit to be able to meet the standards that are going to be used. As the semantics, the words and phrasings used and their corresponding meaning, have to match, some users may need to change how they write. However with a integrated solution the user can do all the work in the system they are currently using. Most of the old systems will still be intact and the users can use the old knowledge and experience when navigating.
 
 \newpage
 

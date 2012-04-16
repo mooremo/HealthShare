@@ -12,16 +12,30 @@
 		\setentrycounter[]{page}\glsnumberformat{11}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{15}}}%
 \glossaryentryfield{XML}{\glsnamefont{Extensible Markup Language (XML)}}{a set of rules for encoding documents in machine-readable form}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{24}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{25}}}\glsgroupskip
+\glsgroupheading{F}\relax \glsresetentrylist %
+\glossaryentryfield{FDIC}{\glsnamefont{FDIC}}{Federal Deposit Insurance Corporation}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{14}}}\glsgroupskip
 \glsgroupheading{H}\relax \glsresetentrylist %
+\glossaryentryfield{HCU}{\glsnamefont{HCU}}{Health Care Unit}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{20}}}%
 \glossaryentryfield{HCP}{\glsnamefont{Health Care Provider (HCP)}}{an individual or an institution that provides health care services in a systematic way}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{4}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{24}}}%
 \glossaryentryfield{HL7}{\glsnamefont{Health Level 7 (HL7)}}{A standard organization focusing on the development of international health care informatics interoperability standards}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{15}}}%
+\glossaryentryfield{HTML}{\glsnamefont{HTML}}{Hyper-Text Markup Language}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{14}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{25}}}%
 \glossaryentryfield{HTTP}{\glsnamefont{Hypertext Transfer Protocol (HTTP)}}{a networking protocol for distributed, collaborative, hypermedia information systems}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{24}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{25}}}\glsgroupskip
 \glsgroupheading{I}\relax \glsresetentrylist %
+\glossaryentryfield{ICT}{\glsnamefont{ICT}}{Information and Communication Technology}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{9}}}%
+\glossaryentryfield{IETF}{\glsnamefont{IETF}}{Internet Engineering Task Force}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{14}}}%
+\glossaryentryfield{IHTSDO}{\glsnamefont{IHTSDO}}{International Health Terminology Standards Development Organization}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{15}}}%
 \glossaryentryfield{IEEE}{\glsnamefont{Institute of Electrical and Electronics Engineers (IEEE)}}{is a non-profit professional association headquartered in New York City that is dedicated to advancing technological innovation and excellence}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{9}}}%
 \glossaryentryfield{interoperability}{\glsnamefont{Interoperability}}{The ability of diverse systems and organizations to work together. Please see section~\ref {sec:interopDefinition} for the meaning within health care}{\relax }{\glossaryentrynumbers{\relax 
@@ -38,6 +52,8 @@
 \glsgroupheading{S}\relax \glsresetentrylist %
 \glossaryentryfield{SOAP}{\glsnamefont{Simple Object Access Protocol (SOAP)}}{is a protocol specification for exchanging structured information in the implementation of Web Services in computer networks}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{17}}}%
+\glossaryentryfield{SNOMED}{\glsnamefont{SNOMED CT}}{Systematized Nomenclature of Medicine - Clinical Terms}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{15}}}%
 \glossaryentryfield{SALAR}{\glsnamefont{Swedish Association of Local Authorities and Regions (SALAR)}}{represents the governmental, professional and employer-related interests of Sweden's 290 municipalities and 20 county councils which include the regions of Gotland, Halland, Västra Götaland and Skåne}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{24}}}\glsgroupskip
 \glsgroupheading{T}\relax \glsresetentrylist %

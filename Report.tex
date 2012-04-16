@@ -55,9 +55,9 @@
 
 \newglossaryentry{openEHR}{name={openEHR}, description={is an open standard specification in health informatics that describes the management and storage, retrieval and exchange of health data in EHRs}}
 
-\newglossaryentry{Personal Health Record}{name={Personal Health Record}, description={a health record where health data is maintained and owned by the individual it pertains to, rather than an institution or a hospital}}
+\newglossaryentry{PHR}{name={Personal Health Record (PHR)}, description={a health record where health data is maintained and owned by the individual it pertains to, rather than an institution or a hospital}}
 
-\newacronym[\glsshortpluralkey=PHRs ,\glslongpluralkey= Personal Health Records]{PHR}{PHR}{\gls{Personal Health Record}}
+%\newacronym[\glsshortpluralkey=PHRs ,\glslongpluralkey= Personal Health Records]{PHR}{PHR}{\gls{Personal Health Record}}
 
 %Page 1: The abstract is not an abstract. It is more of a very brief introduction to the article. An abstract should contain a short summary of the different parts of the discussion etc). This is too short. Rewrite.text (method, results,
 
@@ -217,9 +217,9 @@ One of the most important and prominent issues we worked on during this project 
 \subsection{Definition within Health Care} 
 \label{sec:interopDefinition}
 
-\newglossaryentry{Institute of Electrical and Electronics Engineers}{name={Institute of Electrical and Electronics Engineers}, description={is a non-profit professional association headquartered in New York City that is dedicated to advancing technological innovation and excellence}}
+\newglossaryentry{IEEE}{name={Institute of Electrical and Electronics Engineers (IEEE)}, description={is a non-profit professional association headquartered in New York City that is dedicated to advancing technological innovation and excellence}}
 
-\newacronym[\glsshortpluralkey=IEEE ,\glslongpluralkey= Institute of Electrical and Electronics Engineers]{IEEE}{IEEE}{\gls{Institute of Electrical and Electronics Engineers}}
+%\newacronym[\glsshortpluralkey=IEEE ,\glslongpluralkey= Institute of Electrical and Electronics Engineers]{IEEE}{IEEE}{\gls{Institute of Electrical and Electronics Engineers}}
 
 As defined by \gls{IEEE} interoperability is the ability of multiple systems to exchange information and to use the information that has been exchanged\cite{IEEE}.  In general, if there are multiple systems that both work with the same type of information it is beneficial to all of them to be able to communicate and share information with one another. An illustrative example to think about is the different word processing applications that are available. By making it so that files created and saved with Microsoft Word can be opened and modified using Word Perfect and LibreOffice, all products benefit.  Related to this report, the ability for different systems that handle EHRs to communicate with each other and exchange data is invaluable.  Generally, there are a couple of different ways that interoperability is handled, which will be discussed in a later section.  Interoperability is a long-term investment that has a great history of paying off in the long run (both within the electronic health industry and out).
 
@@ -331,9 +331,9 @@ For different parties (software development companies) to agree on software stan
 
 Below are some examples of Software Standards Organizations:
 
-\newglossaryentry{Simple Object Access Protocol}{name = {Simple Object Access Protocol}, description = {is a protocol specification for exchanging structured information in the implementation of Web Services in computer networks}}
+\newglossaryentry{SOAP}{name = {Simple Object Access Protocol (SOAP)}, description = {is a protocol specification for exchanging structured information in the implementation of Web Services in computer networks}}
 
-\newacronym[\glsshortpluralkey = SOAPs, \glslongpluralkey = Simple Object Access Protocol]{SOAP}{SOAP}{\gls{Simple Object Access Protocol}}
+%\newacronym[\glsshortpluralkey = SOAPs, \glslongpluralkey = Simple Object Access Protocol]{SOAP}{SOAP}{\gls{Simple Object Access Protocol}}
 
 \newglossaryentry{Hypertext Transfer Protocol}{name={Hypertext Transfer Protocol}, description={a networking protocol for distributed, collaborative, hypermedia information systems}}
 
@@ -353,7 +353,7 @@ Below are some examples of Software Standards Organizations:
 
 \begin{itemize}
 \item \gls{W3C} - Responsible for web standards such as \gls{HTML}, \gls{HTTP}, and \gls{XML} 
-\item Institute of Electrical and Electronics Engineers (\gls{IEEE}) Standards Association - Responsible for a wide range of standards for engineering such as the 802.11 standard
+\item Institute of Electrical and Electronics Engineers (IEEE) Standards Association - Responsible for a wide range of standards for engineering such as the 802.11 standard
 \item \gls{IETF} - Responsible for providing standards for new Internet related technology 
 \end{itemize}
 
@@ -368,8 +368,8 @@ With the growing ubiquity of the Internet, computers, and modern technology as w
 \newacronym {IHTSDO}{IHTSDO}{International Health Terminology Standards Development Organization}
 \newacronym {SNOMED}{SNOMED CT}{Systematized Nomenclature of Medicine - Clinical Terms}
 
-\newglossaryentry{Health Level 7}{name={Health Level 7}, description={A standard organization focusing on the development of international health care informatics interoperability standards}}
-\newacronym {HL7}{HL7}{\gls{Health Level 7}}
+\newglossaryentry{HL7}{name={Health Level 7 (HL7)}, description={A standard organization focusing on the development of international health care informatics interoperability standards}}
+%\newacronym {HL7}{HL7}{\gls{Health Level 7}}
 
 \newglossaryentry{The International Organization for Standardization}{name={The International Organization for Standardization}, description={A standard setting organization concerned not only with health informatic standards}}
 \newacronym {ISO}{ISO}{\gls{The International Organization for Standardization}}
@@ -392,9 +392,9 @@ By having unique identifiers for all terms, translation between different langua
 \gls{SNOMED} is centrally updated twice a year where they add new terms and set some terms inactive. In order to support previous versions they never delete terms, but instead mark them as inactive and suggest using the newest term.\cite{annavik}
 
 \subsubsection{The HL7, ISO and CEN standards}
-\gls{HL7}, \gls{ISO} and \gls{CEN} are the main health informatics standards development organizations. They have developed \gls{HL7} version 3 and \gls{EN13606} which are meant to supplement the \gls{SNOMED} standard in providing prerequisites for EHR \gls{interoperability}.
+\gls{HL7}, \gls{ISO} and \gls{CEN} are the main health informatics standards development organizations. They have developed HL7 version 3 and \gls{EN13606} which are meant to supplement the \gls{SNOMED} standard in providing prerequisites for EHR \gls{interoperability}.
 
-\gls{HL7} version 3 and \gls{EN13606} form one step in accomplishing national information structures. From the interview with Johan Thorwid \cite{Cambio} we learned that the \gls{HL7} v2.3 is hard to implement and incomplete due to the additional support information needed for the application to be truly useful. \gls{HL7} 3.0 was designed with the aim of dealing with this issue – it was supposed to support all health care work flows. Among other things, it uses concepts similar to the archetypes and templates of \gls{openEHR}, an open standard specification in health care informatics, and it specifies different communication formats. However, it was never adopted in Sweden. In Sweden \gls{EN13606} is used instead. \gls{HL7} version 3 is however used in England \cite{Cambio} and within epSOS \cite{epSOS}.
+HL7 version 3 and \gls{EN13606} form one step in accomplishing national information structures. From the interview with Johan Thorwid \cite{Cambio} we learned that the HL7 v2.3 is hard to implement and incomplete due to the additional support information needed for the application to be truly useful. HL7 3.0 was designed with the aim of dealing with this issue – it was supposed to support all health care work flows. Among other things, it uses concepts similar to the archetypes and templates of \gls{openEHR}, an open standard specification in health care informatics, and it specifies different communication formats. However, it was never adopted in Sweden. In Sweden \gls{EN13606} is used instead. HL7 version 3 is however used in England \cite{Cambio} and within epSOS \cite{epSOS}.
 
 \subsection{Ideal EHR Standard}
 All medical institutions have different needs and demands which often very significantly. This makes it exceedingly difficult to create a "one-size fits all" Electronic Health Record (EHR) standard. According to us an ideal EHR should be easy to use and learn, which can be achieved by taking advantage of existing user behaviour. Further an ideal EHR should be reliable and secure, maximize healthcare productviity by reducing the time spent handling administrative activities, and provide interoperability that stimulates existing and future workflows (e.g. interoperability between seperate health care units). In our opinion an ideal EHR standard will follow the trend of historically successful interfaces and will closely replicate legacy paper health records. It would also store the records in a standardized format as this maximizes interoperability and data mobility but also allows for the interfaces to the system to be customized for a specific institution. Customizing each EHR for a specific institution adds overhead development and maintenance costs but maximizes the work flow productivity at each facility while maintaining interoperability. 
@@ -414,9 +414,9 @@ The technical limitations for an Electronic Health Record (EHR) system are multi
 
 One solution is to use \gls{SOAP} which is a specification for exchanging structured information. This setup relies on eXtensible Markup Language (\gls{XML}), a remote procedure call, and HyperText Transfer Protocol (\gls{HTTP}). Significant existing software infrastructure and development already exists and SOAP is a way to re-use work that has already been done. This solution is dependent on multiple different systems and if one of the needed layers malfunctions the system as a whole will stop working. 
 
-Additionally, because \gls{XML} formatted data is used, \glspl{SOAP} systems are usually slower and more data-heavy than other options. This might cause scalability problems for a large system. These limitations to the design may cause future problems implementing a \glspl{SOAP} style system on a large scale.
+Additionally, because \gls{XML} formatted data is used, SOAP systems are usually slower and more data-heavy than other options. This might cause scalability problems for a large system. These limitations to the design may cause future problems implementing a \glspl{SOAP} style system on a large scale.
 
-The alternative is to use other transport standards than \gls{SOAP}, such as Minimum Lower Layer Protocol which is used by \gls{HL7}. \gls{SOAP} is a trade-off however: the ability to work practically everywhere and stand on top of hundreds of existing standards comes with significant overhead and additional complexity. Very few other systems, however, have the ability to deal with data as complicated as what is found in EHRs.
+The alternative is to use other transport standards than SOAP, such as Minimum Lower Layer Protocol which is used by HL7. SOAP is a trade-off however: the ability to work practically everywhere and stand on top of hundreds of existing standards comes with significant overhead and additional complexity. Very few other systems, however, have the ability to deal with data as complicated as what is found in EHRs.
 
 \subsection{Legal Issues}
 \label{sec:futureLegal}
@@ -551,7 +551,7 @@ The involvement of end-users can be included in the agile development by letting
 
 \subsubsection{Internet Access or Not}%\subsubsection{Personal Health Records}% Should be moved to after usability testing, under Development Stratedy. New title:    7.5.4 Internet Access or Not  // Emil 26 march
 \label{sec:resultsPHR}
-A possible addition to an interoperable EHR system is be to implement an interface for patients to access information stored in it through their Personal Health Records (PHR) from their home computers. This would be a useful way for patients to obtain the various medical records that are shown to schools, employers, or whoever they may need to share medical information with. Additional beneficial features could also be implemented into the health records to extend its functionality with self-care functionality and allow patients to carry out preliminary test before visiting their Health Care Provider (HCP). If \glspl{PHR} are made available on the Internet, then this becomes a very sensitive issue.
+A possible addition to an interoperable EHR system is be to implement an interface for patients to access information stored in it through their Personal Health Records (PHR) from their home computers. This would be a useful way for patients to obtain the various medical records that are shown to schools, employers, or whoever they may need to share medical information with. Additional beneficial features could also be implemented into the health records to extend its functionality with self-care functionality and allow patients to carry out preliminary test before visiting their Health Care Provider (HCP). If PHRs are made available on the Internet, then this becomes a very sensitive issue.
 
 \newpage
 

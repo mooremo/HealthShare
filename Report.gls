@@ -18,16 +18,14 @@
 \glossaryentryfield{HCP}{\glsnamefont{Health Care Provider (HCP)}}{an individual or an institution that provides health care services in a systematic way}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{4}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{24}}}%
-\glossaryentryfield{Health Level 7}{\glsnamefont{Health Level 7}}{A standard organization focusing on the development of international health care informatics interoperability standards}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{15}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{25}}}%
+\glossaryentryfield{HL7}{\glsnamefont{Health Level 7 (HL7)}}{A standard organization focusing on the development of international health care informatics interoperability standards}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{15}}}%
 \glossaryentryfield{Hypertext Transfer Protocol}{\glsnamefont{Hypertext Transfer Protocol}}{a networking protocol for distributed, collaborative, hypermedia information systems}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{14}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{25}}}\glsgroupskip
 \glsgroupheading{I}\relax \glsresetentrylist %
-\glossaryentryfield{Institute of Electrical and Electronics Engineers}{\glsnamefont{Institute of Electrical and Electronics Engineers}}{is a non-profit professional association headquartered in New York City that is dedicated to advancing technological innovation and excellence}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{9}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{25}}}%
+\glossaryentryfield{IEEE}{\glsnamefont{Institute of Electrical and Electronics Engineers (IEEE)}}{is a non-profit professional association headquartered in New York City that is dedicated to advancing technological innovation and excellence}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{9}}}%
 \glossaryentryfield{interoperability}{\glsnamefont{Interoperability}}{The ability of diverse systems and organizations to work together. Please see section~\ref {sec:interopDefinition} for the meaning within health care}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{1}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{9}\delimN 
@@ -37,13 +35,11 @@
 \glossaryentryfield{openEHR}{\glsnamefont{openEHR}}{is an open standard specification in health informatics that describes the management and storage, retrieval and exchange of health data in EHRs}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{15}}}\glsgroupskip
 \glsgroupheading{P}\relax \glsresetentrylist %
-\glossaryentryfield{Personal Health Record}{\glsnamefont{Personal Health Record}}{a health record where health data is maintained and owned by the individual it pertains to, rather than an institution or a hospital}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{21}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{25}}}\glsgroupskip
+\glossaryentryfield{PHR}{\glsnamefont{Personal Health Record (PHR)}}{a health record where health data is maintained and owned by the individual it pertains to, rather than an institution or a hospital}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{21}}}\glsgroupskip
 \glsgroupheading{S}\relax \glsresetentrylist %
-\glossaryentryfield{Simple Object Access Protocol}{\glsnamefont{Simple Object Access Protocol}}{is a protocol specification for exchanging structured information in the implementation of Web Services in computer networks}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{25}}}%
+\glossaryentryfield{SOAP}{\glsnamefont{Simple Object Access Protocol (SOAP)}}{is a protocol specification for exchanging structured information in the implementation of Web Services in computer networks}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{17}}}%
 \glossaryentryfield{SALAR}{\glsnamefont{Swedish Association of Local Authorities and Regions (SALAR)}}{represents the governmental, professional and employer-related interests of Sweden's 290 municipalities and 20 county councils which include the regions of Gotland, Halland, Västra Götaland and Skåne}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{24}}}\glsgroupskip
 \glsgroupheading{T}\relax \glsresetentrylist %

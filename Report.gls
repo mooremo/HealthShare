@@ -11,18 +11,16 @@
 \glossaryentryfield{EN13606}{\glsnamefont{EN 13606}}{A European EHR Communication Standard by \gls {CEN} and \gls {ISO}. Defines an information architecture for communicating part or all of a single patient's EHR}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{11}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{15}}}%
-\glossaryentryfield{Extensible Markup Language}{\glsnamefont{Extensible Markup Language}}{a set of rules for encoding documents in machine-readable form}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{14}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{25}}}\glsgroupskip
+\glossaryentryfield{XML}{\glsnamefont{Extensible Markup Language (XML)}}{a set of rules for encoding documents in machine-readable form}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{24}}}\glsgroupskip
 \glsgroupheading{H}\relax \glsresetentrylist %
 \glossaryentryfield{HCP}{\glsnamefont{Health Care Provider (HCP)}}{an individual or an institution that provides health care services in a systematic way}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{4}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{24}}}%
 \glossaryentryfield{HL7}{\glsnamefont{Health Level 7 (HL7)}}{A standard organization focusing on the development of international health care informatics interoperability standards}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{15}}}%
-\glossaryentryfield{Hypertext Transfer Protocol}{\glsnamefont{Hypertext Transfer Protocol}}{a networking protocol for distributed, collaborative, hypermedia information systems}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{14}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{25}}}\glsgroupskip
+\glossaryentryfield{HTTP}{\glsnamefont{Hypertext Transfer Protocol (HTTP)}}{a networking protocol for distributed, collaborative, hypermedia information systems}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{24}}}\glsgroupskip
 \glsgroupheading{I}\relax \glsresetentrylist %
 \glossaryentryfield{IEEE}{\glsnamefont{Institute of Electrical and Electronics Engineers (IEEE)}}{is a non-profit professional association headquartered in New York City that is dedicated to advancing technological innovation and excellence}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{9}}}%
@@ -43,12 +41,12 @@
 \glossaryentryfield{SALAR}{\glsnamefont{Swedish Association of Local Authorities and Regions (SALAR)}}{represents the governmental, professional and employer-related interests of Sweden's 290 municipalities and 20 county councils which include the regions of Gotland, Halland, Västra Götaland and Skåne}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{24}}}\glsgroupskip
 \glsgroupheading{T}\relax \glsresetentrylist %
-\glossaryentryfield{The European Committee for Standardization}{\glsnamefont{The European Committee for Standardization}}{aims to provide infrastructures for the development, maintenance and distribution of coherent sets of standards and specifications in Europe}{\relax }{\glossaryentrynumbers{\relax 
+\glossaryentryfield{CEN}{\glsnamefont{The European Committee for Standardization (CEN)}}{aims to provide infrastructures for the development, maintenance and distribution of coherent sets of standards and specifications in Europe}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{15}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{25}}}%
-\glossaryentryfield{The International Organization for Standardization}{\glsnamefont{The International Organization for Standardization}}{A standard setting organization concerned not only with health informatic standards}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{24}}}%
+\glossaryentryfield{ISO}{\glsnamefont{The International Organization for Standardization (ISO)}}{A standard setting organization concerned not only with health informatic standards}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{15}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{25}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{24}}}\glsgroupskip
 \glsgroupheading{W}\relax \glsresetentrylist %
 \glossaryentryfield{World Wide Web Consortium}{\glsnamefont{World Wide Web Consortium}}{An international group responsible for web standards such as \gls {HTML}, \gls {HTTP}, and \gls {XML} networking protocol for distributed, collaborative, hypermedia information systems}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{14}\delimN 

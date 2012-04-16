@@ -335,13 +335,13 @@ Below are some examples of Software Standards Organizations:
 
 %\newacronym[\glsshortpluralkey = SOAPs, \glslongpluralkey = Simple Object Access Protocol]{SOAP}{SOAP}{\gls{Simple Object Access Protocol}}
 
-\newglossaryentry{Hypertext Transfer Protocol}{name={Hypertext Transfer Protocol}, description={a networking protocol for distributed, collaborative, hypermedia information systems}}
+\newglossaryentry{HTTP}{name={Hypertext Transfer Protocol (HTTP)}, description={a networking protocol for distributed, collaborative, hypermedia information systems}}
 
-\newacronym[\glsshortpluralkey=HTTPs ,\glslongpluralkey= Hypertext Transfer Protocol]{HTTP}{HTTP}{\gls{Hypertext Transfer Protocol}}
+%\newacronym[\glsshortpluralkey=HTTPs ,\glslongpluralkey= Hypertext Transfer Protocol]{HTTP}{HTTP}{\gls{Hypertext Transfer Protocol}}
 
-\newglossaryentry{Extensible Markup Language}{name={Extensible Markup Language}, description={a set of rules for encoding documents in machine-readable form}}
+\newglossaryentry{XML}{name={Extensible Markup Language (XML)}, description={a set of rules for encoding documents in machine-readable form}}
 
-\newacronym[\glsshortpluralkey=XLMs ,\glslongpluralkey=Extensible Markup Languages]{XML}{XML}{\gls{Extensible Markup Language}}
+%\newacronym[\glsshortpluralkey=XLMs ,\glslongpluralkey=Extensible Markup Languages]{XML}{XML}{\gls{Extensible Markup Language}}
 
 \newacronym[\glsshortpluralkey=HTML ,\glslongpluralkey= Hyper-Text Markup Language]{HTML}{HTML}{Hyper-Text Markup Language}
 
@@ -352,7 +352,7 @@ Below are some examples of Software Standards Organizations:
 \newacronym[\glsshortpluralkey = W3C, \glslongpluralkey = World Wide Web Consortium]{W3C}{W3C}{\gls{World Wide Web Consortium}}
 
 \begin{itemize}
-\item \gls{W3C} - Responsible for web standards such as \gls{HTML}, \gls{HTTP}, and \gls{XML} 
+\item \gls{W3C} - Responsible for web standards such as \gls{HTML}, HTTP, and XML 
 \item Institute of Electrical and Electronics Engineers (IEEE) Standards Association - Responsible for a wide range of standards for engineering such as the 802.11 standard
 \item \gls{IETF} - Responsible for providing standards for new Internet related technology 
 \end{itemize}
@@ -371,11 +371,11 @@ With the growing ubiquity of the Internet, computers, and modern technology as w
 \newglossaryentry{HL7}{name={Health Level 7 (HL7)}, description={A standard organization focusing on the development of international health care informatics interoperability standards}}
 %\newacronym {HL7}{HL7}{\gls{Health Level 7}}
 
-\newglossaryentry{The International Organization for Standardization}{name={The International Organization for Standardization}, description={A standard setting organization concerned not only with health informatic standards}}
-\newacronym {ISO}{ISO}{\gls{The International Organization for Standardization}}
+\newglossaryentry{ISO}{name={The International Organization for Standardization (ISO)}, description={A standard setting organization concerned not only with health informatic standards}}
+%\newacronym {ISO}{ISO}{\gls{The International Organization for Standardization}}
 
-\newglossaryentry{The European Committee for Standardization}{name={The European Committee for Standardization}, description={aims to provide infrastructures for the development, maintenance and distribution of coherent sets of standards and specifications in Europe}}
-\newacronym {CEN}{CEN}{\gls{The European Committee for Standardization}}
+\newglossaryentry{CEN}{name={The European Committee for Standardization (CEN)}, description={aims to provide infrastructures for the development, maintenance and distribution of coherent sets of standards and specifications in Europe}}
+%\newacronym {CEN}{CEN}{\gls{The European Committee for Standardization}}
 
 \subsection{Terminology}
 \label{sec:TechnicalStandardsTerminology}
@@ -412,9 +412,9 @@ The only other option that achieves interoperability for sharing health care rec
 \label{sec:futureTechnical}
 The technical limitations for an Electronic Health Record (EHR) system are multi-faceted. Two separate approaches to a solution are outlined in the United States’ Department of Health and Human Services paper Health Information Technology: Initial Set of Standards, Implementation Specifications, and Certification Criteria for Electronic Health Record Technology. \cite{AMA} 
 
-One solution is to use \gls{SOAP} which is a specification for exchanging structured information. This setup relies on eXtensible Markup Language (\gls{XML}), a remote procedure call, and HyperText Transfer Protocol (\gls{HTTP}). Significant existing software infrastructure and development already exists and SOAP is a way to re-use work that has already been done. This solution is dependent on multiple different systems and if one of the needed layers malfunctions the system as a whole will stop working. 
+One solution is to use \gls{SOAP} which is a specification for exchanging structured information. This setup relies on eXtensible Markup Language (XML), a remote procedure call, and HyperText Transfer Protocol (HTTP). Significant existing software infrastructure and development already exists and SOAP is a way to re-use work that has already been done. This solution is dependent on multiple different systems and if one of the needed layers malfunctions the system as a whole will stop working. 
 
-Additionally, because \gls{XML} formatted data is used, SOAP systems are usually slower and more data-heavy than other options. This might cause scalability problems for a large system. These limitations to the design may cause future problems implementing a \glspl{SOAP} style system on a large scale.
+Additionally, because XML formatted data is used, SOAP systems are usually slower and more data-heavy than other options. This might cause scalability problems for a large system. These limitations to the design may cause future problems implementing a \glspl{SOAP} style system on a large scale.
 
 The alternative is to use other transport standards than SOAP, such as Minimum Lower Layer Protocol which is used by HL7. SOAP is a trade-off however: the ability to work practically everywhere and stand on top of hundreds of existing standards comes with significant overhead and additional complexity. Very few other systems, however, have the ability to deal with data as complicated as what is found in EHRs.
 
